@@ -74,15 +74,42 @@
 16. подключаем BrowserSync -- позволяет не обновлять страницу вручную для отображения изменений html, css, js
 	npm i browser-sync --save-dev   и let browserSync = require('browser-sync');
 	ВАЖНО!!! -- ПОЧИТАТЬ ДОКУМЕНТАЦИЮ ПЛАГИНА!!
-		gulp.task('browser-sync', function() {  
+		gulp.task('browser-sync', function() {  -- подключение в gulpfile.js
     			browserSync.init({
      			server: {
      		       	baseDir: "./" -- директория (вместо точки ставим папку со своими файлами)
       			  }
     			});
 		});
+	/* подключаем BrowserSync для css*/
+.pipe(browserSync.reload({ stream: true }))  -- в gulp.task для css
 
-			
+	/* подключаем BrowserSync для html*/
+gulp.task('html', function (){
+  return gulp.src('app/*.html')
+          .pipe(browserSync.reload({ stream: true }))
+});
+
+/* подключаем BrowserSync для js*/
+gulp.task('js', function (){
+  return gulp.src('app/js/*.js')
+          .pipe(browserSync.reload({ stream: true }))
+});
+
+Как это выглядит в gulp.watch
+
+/* Подключаем плагин, который следит за изменениями */
+gulp.task('watch', function () {
+  /* метод: если происходят изменения в style.scss запускается плагин "parallel" */
+  gulp.watch('app/scss/style.scss', gulp.parallel('sass'))
+  gulp.watch('app/*.html', gulp.parallel('html'))
+  gulp.watch('app/js/*.js', gulp.parallel('js'))
+});
+
+17. /* Запускаем task, который позволит автоматически обновлять страницу и работать с терминалом (gulp watch не будет забивать эфир). 
+       Пишем задание, default, за кем он будет наблюдать (за заданием gulp.parallel и плагинами, которые мы вписываем)  */
+
+	gulp.task('default', gulp.parallel('sass', 'watch', 'browser-sync'))		
 	
 	
 	
