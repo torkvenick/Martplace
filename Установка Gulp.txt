@@ -71,11 +71,18 @@
 	gulp.watch('app/scss/style.scss', gulp.parallel('sass'));
 	});
 	
-16. подключаем BrowserSync -- позволяет не обновлять страницу вручную для отображения изменений
-	npm i browser-sync --save-dev
+16. подключаем BrowserSync -- позволяет не обновлять страницу вручную для отображения изменений html, css, js
+	npm i browser-sync --save-dev   и let browserSync = require('browser-sync');
 	ВАЖНО!!! -- ПОЧИТАТЬ ДОКУМЕНТАЦИЮ ПЛАГИНА!!
-	
-	
+		gulp.task('browser-sync', function() {  
+    			browserSync.init({
+     			server: {
+     		       	baseDir: "./" -- директория (вместо точки ставим папку со своими файлами)
+      			  }
+    			});
+		});
+
+			
 	
 	
 	
