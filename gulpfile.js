@@ -1,9 +1,13 @@
 
 /* Создаем переменные для облегчения работы в дальнейшем */
+/* переменная для gulp */
 let gulp = require('gulp'),
+/* переменная для gulp-sass */
   sass = require('gulp-sass'),
-  rename = require('gulp-rename');
-browserSync = require('browser-sync');
+  /* переменная для gulp-rename --переименовывает scss в css*/
+  rename = require('gulp-rename'),
+  browserSync = require('browser-sync'),
+  autoprefixer = require('gulp-autoprefixer');
 
 /* Конвертируем SASS в CSS. Даем задание (task)
 .task() -- это метод (точка, слово, скобки)
@@ -14,6 +18,7 @@ gulp.task('sass', function () {
           /* Что мы с файлом делаем (в данном случае      переименовываем и делаем css минифицированным) */
           .pipe(sass({ outputStyle: 'compressed' }))
           .pipe(rename({ suffix: '.min' }))
+          .pipe(autoprefixer({ cascade: false }))
           /* Куда это все выливается */
           .pipe(gulp.dest('app/css'))
           /* труба для подключения browserSync к css */
@@ -33,7 +38,7 @@ gulp.task('js', function (){
 });
 
 /* подключаем BrowserSync -- позволяет не обновлять страницу вручную для отображения изменений html, css, js*/
-gulp.task('browser-sync', function () {
+gulp.task('browser-sync', function (){
   browserSync.init({
     server: {
       baseDir: "app/"
