@@ -111,10 +111,23 @@ gulp.task('watch', function () {
 
 	gulp.task('default', gulp.parallel('sass', 'watch', 'browser-sync'))		
 	
+18. Подключаем gulp-autoprefixer -- поддерживает старые браузеры.
+
+	.pipe(sass({ outputStyle: 'compressed' }))
+          .pipe(rename({ suffix: '.min' }))
+
+          /* труба autoprefixer*/
+          .pipe(autoprefixer({ 			   -- пишем перед пунктом назначения
+            browsers: ['last 8 versions']  --последние 8 версий
+           }))
+          /* Куда это все выливается */
+          .pipe(gulp.dest('app/css'))
 	
+19. Устанавливаем normalize.css	
 	
-	
-	
+20. Подключаем плагин (gulp-concat), который собирает (для конкатинации) все файлы CSS и JS в libs.css и libs.js
+	а с помощью gulp-uglify мы эти файлы минифицируем в libs.min.css и libs.min.js
+
 	
 	
 	
