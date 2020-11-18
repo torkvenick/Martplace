@@ -1,47 +1,47 @@
 
-/* Создаем переменные  */
+//Создаем переменные
 
-/* "верстак" для подключения плагинов */
+//"верстак" для подключения плагинов
 let gulp = require('gulp'),
-  /* препроцессор */
+  //препроцессор 
   sass = require('gulp-sass'),
-  /* переименовывает scss в css*/
+  //переименовывает scss в css
   rename = require('gulp-rename'),
-  /* синхронизирует изменения, чтобы браузер обновлялся автоматически*/
+  //синхронизирует изменения, чтобы браузер обновлялся автоматически
   browserSync = require('browser-sync'),
-  /* поддерживает старые версии браузеров*/
+  //поддерживает старые версии браузеров
   autoprefixer = require('gulp-autoprefixer'),
-  /* собирает (конкатинирует) все файлы CSS и JS в libs.css и libs.js*/
+  //собирает (конкатинирует) все файлы CSS и JS в libs.css и libs.js
   concat = require('gulp-concat'),
-  /* минифицирует в libs.min.js*/
+  //минифицирует в libs.min.js
   uglify = require('gulp-uglify'),
-  /* минифицирует в libs.min.css*/
+  //минифицирует в libs.min.css
   cssmin = require('gulp-cssmin');
 
 /* Конвертируем SASS в CSS. .task() -- метод (точка, слово, скобки)
 function нужен для того, чтобы метод не работал единожды */
 gulp.task('sass', function () {
 
-  /* Откуда будут браться файлы */
-  return gulp.src('app/scss/style.scss')
+  //Откуда будут браться папки и файлы формата .scss 
+  return gulp.src('app/scss/**/*.scss')
 
-    /* Действия над файлом (здесь сжатие и переименование) */
+    //Действия над файлом (здесь сжатие и переименование) 
     .pipe(sass({ outputStyle: 'compressed' }))
     .pipe(rename({ suffix: '.min' }))
 
-    /* труба autoprefixer*/
+    //труба autoprefixer
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 8 versions']
     }))
 
-    /* Куда это все выливается */
+    //Куда это все выливается 
     .pipe(gulp.dest('app/css'))
 
-    /* труба для подключения browserSync к css */
+    //труба для подключения browserSync к css 
     .pipe(browserSync.reload({ stream: true }))
 });
 
-/* Подключение, конкатинация, минификация и вывод в папку css плагинов*/
+//Подключение, конкатинация, минификация и вывод в папку css плагинов
 gulp.task('style', function () {
   return gulp.src([
     'node_modules/normalize.css/normalize.css',
@@ -53,7 +53,7 @@ gulp.task('style', function () {
     .pipe(gulp.dest('app/css'))
 });
 
-/* Подключение, конкатинация, минификация и вывод в папку js плагинов*/
+//Подключение, конкатинация, минификация и вывод в папку js плагинов
 gulp.task('script', function () {
   return gulp.src([
     'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
@@ -64,19 +64,19 @@ gulp.task('script', function () {
     .pipe(gulp.dest('app/js'))
 });
 
-/* подключаем BrowserSync для html*/
+//подключаем BrowserSync для html
 gulp.task('html', function () {
   return gulp.src('app/*.html')
     .pipe(browserSync.reload({ stream: true }))
 });
 
-/* подключаем BrowserSync для js*/
+//подключаем BrowserSync для js
 gulp.task('js', function () {
   return gulp.src('app/js/*.js')
     .pipe(browserSync.reload({ stream: true }))
 });
 
-/* BrowserSync -- позволяет не обновлять страницу вручную для отображения изменений html, css, js*/
+//BrowserSync -- позволяет не обновлять страницу вручную для отображения изменений html, css, js
 gulp.task('browser-sync', function () {
   browserSync.init({
     server: {
@@ -85,9 +85,9 @@ gulp.task('browser-sync', function () {
   });
 });
 
-/* Подключаем плагин, который следит за изменениями */
+//Подключаем плагин, который следит за изменениями 
 gulp.task('watch', function () {
-  /* метод: если происходят изменения в style.scss, файлах html, js - запускается плагин "parallel" */
+  //метод: если происходят изменения в style.scss, файлах html, js - запускается плагин "parallel" 
   gulp.watch('app/scss/style.scss', gulp.parallel('sass'))
   gulp.watch('app/*.html', gulp.parallel('html'))
   gulp.watch('app/js/*.js', gulp.parallel('js'))
