@@ -3,7 +3,76 @@
 @import 'global';
 @import 'fonts';
 
+.lnr{
+  font-size: 20px;
+  color: blue;
+  font-weight: 700;
+}
 
+.header {
+  background-color: #eef1f3;
+
+  &__inner-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__profile {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button {
+  }
+}
+.header-top {
+}
+.container {
+  margin: 0 auto;
+  max-width: calc(100% - 20vw - 30px);
+}
+.logo {
+}
+.user-list {
+  margin-left: 50px;
+  font-size: 0;
+  &__item {
+    display: inline-block;
+  }
+
+  &__link {
+  }
+}
+.user-info {
+  margin-left: 50px;
+  &__avatar {
+  }
+
+  &__name {
+  }
+
+  &__wallet {
+  }
+}
+.menu {
+
+  &__items {
+  }
+
+  &__item {
+  }
+
+  &__link {
+  }
+}
+.search-product {
+
+  &__field {
+  }
+
+  &__icon {
+  }
+}
 
 
 
