@@ -19,36 +19,40 @@
           <a class="logo" href="#">
             <img src="images/logo.png" alt="logo">
           </a>
+
           <div class="header__profile">
             <button class="header__button" type="button">Become a seller</button>
-            <ul class="user-list">
-              <li class="user-list__item">
-                <a class="user-list__link" href="#">
-                  <span class="lnr lnr-alarm"></span>
-                  Alarm
-                </a>
-              </li>
-              <li class="user-list__item">
-                <a class="user-list__link" href="#">
-                  <span class="lnr lnr-envelope"></span>
-                  Envelope
-                </a>
-              </li>
-              <li class="user-list__item">
-                <a class="user-list__link" href="#">
-                  <span class="lnr lnr-cart"></span>
-                  cart
-                </a>
-              </li>
-            </ul>
-            <div class="user-info">
-              <a class="user-info__avatar" href="#">Avatar
-                <img src="images/user.png" alt="user">
+
+            <div class="user-list">
+              <a class="user-list__link" href="#">
+                Alarm
+                <span class="lnr lnr-alarm"></span>
+                <!-- <p class="lnr-num">25</p> -->
               </a>
-              <a class="user-info__name" href="#">Taofiq Hakim
+              <a class="user-list__link" href="#">
+                Envelope
+                <span class="lnr lnr-envelope"></span>
+                <!-- <p class="lnr-num">6</p> -->
               </a>
-              <span class="user-info__wallet">$20.45</span>
+              <a class="user-list__link" href="#">
+                Cart
+                <span class="lnr lnr-cart"></span>
+                <!-- <p class="lnr-num">2</p> -->
+              </a>
             </div>
+
+            <a class="user-avatar" href="#">Avatar
+              <img class="avatar" src="images/user.png" alt="user">
+            </a>
+            <ul class="user-info">
+              <li class="user-info_link">
+                <a class="user-info__name" href="#">Taofiq Hakim
+                </a>
+              </li>
+              <li class="user-info_link">
+                <span class="user-info__wallet">$20.45</span>
+              </li>           
+            </ul>
           </div>
         </div>
       </div>
@@ -88,7 +92,7 @@
         <button class="search-product__icon" type="button">
           <img src="images/" alt="search">
         </button>
-        
+
       </form>
     </nav>
   </header>

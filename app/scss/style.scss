@@ -1,7 +1,8 @@
 //файлы с нижним подчеркиванием игнорируются галпом
-@import 'vars'; 
+@import 'vars';
 @import 'global';
 @import 'fonts';
+
 
 .header {
   background-color: #eef1f3;
@@ -16,60 +17,85 @@
     justify-content: space-between;
   }
 
-  &__button {
-  }
+  &__button {}
 }
-.header-top {
-}
+
+.header-top {}
+
 .container {
   margin: 0 auto;
   max-width: calc(100% - 20vw - 30px);
 }
-.logo {
-}
+
+.logo {}
+
 .user-list {
   margin-left: 50px;
-  font-size: 0;
-  &__item {
-    display: inline-block;
-  }
 
   &__link {
-  }
-}
-.user-info {
-  margin-left: 50px;
-  &__avatar {
+    font-size: 0;
+    
+
+    &+& {
+      margin-left: 15px;
+    }
+
+    .lnr {
+      font-size: 20px;
+      color: $grey;
+      position: relative;
+    }
+
+   /*  .lnr-num {
+      position: absolute;
+      top: 0;
+      font-family: 'Quicksand';
+      font-weight: 550;
+      font-size: 14px;
+      line-height: 42;
+    } */
   }
 
+}
+
+.user-avatar {
+  margin-left: 50px;
+  font-size: 0;
+
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
+
+.user-info {
+  margin-left: 22px;
+  font-size: 22px;
+  font-family: 'Quicksand';
+  font-weight: 550;
+
   &__name {
+    color: $black;
   }
 
   &__wallet {
+    color: $blue;
   }
 }
+
 .menu {
 
-  &__items {
-  }
+  &__items {}
 
-  &__item {
-  }
+  &__item {}
 
-  &__link {
-  }
+  &__link {}
 }
+
 .search-product {
 
-  &__field {
-  }
+  &__field {}
 
-  &__icon {
-  }
+  &__icon {}
 }
-
-
-
-
-
-
