@@ -27,18 +27,19 @@
               <a class="user-list__link" href="#">
                 Alarm
                 <span class="lnr lnr-alarm"></span>
-                <p class="lnr-num lnr-num--red">25</p> 
+                <!-- Если поставить span вместо p, то блок с цифрами опускается ниже -->
+                <p class="lnr-num lnr-num--red">25</p>
               </a>
               <a class="user-list__link" href="#">
                 Envelope
                 <span class="lnr lnr-envelope"></span>
-                <p class="lnr-num lnr-num--green">6</p> 
+                <p class="lnr-num lnr-num--green">6</p>
               </a>
               <a class="user-list__link" href="#">
                 Cart
                 <span class="lnr lnr-cart"></span>
-                <p class="lnr-num lnr-num--blue">2</p> 
-              </a>             
+                <p class="lnr-num lnr-num--blue">2</p>
+              </a>
             </div>
 
             <a class="user-avatar" href="#">Avatar
@@ -58,43 +59,44 @@
       </div>
     </div>
 
-    <nav class="menu">
-      <ul class="menu__items">
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            Home
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            All products
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            Wordpress
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            Features
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            Pages
-          </a>
-        </li>
-      </ul>
+    <div class="container menu-wrapper">
+      <nav class="menu">
+        <div class="menu__items">
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Home
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              All products
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Wordpress
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Features
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Pages
+            </a>
+          </li>
+        </div>
+      </nav>
       <form class="search-product">
-        <label for="search">Search</label>
-        <input class="search-product__field" id="search" name="search" type="search">
-        <button class="search-product__icon" type="button">
-          <img src="images/" alt="search">
+        <label for="search"></label>
+        <input class="search-product__field" id="search" name="search" type="search" placeholder="Search product here...">
+        <button class="search-product__icon" type="button">search
+          <span class="lnr lnr-magnifier"></span>
         </button>
-
       </form>
-    </nav>
+    </div>
   </header>
 
 

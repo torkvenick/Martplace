@@ -16,24 +16,22 @@
   }
 
   &__button {
-    background-color: $button-blue;
-    border-radius: 10%;
+    align-self: center;
+    padding: 6px 18px;
+    border: none;
+    border-radius: 30px;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    background-color: $button-blue;
+    color: #fff;
     font-size: 14px;
     line-height: 28px;
-    color: #fff;
-    margin: 0;
-    padding: 0;
+
   }
 }
 
 .header-top {
   background-color: $bg-header;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: calc(100% - 20vw - 30px);
+  margin-bottom: 17px;
 }
 
 .logo {
@@ -116,18 +114,63 @@
   }
 }
 
+.menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .menu {
+ 
+  &__items {
+    display: flex;
+  }
 
-  &__items {}
+  &__item {
+    & + & {
+      margin-left: 35px;
+    }
+  }
 
-  &__item {}
-
-  &__link {}
+  &__link {
+    font-weight: 550;
+    color: $black;
+    font-size: 15px;
+    line-height: 42px;
+  }
 }
 
 .search-product {
+  position: relative;
+  width: 29%;
+  
+  &__field {
+    width: 100%;
+    overflow: hidden;
+    padding: 15px 80px 15px 25px;
+    border: 1px solid $border-button;
+    border-radius: 30px;
+    &::-webkit-search-cancel-button {
+      display: none;
+    }
+    &:focus {
+      outline: transparent;
+    }
+  }
 
-  &__field {}
+  &__icon {
+    font-size: 0;
+    position: absolute;
+    right: 0;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    background-color: $button-blue;
+    color: #fff;
+    cursor: pointer;
+  }
 
-  &__icon {}
+  .lnr-magnifier {
+    font-size: 15px;
+    line-height: 30px;
+  }
 }
