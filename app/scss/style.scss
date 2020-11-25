@@ -18,7 +18,7 @@
   }
 
   //Регистрация
-  &__button {
+  &__btn {
     align-self: center;
     padding: 4px 18px;
     border: none;
@@ -163,7 +163,7 @@
   position: relative;
   width: 31%;
   
-  &__field {
+  &__input {
     width: 100%;
     overflow: hidden;
     padding: 8px 80px 7px 25px;
@@ -252,4 +252,41 @@
     }
   }
 }
+
+.search {
+
+  &__content-form {
+    &, &::before {
+      position: absolute;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 40px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 6px;
+      background-color: #fff;
+    }
+    &::before {
+      content: '';
+      opacity: 0.5;
+      bottom: 70px;
+    }
+    
+  }
+
+  &__cat-input {
+  }
+
+  &__cat-btn {
+  }
+
+  &__content-btn {
+  }
+}
+.lnr {
+}
+.lnr-chevron-down {
+}
+
 
