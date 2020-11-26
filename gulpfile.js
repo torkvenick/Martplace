@@ -45,7 +45,7 @@ gulp.task('sass', function () {
 gulp.task('style', function () {
   return gulp.src([
     'node_modules/normalize.css/normalize.css',
-    'node_modules/swiper/swiper-bundle.css',
+    'node_modules/swiper/swiper-bundle.min.css',
     'node_modules/magnific-popup/dist/magnific-popup.css'
   ])
     .pipe(concat('libs.min.css'))
@@ -57,7 +57,7 @@ gulp.task('style', function () {
 gulp.task('script', function () {
   return gulp.src([
     'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
-    'node_modules/swiper/swiper.cjs.js'
+    'node_modules/swiper/swiper-bundle.min.js'
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())

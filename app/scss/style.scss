@@ -33,7 +33,7 @@
 }
 
 .header-top {
-  background-color: $bg-header;
+  background-color: $bg-grey;
   margin-bottom: 17px;
 }
 
@@ -206,6 +206,7 @@
 /* Титульный баннер */
 
 .block-intro {
+  margin-bottom: 190px;
   background-image: linear-gradient(180deg, rgb(0, 48, 222) 0%, rgb(23, 69, 237) 54%, rgb(46, 90, 251) 100%);
   opacity: 0.8;
 
@@ -259,12 +260,14 @@
   }
 }
 
+//блок формы
 .search {
 
   &__content-form {
     padding: 40px;
     bottom: -65px;
     width: 100%;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
 
     &,
     &::before,
@@ -293,7 +296,7 @@
     }
 
   }
-  
+  //поле
   &__cat-input {
     max-width: 711px;
     width: 100%;
@@ -311,7 +314,7 @@
       display: none;
     }
   }
-  
+  //кнопка категории
   &__cat-btn {
     position: absolute;
     right: 297px;
@@ -324,7 +327,7 @@
     color: #555;
     background-color: #fff;
   }
-
+  //кнопка поиска
   &__content-btn {
     margin-left: 30px;
     padding: 6px 66px 5px;
@@ -337,11 +340,146 @@
   }
 }
 
-.lnr {}
-
 .lnr-chevron-down {
   font-size: 12px;
   position: absolute;
   right: 10px;
   top: 22px
 }
+
+/* Титульный баннер */
+
+/* Блок преимущества */
+
+.block-benefits {
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+  }
+
+  &__item {
+    width: calc(100% / 3);
+    text-align: center;
+    border-radius: 4px;
+    background-color: #fff;
+    &--active {
+      box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    }
+    &+& {
+      margin-left: 23px;
+    }
+  }
+
+  &__img {
+    padding: 40px 0 ;
+  }
+
+  &__title {
+    padding-bottom: 30px;
+    font-size: 24px;
+    font-weight: 550;
+    color: #010101;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0 37px 46px;
+    color: $text-black;
+  }
+}
+
+/* Блок преимущества */
+
+/* Блок 1 продукт */
+
+.products {
+  
+  &__title {
+    width: 100%;
+    padding: 45px 0 45px 30px;
+    background-color: #dcdcdc;
+    font-size: 30px;
+    color: #000;
+    
+  }
+  
+  &__item {
+    width: 100%;
+    background-color: #dcdcdc;
+  }
+}
+.products-swiper {
+}
+.container {
+}
+.swiper-container {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+  height: 450px;
+}
+.products {
+
+  &__item {
+    height: 450px;
+  }
+
+  &__item-img {
+  }
+
+  &__item-info {
+  }
+}
+.item {
+
+  &__title {
+  }
+
+  &__user {
+  }
+
+  &__avatar {
+  }
+
+  &__link {
+  }
+
+  &__text {
+  }
+
+  &__tags {
+  }
+
+  &__tag {
+  }
+
+  &__info {
+  }
+
+  &__price {
+  }
+
+  &__fav {
+  }
+
+  &__cart {
+  }
+
+  &__rate {
+  }
+}
+.user-avatar {
+}
+.avatar {
+}
+
+
+/* Блок 1 продукт */
