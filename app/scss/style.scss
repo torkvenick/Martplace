@@ -401,6 +401,8 @@
 
 /* Блок 1 продукт */
 
+
+
 .products {
   background-color: #dcdcdc;
 
@@ -410,18 +412,21 @@
     background-color: #dcdcdc;
     font-size: 30px;
     color: #000;
-
   }
 
   &__item {
     display: flex;
     width: 100%;
-    background-color: $bg-grey;
+    margin-bottom: 120px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
+    background-color: #fff;
   }
-
+  
   &__item-img {
     max-width: calc(100% / 2);
     width: 100%;
+    border-radius: 4px;
     background-size: cover;
   }
 
@@ -472,12 +477,28 @@
       left: 0;
     }
   }
+  
+  &__text {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 30px;
+    color: $text-black;
+  }
 
-  &__text {}
-
-  &__tags {}
-
-  &__tag {}
+  &__tags {
+    font-size: 15px;
+    line-height: 30px;
+    color: rgb(134, 140, 150);
+  }
+  
+  &__tag {
+    padding: 0px 15px 0px 18px;
+    background-color: #f1f3f6;
+    border-radius: 30px;
+    &+& {
+      margin-left: 10px;
+    }
+  }
 
   &__info {}
 
