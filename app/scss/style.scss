@@ -280,7 +280,7 @@
       border-radius: 6px;
       background-color: #fff;
     }
-    
+
     &::before {
       opacity: 0.5;
       top: -13px;
@@ -296,6 +296,7 @@
     }
 
   }
+
   //поле
   &__cat-input {
     max-width: 711px;
@@ -310,10 +311,12 @@
     position: relative;
     overflow: hidden;
     outline-style: none;
+
     &::-webkit-search-cancel-button {
       display: none;
     }
   }
+
   //кнопка категории
   &__cat-btn {
     position: absolute;
@@ -327,6 +330,7 @@
     color: #555;
     background-color: #fff;
   }
+
   //кнопка поиска
   &__content-btn {
     margin-left: 30px;
@@ -364,16 +368,18 @@
     text-align: center;
     border-radius: 4px;
     background-color: #fff;
+
     &--active {
       box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
     }
+
     &+& {
       margin-left: 23px;
     }
   }
 
   &__img {
-    padding: 40px 0 ;
+    padding: 40px 0;
   }
 
   &__title {
@@ -396,90 +402,92 @@
 /* Блок 1 продукт */
 
 .products {
-  
+  background-color: #dcdcdc;
+
   &__title {
     width: 100%;
     padding: 45px 0 45px 30px;
     background-color: #dcdcdc;
     font-size: 30px;
     color: #000;
-    
+
   }
-  
-  &__item {
-    width: 100%;
-    background-color: #dcdcdc;
-  }
-}
-.products-swiper {
-}
-.container {
-}
-.swiper-container {
-}
-.swiper-button-prev {
-}
-.swiper-button-next {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-  height: 450px;
-}
-.products {
 
   &__item {
-    height: 450px;
+    display: flex;
+    width: 100%;
+    background-color: $bg-grey;
   }
 
   &__item-img {
+    max-width: calc(100% / 2);
+    width: 100%;
+    background-size: cover;
   }
 
   &__item-info {
   }
+
+  &__wrapper {
+    padding: 50px 50px 25px 50px;
+  }
 }
+
 .item {
 
   &__title {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 550;
+    color: #000;
   }
 
   &__user {
+    font-size: 15px;
+    line-height: 30px;
   }
 
   &__avatar {
+    font-size: 0;
+  }
+
+  &__avatar-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  &__user-name {
+   padding-left: 10px;
+   vertical-align: top;
   }
 
   &__link {
+    padding-left: 25px;
+    color: #7347c1;
+    vertical-align: top;
+
+    &::before {
+      content: url(../images/wordpress.png);
+      left: 0;
+    }
   }
 
-  &__text {
-  }
+  &__text {}
 
-  &__tags {
-  }
+  &__tags {}
 
-  &__tag {
-  }
+  &__tag {}
 
-  &__info {
-  }
+  &__info {}
 
-  &__price {
-  }
+  &__price {}
 
-  &__fav {
-  }
+  &__fav {}
 
-  &__cart {
-  }
+  &__cart {}
 
-  &__rate {
-  }
-}
-.user-avatar {
-}
-.avatar {
+  &__rate {}
 }
 
-
-/* Блок 1 продукт */
+  /* Блок 1 продукт */
