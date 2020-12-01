@@ -593,10 +593,11 @@
   }
 
   .filter-btn__text {
-    
+    padding-right: 25px;
   }
   
   .products__inner {
+    margin-bottom: 50px;
   }
   
   .products__inner-btn {
@@ -608,11 +609,11 @@
     display: flex;
     flex-wrap: wrap;
   }
-
+  
   .products__btn {
     border: none;
     font-size: 15px;
-    line-height: 30px;
+    line-height: 25px;
     color: $text-grey;
     padding: 0px 15px 0px 18px;
     margin-bottom: 15px;
@@ -620,6 +621,11 @@
     border-radius: 30px;
     margin-left: 10px;
   }
+
+  .product__item--vertical {
+    flex-direction: column;
+  }
+
 
   
    /* Блок продукты */
