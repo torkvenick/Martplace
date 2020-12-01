@@ -91,8 +91,7 @@
       </nav>
       <form class="search-product">
         <label for="search"></label>
-        <input class="search-product__input" id="search" name="search" type="search"
-          placeholder="Search product here...">
+        <input class="search-product__input" id="search" name="search" type="search" placeholder="Search product here...">
         <button class="search-product__icon" type="button">search
           <span class="lnr lnr-magnifier"></span>
         </button>
@@ -297,9 +296,10 @@
             </article>
           </div>
 
+
           <div class="swiper-slide">
             <article class="product__item">
-              <div class="products__item-img" style="background-image: url(images/content/products-1.jpg);"></div>
+              <div class="product__item-img" style="background-image: url(images/content/products-1.jpg);"></div>
               <div class="product__item-info">
                 <!-- Обертка для падингов -->
                 <div class="product__wrapper">
@@ -345,9 +345,7 @@
                       634
                     </a>
                   </div>
-                  <a class="item__rate" href="#">
-                    <div class="rate-yo"></div>
-                  </a>
+                  <div class="item__rate"></div>
                 </div>
               </div>
             </article>
@@ -361,17 +359,24 @@
       <div class="container">
         <div class="products__title">
           Newest Release Products
+          <button class="filter-btn">
+           <span class="filter-btn__text">Filter by:</span> 
+            <svg width="5px" height="20px">
+              <path fill-rule="evenodd" fill="rgb(163, 177, 196)"
+                d="M2.704,4.003 C1.481,3.969 0.519,3.047 0.557,1.944 C0.594,0.840 1.617,-0.028 2.840,0.006 C4.064,0.039 5.026,0.962 4.988,2.066 C4.950,3.169 3.928,4.037 2.704,4.003 ZM4.716,10.060 C4.678,11.164 3.656,12.031 2.432,11.998 C1.208,11.963 0.247,11.041 0.284,9.938 C0.322,8.833 1.344,7.967 2.568,8.000 C3.792,8.034 4.753,8.956 4.716,10.060 ZM4.443,18.054 C4.406,19.158 3.383,20.025 2.160,19.992 C0.936,19.957 -0.026,19.035 0.012,17.932 C0.050,16.828 1.072,15.961 2.296,15.994 C3.519,16.028 4.481,16.950 4.443,18.054 Z" />
+            </svg>
+          </button>
         </div>
         <div class="products__inner">
           <div class="products__inner-btn">
-            <button>Plugins</button>
-            <button>WordPress</button>
-            <button>Site Template</button>
-            <button>PSD Template</button>
-            <button>Joomla</button>
-            <button>User Interface</button>
-            <button>Landing Page</button>
-            <button>Software</button>
+            <button class="products__btn">Plugins</button>
+            <button class="products__btn">WordPress</button>
+            <button class="products__btn">Site Template</button>
+            <button class="products__btn">PSD Template</button>
+            <button class="products__btn">Joomla</button>
+            <button class="products__btn">User Interface</button>
+            <button class="products__btn">Landing Page</button>
+            <button class="products__btn">Software</button>
           </div>
         </div>
       </div>

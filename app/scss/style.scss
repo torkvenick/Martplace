@@ -518,7 +518,7 @@
   &__tags {
     font-size: 15px;
     line-height: 30px;
-    color: rgb(134, 140, 150);
+    color: $text-grey;
     margin-bottom: 43px;
   }
   
@@ -573,12 +573,27 @@
   .products__title {
     width: 100%;
     margin-bottom: 30px;
-    padding: 45px 0 45px 30px;
+    padding: 45px 30px 45px 30px;
     background-color: #fff;
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
     border-radius: 4px;
     font-size: 30px;
     color: #000;
+    position: relative;
+  }
+
+  .filter-btn {
+    position: absolute;
+    right: 30px;
+    background-color: transparent;
+    border: transparent;
+    font-size: 16px;
+    line-height: 32px;
+    color: $text-grey;
+  }
+
+  .filter-btn__text {
+    
   }
   
   .products__inner {
@@ -586,12 +601,24 @@
   
   .products__inner-btn {
     width: 100%;
-    padding: 30px 25px 30px 22px;
+    padding: 30px 20px 15px 20px;
     border-radius: 4px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .products__btn {
+    border: none;
+    font-size: 15px;
+    line-height: 30px;
+    color: $text-grey;
+    padding: 0px 15px 0px 18px;
+    margin-bottom: 15px;
+    background-color: #f1f3f6;
+    border-radius: 30px;
+    margin-left: 10px;
   }
 
   
