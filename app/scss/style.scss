@@ -264,9 +264,10 @@
 .search {
 
   &__content-form {
+    display: flex;
+    justify-content: space-between;
     padding: 40px;
     bottom: -65px;
-    width: 100%;
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
 
     &,
@@ -319,12 +320,9 @@
 
   //кнопка категории
   &__cat-btn {
-    position: absolute;
-    right: 297px;
-    margin-top: 1px;
     padding: 6px 38px 5px 20px;
     border: none;
-    border-left: 1px solid #dcdcdc;
+    border: 1px solid #dcdcdc;
     font-size: 14px;
     line-height: 42px;
     color: #555;
@@ -333,7 +331,6 @@
 
   //кнопка поиска
   &__content-btn {
-    margin-left: 30px;
     padding: 6px 66px 5px;
     background-color: $blue;
     border: transparent;
@@ -346,9 +343,7 @@
 
 .lnr-chevron-down {
   font-size: 12px;
-  position: absolute;
-  right: 10px;
-  top: 22px
+  padding-left: 10px;
 }
 
 /* Титульный баннер */
