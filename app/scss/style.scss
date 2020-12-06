@@ -396,8 +396,6 @@
 
 /* Блок 1 продукт */
 
-
-
 .product {
   background-color: #eff1f5; 
 
@@ -456,6 +454,7 @@
   }
 
   &__item-info {
+    position: relative;
     padding: 50px 50px 25px 50px;
     &--wide {
       max-width: calc( 100% / 2);
@@ -496,11 +495,6 @@
     padding-left: 25px;
     color: #7347c1;
     vertical-align: top;
-
-    &::before {
-      content: url(../images/wordpress.png);
-      left: 0;
-    }
   }
   
   &__text {
@@ -624,8 +618,12 @@
   }
 
   .product__item--vert {
-    width: calc(100% / 3 - 25px );
+    width: calc(100% / 3 - 30px);
     flex-direction: column;
+  }
+
+  .item__tags--hide {
+    display: none;
   }
 
 
