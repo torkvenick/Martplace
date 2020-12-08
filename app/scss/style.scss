@@ -355,11 +355,12 @@
   &__inner {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 120px;
+    margin-bottom: 90px;
   }
 
   &__item {
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 30px);
+    margin-bottom: 30px;
     text-align: center;
     border-radius: 4px;
     background-color: #fff;
@@ -661,6 +662,7 @@
 /* Блок statistics */
 
 .stats {
+  margin-bottom: 120px;
   background-color: rgba(0, 0, 0, 0.8);
   &__inner {
     display: flex;
@@ -668,9 +670,59 @@
   }
   &__block {
     text-align: center;
+    padding-top: 100px;
+    margin-bottom: 100px;
+    .lnr {
+      font-size: 48px;
+    }
+    &--yellow {
+      color: #feb71d;
+    }
+    &--blue {
+      color: #58c9e9;
+    }
+    &--green {
+      color: #77de51;
+    }
+    &--red {
+      color: #ff6a6d;
+    }
+  }
+  &__title {
+    font-size: 36px;
+    line-height: 100%;
+    margin-bottom: 0;
+  }
+  &__text {
+    color: #fff;
   }
 }
 
 /* Блок statistics */
 
+/* Блок benefits--big */
+
+.block-benefits__inner--big {
+  flex-wrap: wrap;
+}
+
+.block-benefits__title-main {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  span {
+    color: $blue-light;
+  }
+}
+
+.block-benefits__text-main {
+  max-width: 60%;
+  margin: 0 auto 60px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+
+/* Блок benefits--big */
 
