@@ -625,7 +625,7 @@
 }
 
 .product__item--vert {
-  width: calc(100% / 3 - 30px);
+  max-width: calc(100% / 3 - 30px);
   flex-direction: column;
 }
 
@@ -644,6 +644,33 @@
   color: #fff;
 }
 
-
-
 /* Блок продукты */
+
+/* Блок followers-feed */
+
+.swiper-container--multi {
+  overflow: hidden;
+}
+
+.product__item--swp {
+  flex-direction: column;
+}
+
+/* Блок followers-feed */
+
+/* Блок statistics */
+
+.stats {
+  background-color: rgba(0, 0, 0, 0.8);
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__block {
+    text-align: center;
+  }
+}
+
+/* Блок statistics */
+
+
