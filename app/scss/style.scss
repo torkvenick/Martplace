@@ -763,6 +763,7 @@
   margin-bottom: 120px;
   &__inner {
     display: flex;
+    justify-content: center;
     text-align: center;
     color: #fff;
   }
@@ -770,6 +771,8 @@
     margin-bottom: 50px;
   }
   &__block {
+    max-width: calc(100% / 2);
+    width: 100%;
     padding: 100px 0;
   }
   &__block--blue {
@@ -860,6 +863,14 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+  }
+  &__item-info {
+    font-size: 15px;
+    line-height: 30px;
+    color: #999;
+    .lnr-clock {
+      color: $blue-light;
+    }
   }
 }
 /* Блок latest-news */
