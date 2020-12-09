@@ -468,7 +468,6 @@
 
   &__title {
     margin-bottom: 15px;
-    font-size: 20px;
     font-weight: 700;
     color: #000;
   }
@@ -822,7 +821,7 @@
     color: #000;
     font-weight: 550;
   }
-  & .lnr {
+  .lnr {
     font-size: 60px;
     color: #e8e8e8;
   }
@@ -871,6 +870,9 @@
     .lnr-clock {
       color: $blue-light;
     }
+  }
+  .item__text {
+    margin-bottom: 30px;
   }
 }
 /* Блок latest-news */
