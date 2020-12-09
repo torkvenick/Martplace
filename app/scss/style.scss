@@ -864,9 +864,14 @@
     justify-content: space-between;
   }
   &__item-info {
+    display: flex;
+    justify-content: space-between;
     font-size: 15px;
     line-height: 30px;
     color: #999;
+    .lnr {
+      padding-right: 10px;
+    }
     .lnr-clock {
       color: $blue-light;
     }
