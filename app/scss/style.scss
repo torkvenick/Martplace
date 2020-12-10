@@ -862,18 +862,20 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 90px;
   }
   &__item-info {
     display: flex;
     justify-content: space-between;
+    padding-top: 0;
     font-size: 15px;
     line-height: 30px;
     color: #999;
-    .lnr {
-      padding-right: 10px;
-    }
     .lnr-clock {
       color: $blue-light;
+    }
+    .lnr-eye {
+      margin-left: 30px;
     }
   }
   .item__title {
@@ -884,9 +886,80 @@
     margin-bottom: 30px;
     line-height: 150%;
   }
+  .item__date {
+    width: 50%;
+    margin: 10px 0 0 0;
+    padding: 5px 0 15px;
+    border-right: 1px solid #ececec;
+  }
   .product__item-info {
     padding: 30px 40px 5px 30px;
   }
 }
 /* Блок latest-news */
+
+
+/* Блок block-info */
+
+.block-info {
+  &__inner {
+    display: flex;
+    font-size: 24px;
+    color: #333;
+  }
+  &__item {
+    padding-top: 60px;
+    width: calc( 100% / 2);
+    text-align: center;
+    &--border {
+      border-right: 1px solid #ececec;
+    }
+  }
+  &__img {
+    display: block;
+    margin: 0 auto 30px;
+  }
+  &__link {
+    margin-bottom: 60px;
+  }
+}
+
+.item--blue {
+  color: $blue-light;
+}
+
+.item--purple {
+  color: $purple;
+}
+
+
+/* Блок block-info */
+
+
+
+/* Блок block-join us */
+
+.block-join {
+  background-image: linear-gradient( 90deg, rgba(114,33,160, 0.9) 0%, rgba(64,48,201, 0.9) 46%, rgba(13,62,242, 0.9) 100%);
+
+  &__inner {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__text {
+    max-width: 70%;
+    margin-bottom: 50px;
+    font-size: 18px;
+  }
+  .link {
+    margin-bottom: 10px;
+  }
+}
+
+/* Блок block-join us */
 
