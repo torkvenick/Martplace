@@ -876,8 +876,16 @@
       color: $blue-light;
     }
   }
+  .item__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
   .item__text {
     margin-bottom: 30px;
+    line-height: 150%;
+  }
+  .product__item-info {
+    padding: 30px 40px 5px 30px;
   }
 }
 /* Блок latest-news */
