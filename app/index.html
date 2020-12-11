@@ -91,8 +91,7 @@
       </nav>
       <form class="search-product">
         <label for="search"></label>
-        <input class="search-product__input" id="search" name="search" type="search"
-          placeholder="Search product here...">
+        <input class="search-product__input" id="search" name="search" type="search" placeholder="Search product here...">
         <button class="search-product__icon" type="button">search
           <span class="lnr lnr-magnifier"></span>
         </button>
@@ -1259,14 +1258,16 @@
     <div class="container">
       <div class="footer__top">
         <div class="footer__top-inner">
-          <div class="footer__item">
+
+          <div class="footer__item footer__item-contacts">
             <a class="logo footer__logo" href="#">
               <img src="images/logo.png" alt="logo">
             </a>
             <ul class="footer-list footer-list__contacts">
-              <li class="footer-list__item">
-                Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis, leo
-                quam.
+              <li class="footer-list__item footer-list__item-text">
+                <p>
+                  Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis, leo quam.
+                </p>
               </li>
               <li class="footer-list__item">
                 <a class="footer-list__link" href="#">
@@ -1289,7 +1290,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer__item">
+          <div class="footer__item footer__item-about">
             <div class="footer__item-title">
               Our Company
             </div>
@@ -1331,7 +1332,8 @@
               </li>
             </ul>
           </div>
-          <div class="footer__item">
+
+          <div class="footer__item footer__item-support">
             <div class="footer__item-title">
               Help Support
             </div>
@@ -1373,55 +1375,61 @@
               </li>
             </ul>
           </div>
-          <div class="footer__item">
+
+          <div class="footer__item footer__item-newsletter">
             <div class="footer__item-title">
               Newsletter
             </div>
             <p class="footer__item-text">
               Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!
             </p>
-            <div class="footer__form"></div>
+            <div class="footer__form">
+              <form class="search-product">
+                <label for="search"></label>
+                <input class="search-product__input" id="search" name="search" type="search" placeholder="Enter email">
+                <button class="search-product__icon" type="submit">
+                  Submit
+                </button>
+              </form>
+            </div>
             <ul class="social-list">
               <li class="social-list__item">
-                <a class="social-list__link" href="#">
-                  <img src="" alt="">
+                <a class="social-list__link social-list__link--fb" href="#">
+                  <img src="images/social/fb.png" alt="facebook">
                 </a>
               </li>
               <li class="social-list__item">
-                <a class="social-list__link" href="#">
-                  <img src="" alt="">
+                <a class="social-list__link social-list__link--twitter" href="#">
+                  <img src="images/social/twit.png" alt="twitter">
                 </a>
               </li>
               <li class="social-list__item">
-                <a class="social-list__link" href="#">
-                  <img src="" alt="">
+                <a class="social-list__link social-list__link--google" href="#">
+                  <img src="images/social/google.png" alt="google">
                 </a>
               </li>
               <li class="social-list__item">
-                <a class="social-list__link" href="#">
-                  <img src="" alt="">
+                <a class="social-list__link social-list__link--pinterest" href="#">
+                  <img src="images/social/pinterest.png" alt="pinterest">
                 </a>
               </li>
               <li class="social-list__item">
-                <a class="social-list__link" href="#">
-                  <img src="" alt="">
+                <a class="social-list__link social-list__link--linkedin" href="#">
+                  <img src="images/social/linked.png" alt="linkedin">
                 </a>
               </li>
               <li class="social-list__item">
-                <a class="social-list__link" href="#">
-                  <img src="" alt="">
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#">
-                  <img src="" alt="">
+                <a class="social-list__link social-list__link--dribbble" href="#">
+                  <img src="images/social/dribbble.png" alt="dribbble">
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="footer__bottom"></div>
+    </div>
+    <div class="footer__bottom">
+      ©2017 <span>MartPlace</span>. All rights reserved. Created by <span>AazzTech</span>
     </div>
   </footer>
 
