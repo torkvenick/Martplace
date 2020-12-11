@@ -963,3 +963,80 @@
 
 /* Блок block-join us */
 
+/* Подвал сайта FOOTER */
+
+.footer {
+  background-color: $bg-footer;
+  &__top {
+  }
+
+  &__top-inner {
+    padding-top: 110px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+  }
+
+  &__logo {
+  }
+
+  &__item-title {
+    font-size: 18px;
+    line-height: 42px;
+    color: #fff;
+  }
+
+  &__item-text {
+  }
+
+  &__form {
+  }
+
+  &__bottom {
+  }
+}
+.container {
+}
+.logo {
+}
+.footer-list {
+
+  &__item {
+  }
+  
+  &__link {
+    font-size: 15px;
+    color: $footer-text;
+  }
+}
+.footer-list__contacts {
+  line-height: 26px;
+}
+.footer-list__about {
+
+}
+.footer-list__support {
+  
+}
+.lnr {
+}
+.lnr-phone-handset {
+}
+.lnr-envelope {
+}
+.lnr-map-marker {
+}
+.social-list {
+
+  &__item {
+  }
+
+  &__link {
+  }
+}
+
+
+/* Подвал сайта FOOTER */
+
