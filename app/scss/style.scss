@@ -4,20 +4,22 @@
 @import 'fonts';
 
 
-/* Шапка */
-
+//Header start
 .header {
-  &__inner-top {
+  &__top {
+    background-color: $bg-grey;
+    margin-bottom: 17px;
+  }
+  &__top-inner {
     display: flex;
     justify-content: space-between;
-  }
-
+  }  
   &__profile {
     display: flex;
     justify-content: space-between;
   }
 
-  //Регистрация
+  //registration btn
   &__btn {
     align-self: center;
     padding: 4px 18px;
@@ -28,19 +30,30 @@
     color: #fff;
     font-size: 14px;
     line-height: 28px;
+  }
+}
+// Логотип
+.logo {
+  padding: 25px 20px;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
 
+.logo__text {
+  padding-left: 5px;
+  color: $blue-light;
+  &--black {
+    color: #000;
+  }
+  &--white {
+    color: #fff;
   }
 }
 
-.header-top {
-  background-color: $bg-grey;
-  margin-bottom: 17px;
-}
 
-// Логотип
-.logo {
-  padding: 25px 0 21px 25px;
-}
+
 
 // Иконки
 .user-list {
@@ -1039,7 +1052,8 @@
 }
 .container {
 }
-.logo {
+.logo-footer {
+  padding: 0;
 }
 .footer-list {
 
