@@ -12,7 +12,7 @@
 
 <body>
 
-
+  <!-- Start header -->
   <header class="header">
     <div class="header__top">
       <div class="container">
@@ -21,7 +21,9 @@
             <a class="logo__img" href="#">
               <img src="images/logo.png" alt="logo">
             </a>
-            <a class="logo__text" href="#"><span class="logo__text--black">Mart</span>Place</a>
+            <a class="logo__text" href="#">
+              <span class="logo__text--black">Mart</span>Place
+            </a>
           </div>
           <div class="header__profile">
             <button class=" btn header__btn" type="button">Become a seller</button>
@@ -45,61 +47,65 @@
               </a>
             </div>
 
-            <a class="user-avatar" href="#">Avatar
-              <img class="avatar" src="images/user.png" alt="user">
-            </a>
-            <ul class="user-info">
-              <li class="user-info__link">
-                <a class="user-info__name" href="#">Taofiq Hakim
+            <div class="user-profile">
+              <a class="user-avatar" href="#">Avatar
+                <img class="avatar" src="images/logos.jpg" alt="user">
+              </a>
+              <div class="user-info">
+                <a class="user-name" href="#">Taofiq Hakim
                 </a>
-              </li>
-              <li class="user-info__link">
-                <span class="user-info__wallet">$20.45</span>
-              </li>
-            </ul>
+                <p class="user-wallet">$20.45</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container menu-wrapper">
-      <nav class="menu">
-        <div class="menu__items">
-          <li class="menu__item">
-            <a class="menu__link" href="#">
-              Home
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">
-              All products
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">
-              Wordpress
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">
-              Features
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">
-              Pages
-            </a>
-          </li>
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__bottom-inner">
+          <nav class="menu">
+            <div class="menu__items">
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  All products
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Wordpress
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Features
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Pages
+                </a>
+              </li>
+            </div>
+          </nav>
+          <form class="search-product">
+            <label for="search"></label>
+            <input class="search-product__input" id="search" name="search" type="search"
+              placeholder="Search product here...">
+            <button class="search-product__icon" type="button">search
+              <span class="lnr lnr-magnifier"></span>
+            </button>
+          </form>
         </div>
-      </nav>
-      <form class="search-product">
-        <label for="search"></label>
-        <input class="search-product__input" id="search" name="search" type="search" placeholder="Search product here...">
-        <button class="search-product__icon" type="button">search
-          <span class="lnr lnr-magnifier"></span>
-        </button>
-      </form>
+      </div>
     </div>
+
   </header>
 
   <main class="main">
@@ -1272,7 +1278,8 @@
             <ul class="footer-list footer-list__contacts">
               <li class="footer-list__item footer-list__item-text">
                 <p>
-                  Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis, leo quam.
+                  Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis,
+                  leo quam.
                 </p>
               </li>
               <li class="footer-list__item">
