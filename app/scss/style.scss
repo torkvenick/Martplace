@@ -10,20 +10,20 @@
 .header {
   &__top {
     background-color: $bg-grey;
-    margin-bottom: 17px;
   }
   &__top-inner {
+    padding: 25px 0 17px 8px;
     display: flex;
     justify-content: space-between;
-    padding: 25px 0;
   }  
   &__profile {
     display: flex;
     justify-content: space-between;
   }
 
-  //registration btn
+  //Button registration
   &__btn {
+    //чтобы кнопка не растягивалась по высоте
     align-self: center;
     padding: 11px 18px;
     border: none;
@@ -34,23 +34,24 @@
 }
 // Logo
 .logo {
-  padding-left: 16px;
   font-size: 24px;
   font-weight: 700;
   display: flex;
   align-items: center;
+  &__img {
+  }
+  &__text {
+    padding-left: 5px;
+    color: $blue-light;
+    &--black {
+      color: #000;
+    }
+    &--white {
+      color: #fff;
+    }
+  }
 }
 
-.logo__text {
-  padding-left: 5px;
-  color: $blue-light;
-  &--black {
-    color: #000;
-  }
-  &--white {
-    color: #fff;
-  }
-}
 
 // Иконки
 .user-list {
@@ -62,35 +63,33 @@
     font-size: 0;
     padding-right: 17px;
     & + & {
-      margin-left: 10px;
+      margin-left: 15px;
     }
-    .lnr {
-      font-size: 20px;
-      color: $grey;
-    }
-
-    .lnr-num {
-      position: absolute;
-      bottom: 0;
-      left: 12px;
-      padding: 3px 7px;
-      height: 22px;
-      border-radius: 50%;
-      font-weight: 550;
-      font-size: 14px;
-      color: #fff;
-    }
-
-    .lnr-num--red {
+  }
+  
+  .lnr {
+    font-size: 20px;
+    color: $grey;
+  }
+  
+  .lnr-num {
+    position: absolute;
+    bottom: 15px;
+    left: 12px;
+    padding: 3px 7px;
+    height: 22px;
+    border-radius: 50%;
+    font-weight: 550;
+    font-size: 14px;
+    color: #fff;
+    &--red {
       background-color: #ff6a6c;
       left: 10px;
     }
-
-    .lnr-num--green {
+      &--green {
       background-color: #62d03b;
     }
-
-    .lnr-num--blue {
+      &--blue {
       background-color: $blue-light;
     }
   }
@@ -100,6 +99,7 @@
 // User-info
 .user-profile {
   display: flex;
+  margin-left: 48px;
   font-size: 16px;
   font-weight: 550;
   line-height: 100%;
@@ -117,19 +117,23 @@
 }
 
 .user-info {
+  margin-left: 22px;
 }
 
 .user-name {
   color: $black;
+  padding: 7px 0 4px;
 }
 
 .user-wallet {
+  padding-top: 4px;
   margin: 0;
   color: $blue;
   }
 
 // Header__bottom
 .header__bottom-inner {
+  padding-top: 17px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
@@ -138,7 +142,6 @@
 .menu {
   &__items {
     display: flex;
-    padding-left: 15px;
     text-transform: uppercase;
   }
 
