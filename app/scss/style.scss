@@ -559,7 +559,7 @@
 /* Блок продукты */
 
 .products {
-  background-color: $bg-light-grey;
+  background-color: $bg-lightgrey;
   padding-top: 120px;
 }
 
@@ -967,7 +967,7 @@
 /* Подвал сайта FOOTER */
 
 .footer {
-  background-color: $bg-footer;
+  background-color: $bg-darkgrey;
   &__top {
   }
   
@@ -1040,7 +1040,8 @@
 }
 .container {
 }
-.logo {
+.logo-footer {
+  padding: 0;
 }
 .footer-list {
 
