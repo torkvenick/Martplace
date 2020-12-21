@@ -44,3 +44,23 @@ body {
   color: #fff;
   cursor: pointer;
 }
+
+.avatar {
+  font-size: 0;
+  line-height: 0;
+  margin-right: 7px;
+  &__img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $dark-grey;
+    &--sm {
+      width: 28px;
+      height: 28px;
+    }
+    &--big {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}

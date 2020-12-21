@@ -6,13 +6,13 @@
 
 /* Start Header */
 
-//header__top
+/* Start header__top */
 .header {
   &__top {
     background-color: $bg-grey;
   }
   &__top-inner {
-    padding: 25px 0 17px 8px;
+    padding: 25px 0 25px 8px;
     display: flex;
     justify-content: space-between;
   }  
@@ -20,11 +20,11 @@
     display: flex;
     justify-content: space-between;
   }
-
   //Button registration
   &__btn {
     //чтобы кнопка не растягивалась по высоте
     align-self: center;
+    margin-right: 47px;
     padding: 11px 18px;
     border: none;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
@@ -39,6 +39,7 @@
   display: flex;
   align-items: center;
   &__img {
+    line-height: 0;
   }
   &__text {
     padding-left: 5px;
@@ -51,17 +52,16 @@
     }
   }
 }
-
-
 // Иконки
 .user-notification {
-  margin-left: 47px;
+  margin-right: 48px;
   padding-top: 15px;
 
   &__link {
     position: relative;
     font-size: 0;
     padding-right: 17px;
+    cursor: pointer;
     & + & {
       margin-left: 15px;
     }
@@ -95,29 +95,16 @@
   }
 }
 
-
-// User-info
+/* Start Блок с инфой пользователя */
 .user-profile {
   display: flex;
-  margin-left: 48px;
   font-size: 16px;
   font-weight: 550;
   line-height: 100%;
 }
 
-// Аватарка
-.user-avatar {
-  font-size: 0;
-}
-.avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: $dark-grey;
-}
-
 .user-info {
-  margin-left: 22px;
+  margin-left: 15px;
 }
 
 .user-name {
@@ -130,13 +117,14 @@
   margin: 0;
   color: $blue;
 }
+/* End Блок с инфой пользователя */
+/* End header__top */
 
-// header__bottom
+ /* Start header__bottom */
 .header__bottom-inner {
-  padding-top: 17px;
+  padding: 16px 0;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
 }
 
 /* Start navigation */
@@ -206,6 +194,7 @@
   }
 }
 /* End form-search */
+/* End header__bottom */
 
 /* Start block-intro */
 .block-intro {
@@ -478,16 +467,6 @@
   &__user {
     font-size: 15px;
     line-height: 30px;
-  }
-
-  &__avatar {
-    font-size: 0;
-  }
-
-  &__avatar-img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
   }
 
   &__user-name {
@@ -814,10 +793,6 @@
   &__profile-info {
     display: flex;
   }
-  &__avatar {
-    font-size: 0;
-    margin-right: 20px;
-  }
   &__name {
     font-size: 20px;
     padding: 15px 0;
@@ -846,14 +821,6 @@
   line-height: 100%;
   color: #fff;
 } 
-
-.avatar.avatar--big {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: $dark-grey;
-}
-
 /* Блок feedback (отзывы) */
 
 
