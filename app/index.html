@@ -104,7 +104,8 @@
           <!-- Start form -->
           <form class="search-product">
             <label for="search"></label>
-            <input class="search-product__input" id="search" name="search" type="search" placeholder="Search product here...">
+            <input class="search-product__input" id="search" name="search" type="search"
+              placeholder="Search product here...">
             <button class="search-product__icon" type="button">search
               <span class="lnr lnr-magnifier"></span>
             </button>
@@ -155,227 +156,238 @@
     </section>
     <!-- End block-intro-->
 
-    <section class="block-benefits">
+    <!-- Start benefits-->
+    <section class="benefits">
       <div class="container">
-        <div class="block-benefits__inner">
+        <div class="benefits__inner">
 
-          <article class="block-benefits__item">
-            <img class="block-benefits__img" src="images/book.png" alt="book">
-            <div class="block-benefits__title">
+          <a class="benefits__item" href="#">
+            <div class="benefits__img">
+              <img src="images/book.png" alt="book">
+            </div>
+            <div class="benefits__title">
               Best UX Research
             </div>
-            <div class="block-benefits__text">
+            <div class="benefits__text">
               Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
               the mattis, leo quam aliquet diam
               congue is laoreet elit metus.
             </div>
-          </article>
+          </a>
 
-          <article class="block-benefits__item block-benefits__item--active">
-            <img class="block-benefits__img" src="images/table.png" alt="book">
-            <div class="block-benefits__title">
+          <a class="benefits__item" href="#">
+            <div class="benefits__img">
+              <img src="images/table.png" alt="table">
+            </div>
+            <div class="benefits__title">
               Fully Responsive
             </div>
-            <div class="block-benefits__text">
+            <div class="benefits__text">
               Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
               the mattis, leo quam aliquet diam
               congue is laoreet elit metus.
             </div>
-          </article>
+          </a>
 
-          <article class="block-benefits__item">
-            <img class="block-benefits__img" src="images/phone.png" alt="book">
-            <div class="block-benefits__title">
+          <a class="benefits__item" href="#">
+            <div class="benefits__img">
+              <img src="images/phone.png" alt="phone">
+            </div>
+            <div class="benefits__title">
               Buy & Sell Easily
             </div>
-            <div class="block-benefits__text">
+            <div class="benefits__text">
               Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
               the mattis, leo quam aliquet diam
               congue is laoreet elit metus.
             </div>
-          </article>
+          </a>
 
         </div>
       </div>
     </section>
+    <!-- End benefits-->
 
-    <section class="product product-swiper">
+    <!-- Start product-->
+    <section class="block product">
       <div class="container swiper-container">
-        <div class="product__title">
-          Weekly Featured Products
-          <div class="swiper-btn__wrapper">
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+        <div class="product__inner">
+          <div class="product__title">
+            Weekly Featured Products
+            <div class="swiper-btn__wrapper">
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
           </div>
-        </div>
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
 
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <article class="product__item">
-              <!-- Заменить на img!!! -->
-              <div class="product__item-img">
-                <img src="images/content/products-1.jpg" alt="products-1">
-              </div>
-              <div class="product__item-info product__item-info--wide">
-                <div class="item__title">
-                  One Page Resume Template
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <article class="product__item">
+                <!-- Заменить на img!!! -->
+                <div class="product__item-img">
+                  <img src="images/content/products-1.jpg" alt="products-1">
                 </div>
-                <div class="item__user">
-                  <a class="avatar" href="#">Avatar
-                    <img class="avatar__img avatar__img--sm" src="images/user.png" alt="user">
-                  </a>
-                  <a class="item__user-name" href="#">
-                    AazzTech
-                  </a>
-                  <a class="item__link" href="#">
-                    <img src="images/wp.svg" alt="WordPress">
-                    WordPress
-                  </a>
+                <div class="product__item-info product__item-info--wide">
+                  <div class="item__title">
+                    One Page Resume Template
+                  </div>
+                  <div class="item__user">
+                    <a class="avatar" href="#">Avatar
+                      <img class="avatar__img avatar__img--sm" src="images/user.png" alt="user">
+                    </a>
+                    <a class="item__user-name" href="#">
+                      AazzTech
+                    </a>
+                    <a class="item__link" href="#">
+                      <img src="images/wp.svg" alt="WordPress">
+                      WordPress
+                    </a>
+                  </div>
+                  <div class="item__text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+                    quam
+                    aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                    mattis, leo quam aliquet congue justo ut scelerisque.
+                  </div>
+                  <div class="item__tags">
+                    <a class="item__tag" href="#">
+                      website
+                    </a>
+                    <a class="item__tag" href="#">
+                      plugin
+                    </a>
+                    <a class="item__tag" href="#">
+                      landing page
+                    </a>
+                  </div>
+                  <div class="item__info">
+                    <a class="item__price" href="#">$10 - $50</a>
+                    <a class="item__fav" href="#">
+                      <span class="lnr lnr-heart"></span>
+                      46
+                    </a>
+                    <a class="item__cart" href="#">
+                      <span class="lnr lnr-cart"></span>
+                      634
+                    </a>
+                  </div>
                 </div>
-                <div class="item__text">
-                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
-                  quam
-                  aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
-                  mattis, leo quam aliquet congue justo ut scelerisque.
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="product__item">
+                <!-- Заменить на img!!! -->
+                <div class="product__item-img ">
+                  <img src="images/content/products-1.jpg" alt="products-1">
                 </div>
-                <div class="item__tags">
-                  <a class="item__tag" href="#">
-                    website
-                  </a>
-                  <a class="item__tag" href="#">
-                    plugin
-                  </a>
-                  <a class="item__tag" href="#">
-                    landing page
-                  </a>
+                <div class="product__item-info product__item-info--wide">
+                  <div class="item__title">
+                    One Page Resume Template
+                  </div>
+                  <div class="item__user">
+                    <a class="avatar" href="#">Avatar
+                      <img class="avatar__img avatar__img--sm" src="images/user.png" alt="user">
+                    </a>
+                    <a class="item__user-name" href="#">
+                      AazzTech
+                    </a>
+                    <a class="item__link" href="#">
+                      <img src="images/wp.svg" alt="WordPress">
+                      WordPress
+                    </a>
+                  </div>
+                  <div class="item__text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+                    quam
+                    aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                    mattis, leo quam aliquet congue justo ut scelerisque.
+                  </div>
+                  <div class="item__tags">
+                    <a class="item__tag" href="#">
+                      website
+                    </a>
+                    <a class="item__tag" href="#">
+                      plugin
+                    </a>
+                    <a class="item__tag" href="#">
+                      landing page
+                    </a>
+                  </div>
+                  <div class="item__info">
+                    <a class="item__price" href="#">$10 - $50</a>
+                    <a class="item__fav" href="#">
+                      <span class="lnr lnr-heart"></span>
+                      46
+                    </a>
+                    <a class="item__cart" href="#">
+                      <span class="lnr lnr-cart"></span>
+                      634
+                    </a>
+                  </div>
                 </div>
-                <div class="item__info">
-                  <a class="item__price" href="#">$10 - $50</a>
-                  <a class="item__fav" href="#">
-                    <span class="lnr lnr-heart"></span>
-                    46
-                  </a>
-                  <a class="item__cart" href="#">
-                    <span class="lnr lnr-cart"></span>
-                    634
-                  </a>
+              </article>
+            </div>
+
+
+            <div class="swiper-slide">
+              <article class="product__item">
+                <!-- Заменить на img!!! -->
+                <div class="product__item-img">
+                  <img src="images/content/products-1.jpg" alt="products-1">
                 </div>
-              </div>
-            </article>
+                <div class="product__item-info product__item-info--wide">
+                  <div class="item__title">
+                    One Page Resume Template
+                  </div>
+                  <div class="item__user">
+                    <a class="avatar" href="#">Avatar
+                      <img class="avatar__img avatar__img--sm" src="images/user.png" alt="user">
+                    </a>
+                    <a class="item__user-name" href="#">
+                      AazzTech
+                    </a>
+                    <a class="item__link" href="#">
+                      <img src="images/wp.svg" alt="WordPress">
+                      WordPress
+                    </a>
+                  </div>
+                  <div class="item__text">
+                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+                    quam
+                    aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                    mattis, leo quam aliquet congue justo ut scelerisque.
+                  </div>
+                  <div class="item__tags">
+                    <a class="item__tag" href="#">
+                      website
+                    </a>
+                    <a class="item__tag" href="#">
+                      plugin
+                    </a>
+                    <a class="item__tag" href="#">
+                      landing page
+                    </a>
+                  </div>
+                  <div class="item__info">
+                    <a class="item__price" href="#">$10 - $50</a>
+                    <a class="item__fav" href="#">
+                      <span class="lnr lnr-heart"></span>
+                      46
+                    </a>
+                    <a class="item__cart" href="#">
+                      <span class="lnr lnr-cart"></span>
+                      634
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
           </div>
-
-          <div class="swiper-slide">
-            <article class="product__item">
-              <!-- Заменить на img!!! -->
-              <div class="product__item-img ">
-                <img src="images/content/products-1.jpg" alt="products-1">
-              </div>
-              <div class="product__item-info product__item-info--wide">
-                <div class="item__title">
-                  One Page Resume Template
-                </div>
-                <div class="item__user">
-                  <a class="avatar" href="#">Avatar
-                    <img class="avatar__img avatar__img--sm" src="images/user.png" alt="user">
-                  </a>
-                  <a class="item__user-name" href="#">
-                    AazzTech
-                  </a>
-                  <a class="item__link" href="#">
-                    <img src="images/wp.svg" alt="WordPress">
-                    WordPress
-                  </a>
-                </div>
-                <div class="item__text">
-                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
-                  quam
-                  aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
-                  mattis, leo quam aliquet congue justo ut scelerisque.
-                </div>
-                <div class="item__tags">
-                  <a class="item__tag" href="#">
-                    website
-                  </a>
-                  <a class="item__tag" href="#">
-                    plugin
-                  </a>
-                  <a class="item__tag" href="#">
-                    landing page
-                  </a>
-                </div>
-                <div class="item__info">
-                  <a class="item__price" href="#">$10 - $50</a>
-                  <a class="item__fav" href="#">
-                    <span class="lnr lnr-heart"></span>
-                    46
-                  </a>
-                  <a class="item__cart" href="#">
-                    <span class="lnr lnr-cart"></span>
-                    634
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
-
-
-          <div class="swiper-slide">
-            <article class="product__item">
-              <!-- Заменить на img!!! -->
-              <div class="product__item-img">
-                <img src="images/content/products-1.jpg" alt="products-1">
-              </div>
-              <div class="product__item-info product__item-info--wide">
-                <div class="item__title">
-                  One Page Resume Template
-                </div>
-                <div class="item__user">
-                  <a class="avatar" href="#">Avatar
-                    <img class="avatar__img avatar__img--sm" src="images/user.png" alt="user">
-                  </a>
-                  <a class="item__user-name" href="#">
-                    AazzTech
-                  </a>
-                  <a class="item__link" href="#">
-                    <img src="images/wp.svg" alt="WordPress">
-                    WordPress
-                  </a>
-                </div>
-                <div class="item__text">
-                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
-                  quam
-                  aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
-                  mattis, leo quam aliquet congue justo ut scelerisque.
-                </div>
-                <div class="item__tags">
-                  <a class="item__tag" href="#">
-                    website
-                  </a>
-                  <a class="item__tag" href="#">
-                    plugin
-                  </a>
-                  <a class="item__tag" href="#">
-                    landing page
-                  </a>
-                </div>
-                <div class="item__info">
-                  <a class="item__price" href="#">$10 - $50</a>
-                  <a class="item__fav" href="#">
-                    <span class="lnr lnr-heart"></span>
-                    46
-                  </a>
-                  <a class="item__cart" href="#">
-                    <span class="lnr lnr-cart"></span>
-                    634
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
-
         </div>
       </div>
     </section>
@@ -1464,7 +1476,6 @@
 
   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
  -->
-  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

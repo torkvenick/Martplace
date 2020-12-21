@@ -45,8 +45,7 @@ gulp.task('sass', function () {
 gulp.task('style', function () {
   return gulp.src([
     'node_modules/normalize.css/normalize.css',
-    'node_modules/swiper/swiper-bundle.min.css',
-    'node_modules/rateyo/lib/cjs/rateyo.css',
+    'node_modules/swiper/swiper-bundle.css',
     'node_modules/magnific-popup/dist/magnific-popup.css'
   ])
     .pipe(concat('libs.min.css'))
@@ -57,9 +56,8 @@ gulp.task('style', function () {
 //Подключение, конкатинация, минификация и вывод в папку js плагинов
 gulp.task('script', function () {
   return gulp.src([
-    'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
-    'node_modules/swiper/swiper-bundle.min.js',
-    'node_modules/rateyo/lib/cjs/rateyo.js'
+    'node_modules/swiper/swiper-bundle.js',
+    'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())

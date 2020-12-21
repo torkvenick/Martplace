@@ -20,7 +20,7 @@
     "magnific-popup": "^1.1.0",
     "normalize.css": "^8.0.1",
     "rateyo": "^3.0.0-alpha.2",
-    "swiper": "^6.3.5"
+    "swiper": "^6.4.5"
   },
   "dependencies": {}
 }

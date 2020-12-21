@@ -202,19 +202,17 @@
   opacity: 0.8;
   
   &__wrapper {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     //Проверить высоту
-    min-height: 730px;
     margin-bottom: 190px;
+    min-height: 730px;
+    text-align: center;
+    position: relative;
   }
   
-  &__inner {
-    /* position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 236px; */
-    
-    text-align: center;
+  &__inner {   
     color: $white-title;
   }
 
@@ -252,7 +250,7 @@
   }
 }
 
-//блок формы
+//form
 .search {
 
   &__content-form {
@@ -290,7 +288,7 @@
 
   }
 
-  //поле
+  //input
   &__cat-input {
     max-width: 711px;
     width: 100%;
@@ -310,7 +308,7 @@
     }
   }
 
-  //кнопка категории
+  //categories btn
   &__cat-btn {
     padding: 6px 38px 5px 20px;
     border: none;
@@ -321,7 +319,7 @@
     background-color: #fff;
   }
 
-  //кнопка поиска
+  //search btn
   &__content-btn {
     padding: 6px 66px 5px;
     background-color: $blue;
@@ -337,60 +335,58 @@
   font-size: 12px;
   padding-left: 10px;
 }
+/* End block-intro */
 
-/* Титульный баннер */
 
-/* Блок преимущества */
-
-.block-benefits {
-
+/* Start benefits */
+.benefits {
   &__inner {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 90px;
+    padding-bottom: 40px;
   }
-
   &__item {
-    width: calc(100% / 3 - 30px);
+    max-width: calc(100% / 3 - 30px);
     margin-bottom: 30px;
+    padding: 40px 37px 47px;
     text-align: center;
     border-radius: 4px;
     background-color: #fff;
-
-    &--active {
+    transition: box-shadow 0.3s;
+    &:hover {
       box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
     }
   }
-
   &__img {
-    padding: 40px 0;
+    //позволяет выровнять текст по высоте во всех карточках
+    min-height: 157px;
   }
-
   &__title {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     font-size: 24px;
     font-weight: 550;
     color: #010101;
   }
-
   &__text {
     font-size: 16px;
     line-height: 30px;
-    padding: 0 37px 46px;
     color: $text-black;
   }
 }
+/* End benefits */
 
-/* Блок преимущества */
-
-/* Блок 1 продукт */
-
+/* Start product */
 .product {
   background-color: #eff1f5;
 
+  &__inner {
+    padding: 120px 0;
+  }
+
   &__title {
     width: 100%;
-    margin: 120px 0 50px;
+    margin-bottom: 50px;
     padding: 45px 0 45px 30px;
     background-color: #fff;
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
@@ -426,12 +422,10 @@
   }
 
   .swiper-slide {
-    margin-bottom: 90px;
   }
 
   &__item {
     display: flex;
-    margin-bottom: 30px;
     border-radius: 4px;
     box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
     background-color: #fff;
@@ -534,8 +528,7 @@
   }
 
 }
-
-/* Блок 1 продукт */
+/* End product */
 
 /* Блок продукты */
 
