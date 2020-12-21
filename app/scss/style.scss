@@ -376,54 +376,8 @@
 }
 /* End benefits */
 
-/* Start product */
+/* Start block-product */
 .product {
-  background-color: #eff1f5;
-
-  &__inner {
-    padding: 120px 0;
-  }
-
-  &__title {
-    width: 100%;
-    margin-bottom: 50px;
-    padding: 45px 0 45px 30px;
-    background-color: #fff;
-    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
-    border-radius: 4px;
-    font-size: 30px;
-    color: #000;
-    position: relative;
-  }
-
-  .swiper-btn__wrapper {
-    position: absolute;
-    width: 110px;
-    height: 45px;
-    right: 30px;
-    top: 40px;
-    background-color: $purple;
-    border-radius: 30px;
-  }
-
-  .swiper-button-prev {
-    margin-left: 7px;
-  }
-
-  .swiper-button-next {
-    margin-right: 7px;
-  }
-
-  .swiper-button-prev::after,
-  .swiper-button-next::after {
-    font-size: 14px;
-    line-height: 100%;
-    color: #fff;
-  }
-
-  .swiper-slide {
-  }
-
   &__item {
     display: flex;
     border-radius: 4px;
@@ -526,7 +480,25 @@
     margin-left: 20px;
     color: $blue-light;
   }
+}
 
+.product__items-wrapper {
+  margin-top: 50px;
+}
+
+.swiper-button-prev {
+  margin-left: 7px;
+}
+
+.swiper-button-next {
+  margin-right: 7px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 14px;
+  line-height: 100%;
+  color: #fff;
 }
 /* End product */
 
@@ -535,6 +507,10 @@
 .products {
   background-color: $bg-lightgrey;
   padding-top: 120px;
+}
+
+.block__title-products {
+  margin-bottom: 30px;
 }
 
 .products__title {
@@ -550,8 +526,6 @@
 }
 
 .filter-btn {
-  position: absolute;
-  right: 30px;
   background-color: transparent;
   border: transparent;
   font-size: 16px;
