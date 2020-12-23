@@ -53,7 +53,7 @@ body {
 
 //кнопка категории
 .btn-cat {
-  padding: 8px 15px 8px 18px;
+  padding: 7px 15px 7px 18px;
   border-radius: 30px;
   background-color: #f1f3f6;
   font-size: 15px;
@@ -62,6 +62,10 @@ body {
   border: none;
   & + .btn-cat {
     margin-left: 10px;
+  }
+  &--big {
+    padding: 10px 20px;
+    background-color: #f1f3f6;
   }
 }
 
@@ -102,6 +106,9 @@ body {
     font-size: 30px;
     color: #000;
   }
+  &__products-wrapper {
+    margin-top: 50px;
+  }
 }
 
 //навигационные кнопки слайдера
@@ -113,5 +120,85 @@ body {
   position: relative;
   &--blue {
     background-color: $blue-light;
+  }
+}
+
+//карточка товара
+
+.product-item {
+  display: flex;
+  border-radius: 4px;
+  box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
+  background-color: #fff;
+  &__img {
+    overflow: hidden;
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__inner {
+    position: relative;
+    padding: 50px 50px 25px 50px;
+  }
+  &__title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #000;
+  }
+
+  &__user {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  &__user-name {
+    padding-left: 10px;
+    vertical-align: top;
+  }
+
+  &__link {
+    padding-left: 25px;
+    color: #7347c1;
+    vertical-align: top;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 30px;
+    color: $text-black;
+  }
+
+  &__tags {
+    margin-bottom: 43px;
+  }
+
+  &__info {
+    padding-top: 23px;
+    border-top: 1px solid #ececec;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  &__price {
+    padding: 0 19px 0 18px;
+    border: none;
+    border-radius: 30px;
+    background-color: $blue-light;
+    color: #fff;
+  }
+
+  &__fav {
+    margin-left: 20px;
+    color: $text-black;
+    .lnr-heart {
+      color: $purple;
+    }
+  }
+
+  &__cart {
+    margin-left: 20px;
+    color: $blue-light;
   }
 }
