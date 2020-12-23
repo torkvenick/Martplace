@@ -51,6 +51,20 @@ body {
   cursor: pointer;
 }
 
+//кнопка категории
+.btn-cat {
+  padding: 8px 15px 8px 18px;
+  border-radius: 30px;
+  background-color: #f1f3f6;
+  font-size: 15px;
+  line-height: 100%;
+  color: $text-grey;
+  border: none;
+  & + .btn-cat {
+    margin-left: 10px;
+  }
+}
+
 //аватарка
 .avatar {
   font-size: 0;
