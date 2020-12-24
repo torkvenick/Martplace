@@ -37,6 +37,7 @@ body {
   margin: 0 auto;
   max-width: calc(100% - 20vw);
   padding: 0 15px;
+  overflow: hidden;
 }
 
 //кнопка
@@ -49,6 +50,15 @@ body {
   line-height: 100%;
   color: #fff;
   cursor: pointer;
+  &--big {
+    padding: 20px 33px;
+  }
+  &--blue {
+    background-color: $blue-light;
+  }
+  &--white {
+    
+  }
 }
 
 //кнопка категории
@@ -60,9 +70,11 @@ body {
   line-height: 100%;
   color: $text-grey;
   border: none;
+
   & + .btn-cat {
     margin-left: 10px;
   }
+
   &--big {
     padding: 10px 20px;
     background-color: #f1f3f6;
@@ -74,15 +86,18 @@ body {
   font-size: 0;
   line-height: 0;
   margin-right: 7px;
+
   &__img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: $dark-grey;
+
     &--sm {
       width: 28px;
       height: 28px;
     }
+
     &--big {
       width: 80px;
       height: 80px;
@@ -94,20 +109,32 @@ body {
 .block {
   padding: 120px 0;
   background-color: $bg-grey;
-  &__title {
+  
+  &__wrapper {
+    margin-top: 50px;
+  }
+  
+  &__item {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 45px 30px;
-    background-color: #fff;
-    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    padding: 30px;
     border-radius: 4px;
+    background-color: #fff;
+  }
+
+  &__item-title {
+    justify-content: space-between;
+    padding: 45px 30px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
     font-size: 30px;
     color: #000;
   }
-  &__products-wrapper {
-    margin-top: 50px;
+
+  &__item-tags {
+    flex-wrap: wrap;
+    box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
+    margin-top: 30px;
   }
 }
 
@@ -118,29 +145,50 @@ body {
   background-color: $purple;
   border-radius: 30px;
   position: relative;
+
   &--blue {
     background-color: $blue-light;
   }
 }
+//Стрелки кнопки слайдера
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 14px;
+  line-height: 100%;
+  color: #fff;
+}
 
 //карточка товара
-
 .product-item {
   display: flex;
   border-radius: 4px;
   box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
   background-color: #fff;
+
+  &__vert {
+    max-width: calc(100% / 3 - 30px);
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
   &__img {
     overflow: hidden;
+
     & img {
       width: 100%;
       height: 100%;
     }
   }
+
   &__inner {
     position: relative;
     padding: 50px 50px 25px 50px;
+
+    &--wide {
+      max-width: calc(100% / 2);
+    }
   }
+
   &__title {
     margin-bottom: 15px;
     font-weight: 700;
@@ -192,6 +240,7 @@ body {
   &__fav {
     margin-left: 20px;
     color: $text-black;
+
     .lnr-heart {
       color: $purple;
     }
