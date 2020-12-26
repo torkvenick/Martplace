@@ -340,11 +340,11 @@
 
 /* Start benefits */
 .benefits {
+  background-color: #fff;
   &__inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 40px;
   }
   &__item {
     max-width: calc(100% / 3 - 30px);
@@ -620,7 +620,7 @@
 
 /* Блок benefits--big */
 
-/* Блок offers (предложения) */
+/* Start offers (предложения) */
 
 .offers {
   margin-bottom: 120px;
@@ -644,9 +644,12 @@
   &__block--purple {
     background-color: $purple;
   }
+  &__btn--purple {
+    color: $purple;
+  }
 }
 
-/* Блок offers (предложения) */
+/* End offers (предложения) */
 
 /* Блок feedback (отзывы) */
 

@@ -59,6 +59,7 @@ body {
   }
   &--white {
     background-color: #fff;
+    color: $blue-light;
   }
 }
 
@@ -110,6 +111,10 @@ body {
 .block {
   padding: 120px 0;
   background-color: $bg-grey;
+
+  &--sm {
+    padding: 100px 0;
+  }
   
   &__wrapper {
     margin-top: 50px;
