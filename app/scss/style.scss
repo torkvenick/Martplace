@@ -376,7 +376,7 @@
 }
 /* End benefits */
 
-/* Start block-product */
+/* Start product */
 .product {
   &__item {
     display: flex;
@@ -476,12 +476,16 @@
 .swiper-button-next {
   margin-right: 7px;
 }
-/* End block__product */
+/* End product */
 
-/* Блок продукты */
-.block__products {
+/* Start products */
+.products {
   background-color: $bg-lightgrey;
   padding-top: 120px;
+
+  &__btn {
+    margin: 0 auto;
+  }
 }
 
 .filter-btn {
@@ -496,13 +500,12 @@
   margin-right: 25px;
 }
 
-.block__products-inner {
+.products-inner {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-/* Блок продукты */
+/* End products */
 
 /* Блок followers-feed */
 
