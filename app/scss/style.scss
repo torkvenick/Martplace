@@ -428,20 +428,19 @@
 
 /* Блок followers-feed */
 
-/* Блок statistics */
-
+/* Start stats */
 .stats {
   background-color: rgba(0, 0, 0, 0.8);
+  padding: 70px 0;
   &__inner {
     display: flex;
     justify-content: space-between;
   }
-  &__block {
+  &__item {
     text-align: center;
-    padding-top: 100px;
-    margin-bottom: 100px;
     .lnr {
       font-size: 48px;
+      line-height: 100%;
     }
     &--yellow {
       color: #feb71d;
@@ -465,8 +464,7 @@
     color: #fff;
   }
 }
-
-/* Блок statistics */
+/* End stats */
 
 /* Блок benefits--big */
 
