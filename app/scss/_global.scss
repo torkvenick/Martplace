@@ -31,13 +31,13 @@ body {
   font-weight: 400;
   font-size: 20px;
   color: $text-black;
+  background-color: #fff;
 }
 
 .container {
   margin: 0 auto;
   max-width: calc(100% - 20vw);
   padding: 0 15px;
-  overflow: hidden;
 }
 
 //кнопка
@@ -51,8 +51,14 @@ body {
   line-height: 100%;
   color: #fff;
   cursor: pointer;
+  transition: 0.3s;
   &--big {
     padding: 20px 33px;
+    &:hover {
+      background-color: #fff;
+      box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.08);
+      color: $blue-light;
+    }
   }
   &--blue {
     background-color: $blue-light;
