@@ -372,12 +372,16 @@
   background-color: transparent;
   border: transparent;
   font-size: 16px;
-  line-height: 32px;
   color: $text-grey;
 }
 
 .filter-btn__text {
   margin-right: 25px;
+  vertical-align: top;
+}
+
+.filter-btn__icon {
+  
 }
 /* End products */
 
@@ -386,7 +390,7 @@
   overflow: hidden;
 }
 
-.product__item--swp {
+.products-feed__item {
   flex-direction: column;
 }
 /* End products-feed */
