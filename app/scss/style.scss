@@ -751,22 +751,15 @@
 }
 
 .footer-list {
-
-  &__item {}
+  
+  &__contacts {
+    line-height: 26px;
+  }
 
   &__link {
+    position: relative;
     font-size: 15px;
     color: $footer-text;
-  }
-}
-
-.footer-list__contacts {
-  line-height: 26px;
-
-  .footer-list__link {
-    position: relative;
-    padding-left: 30px;
-
     span {
       position: absolute;
       left: 0;
