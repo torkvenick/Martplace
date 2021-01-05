@@ -170,7 +170,6 @@
 .search-product {
   position: relative;
   width: 31%;
-  margin-left: 20px;
 
   &__input {
     width: 100%;
@@ -486,6 +485,7 @@
 }
 /* End benefits */
 
+
 /* Start offers (предложения) */
 .offers {
   &__inner {
@@ -587,7 +587,7 @@
   &__info {
     display: flex;
     justify-content: space-between;
-    padding: 20px 30px;
+    padding: 10px 30px;
     border-top: 1px solid #ececec;
     font-size: 15px;
     line-height: 30px;
@@ -611,21 +611,24 @@
 
 
 /* Start info */
-.block-info {
+.info {
+  background-color: #fff;
+  
   &__inner {
     display: flex;
     font-size: 24px;
     color: #333;
   }
-
+  
   &__item {
-    padding-top: 60px;
     width: calc(100% / 2);
+    /* блок расширил за счет отступов, чтобы линия посередине соответствовала макету. Мне показалось это наиболее доступным */
+    padding: 60px 0;
     text-align: center;
+  }
 
-    &--border {
-      border-right: 1px solid #ececec;
-    }
+  &__item--border {
+    border-right: 1px solid #ececec;
   }
 
   &__img {
@@ -634,16 +637,15 @@
   }
 
   &__link {
-    margin-bottom: 60px;
   }
-}
 
-.item--blue {
-  color: $blue-light;
-}
+  &__link--blue {
+    color: $blue-light;
+  }
 
-.item--purple {
-  color: $purple;
+  &__link--purple {
+    color: $purple;
+  }
 }
 /* End info */
 
@@ -654,33 +656,34 @@
   &__wrapper {
     padding-top: 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     text-align: center;
     color: #fff;
   }
 
   &__title-bottom {
     max-width: 100%;
+    margin-bottom: 50px;
   }
 
   &__link {
-    margin: 50px 0 30px;
+    display: inline-block;
+    margin: 0 auto 20px;
   }
 }
 /* End join */
 
-/* Подвал сайта FOOTER */
+/* Start footer */
 
 .footer {
   background-color: $bg-darkgrey;
+  padding-bottom: 0;
 
-  &__top {}
-
-  &__top-inner {
-    padding-top: 110px;
-    margin-bottom: 120px;
+  &__top {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0 120px;
     color: $footer-text;
   }
 
@@ -688,8 +691,13 @@
     font-size: 15px;
   }
 
-  &__item-contacts {
+
+  &__contacts {
     max-width: 270px;
+  }
+
+  &__logo {
+    margin-bottom: 30px;
   }
 
   &__item-about {
@@ -702,16 +710,6 @@
 
   &__item-newsletter {
     max-width: 360px;
-  }
-
-  &__logo {
-    & img {
-      width: 165px;
-      height: 40px;
-    }
-
-    padding: 0;
-    margin-bottom: 15px;
   }
 
   &__item-title {
@@ -750,12 +748,6 @@
       color: #fff;
     }
   }
-}
-
-.container {}
-
-.logo-footer {
-  padding: 0;
 }
 
 .footer-list {
