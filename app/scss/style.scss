@@ -674,7 +674,6 @@
 /* End join */
 
 /* Start footer */
-
 .footer {
   background-color: $bg-darkgrey;
   padding-bottom: 0;
@@ -691,7 +690,6 @@
     font-size: 15px;
   }
 
-
   &__contacts {
     max-width: 270px;
   }
@@ -700,15 +698,15 @@
     margin-bottom: 30px;
   }
 
-  &__item-about {
+  &__about {
     max-width: 130px;
   }
 
-  &__item-support {
+  &__support {
     max-width: 140px;
   }
 
-  &__item-newsletter {
+  &__newsletter {
     max-width: 360px;
   }
 
@@ -726,10 +724,8 @@
 
   &__form {
     margin-bottom: 50px;
-
     .search-product {
       width: 100%;
-
       &__icon {
         font-size: 15px;
         line-height: 32px;
@@ -743,7 +739,6 @@
     text-align: center;
     font-size: 15px;
     line-height: 27px;
-
     span {
       color: #fff;
     }
@@ -751,15 +746,23 @@
 }
 
 .footer-list {
-  
+  line-height: 32px;
   &__contacts {
     line-height: 26px;
+  }
+  
+  &__item-text {
+    margin-bottom: 30px;
+    line-height: 28px;
   }
 
   &__link {
     position: relative;
     font-size: 15px;
     color: $footer-text;
+    &--padding {
+      padding-left: 30px;
+    }
     span {
       position: absolute;
       left: 0;
@@ -767,24 +770,10 @@
   }
 }
 
-.footer-list__about {
-  line-height: 32px;
-}
-
-.footer-list__support {
-  line-height: 32px;
-}
-
 .lnr {
   font-size: 16px;
   line-height: 28px;
 }
-
-.lnr-phone-handset {}
-
-.lnr-envelope {}
-
-.lnr-map-marker {}
 
 .social-list {
   display: flex;
@@ -800,7 +789,7 @@
     height: 42px;
     border-radius: 50%;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 13px;
 
     &--fb {
       background-color: #395799;
@@ -825,8 +814,6 @@
     &--dribbble {
       background-color: #ea4c89;
     }
-
   }
 }
-
-/* Подвал сайта FOOTER */
+/* End footer */
