@@ -19,7 +19,8 @@
       <div class="container">
         <div class="header__top-inner">
 
-          <div class="logo">
+          <!-- Logo сделал дивом и в нем поместил ссылки, потому что я этот блок использую и в шапке и в подвале. К тому же, текст логотипа менят цвет на макете. Если logo сделать ссылкой, а не div, как у меня, то логотип крашится. Я правильно сделал?-->
+          <div class="logo" href="#">
             <a class="logo__img" href="#">
               <img src="images/logo.png" alt="logo">
             </a>
@@ -404,18 +405,19 @@
             </button>
           </div>
           <div class="block__item block__item-tags">
-            <button class="btn-cat btn-cat--big">Plugins</button>
-            <button class="btn-cat btn-cat--big">WordPress</button>
-            <button class="btn-cat btn-cat--big">Site Template</button>
-            <button class="btn-cat btn-cat--big">PSD Template</button>
-            <button class="btn-cat btn-cat--big">Joomla</button>
-            <button class="btn-cat btn-cat--big">User Interface</button>
-            <button class="btn-cat btn-cat--big">Landing Page</button>
-            <button class="btn-cat btn-cat--big">Software</button>
+            <button class="btn-cat btn-cat--big" type="button" data-filter=".category-plugins">Plugins</button>
+            <button class="btn-cat btn-cat--big" type="button" data-filter=".category-wordpress">WordPress</button>
+            <button class="btn-cat btn-cat--big" type="button" data-filter=".category-site">Site Template</button>
+            <button class="btn-cat btn-cat--big" type="button" data-filter=".category-psd">PSD Template</button>
+            <button class="btn-cat btn-cat--big" type="button" data-filter=".category-joomla">Joomla</button>
+            <button class="btn-cat btn-cat--big" type="button" data-filter=".category-user">User Interface</button>
+            <button class="btn-cat btn-cat--big" type="button" data-filter=".category-landing">Landing Page</button>
+            <button class="btn-cat btn-cat--big" type="button" data-filter=".category-software">Software</button>
           </div>
 
           <div class="block__inner products__inner">
-            <article class="product-item product-item__vert">
+
+            <article class="product-item product-item__vert mix category-plugins" data-order="1">
               <div class="product-item__img">
                 <img src="images/content/products-1.jpg" alt="products-1">
               </div>
@@ -453,7 +455,7 @@
               </div>
             </article>
 
-            <article class="product-item product-item__vert">
+            <article class="product-item product-item__vert mix category-wordpress" data-order="2">
               <div class="product-item__img">
                 <img src="images/content/products-1.jpg" alt="products-1">
               </div>
@@ -491,7 +493,7 @@
               </div>
             </article>
 
-            <article class="product-item product-item__vert">
+            <article class="product-item product-item__vert mix category-site" data-order="3">
               <div class="product-item__img">
                 <img src="images/content/products-1.jpg" alt="products-1">
               </div>
@@ -529,7 +531,7 @@
               </div>
             </article>
 
-            <article class="product-item product-item__vert">
+            <article class="product-item product-item__vert mix category-plugins" data-order="4">
               <div class="product-item__img">
                 <img src="images/content/products-1.jpg" alt="products-1">
               </div>
@@ -567,7 +569,7 @@
               </div>
             </article>
 
-            <article class="product-item product-item__vert">
+            <article class="product-item product-item__vert mix category-site" data-order="5">
               <div class="product-item__img">
                 <img src="images/content/products-1.jpg" alt="products-1">
               </div>
@@ -605,7 +607,7 @@
               </div>
             </article>
 
-            <article class="product-item product-item__vert">
+            <article class="product-item product-item__vert mix category-psd" data-order="6">
               <div class="product-item__img">
                 <img src="images/content/products-1.jpg" alt="products-1">
               </div>
@@ -643,10 +645,11 @@
               </div>
             </article>
           </div>
+          <!-- Мне кажется, это ссылка, но так как нет ни одной кнопки для отображения всех карточек одновременно после того как выбираешь какую-то конкретную категорию, я сделал "All new products" кнопкой -->
           <div class="products__btn">
-            <a class="btn btn--big btn--blue" href="#">
+            <button class="btn btn--big btn--blue" type="button" data-filter="all" href="#">
               All New Products
-            </a>
+            </button>
           </div>
 
         </div>
@@ -1514,10 +1517,10 @@
   <!-- End footer -->
 
 
-  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
- -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

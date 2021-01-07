@@ -22,3 +22,8 @@
       prevEl: '.swiper-button-prev',
     },
   });
+
+  var mixer = mixitup('.products__inner');
+
+
+
