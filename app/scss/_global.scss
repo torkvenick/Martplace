@@ -43,16 +43,22 @@ body {
 
 //кнопка
 .btn {
+  padding: 19px 25px 18px 25px;
+  background-color: transparent;
   border: 1px solid #fff;
   border-radius: 30px;
-  padding: 19px 25px 18px 25px;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
-  background-color: transparent;
   font-size: 16px;
   line-height: 100%;
   color: #fff;
   cursor: pointer;
   transition: 0.3s;
+
+  &:focus {
+    outline: transparent;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+
   &--big {
     padding: 20px 33px;
     &:hover {
@@ -80,6 +86,12 @@ body {
   color: $text-grey;
   border: none;
   margin: 0 10px 15px 0;
+  transition: 0.3s;
+
+  &:focus {
+    outline: transparent;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
+  }
 
   &--big {
     padding: 10px 20px;
@@ -319,6 +331,8 @@ body {
   }
 
   &__info {
+    display: flex;
+    position: relative;
     padding: 23px 30px 15px;
     border-top: 1px solid #ececec;
     font-size: 15px;
@@ -348,5 +362,26 @@ body {
   &__cart {
     margin-left: 20px;
     color: $blue-light;
+    
+    &--right {
+      position: absolute;
+      right: 30px;
+    }
+  }
+
+  &__rate {
+    margin-left: 15px;
+    width: 80px;
+    background-image: url(../images/content/rate.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-size: 0;
+
+    &--wide {
+      width: 90px;
+      position: absolute;
+      right: 0;
+    }
   }
 }

@@ -6,7 +6,7 @@
 
 /* Start Header */
 
-/* Start header__top */
+// Start header__top 
 .header {
   &__top {
     background-color: $bg-grey;
@@ -31,47 +31,16 @@
     padding: 11px 18px;
     border: none;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
-    background-color: $blue-light;
     font-size: 14px;
   }
-}
 
-// Logo
-.logo {
-  font-size: 24px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  transition: transform 0.3s;
-
-  &:hover {
-    transform: scale(0.9);
+  // Иконки
+  &__user {
+    margin-right: 48px;
+    padding-top: 15px;
   }
 
-  &__img {
-    line-height: 0;
-  }
-
-  &__text {
-    padding-left: 5px;
-    color: $blue-light;
-
-    &--black {
-      color: #000;
-    }
-
-    &--white {
-      color: #fff;
-    }
-  }
-}
-
-// Иконки
-.user-notification {
-  margin-right: 48px;
-  padding-top: 15px;
-
-  &__link {
+  &__user-link {
     position: relative;
     font-size: 0;
     padding-right: 17px;
@@ -113,7 +82,38 @@
   }
 }
 
-/* Start Блок с инфой пользователя */
+
+// Logo
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+
+  &__img {
+    line-height: 0;
+  }
+
+  &__text {
+    padding-left: 5px;
+    color: $blue-light;
+
+    &--black {
+      color: #000;
+    }
+
+    &--white {
+      color: #fff;
+    }
+  }
+}
+
+// Start user-profile
 .user-profile {
   display: flex;
   font-size: 16px;
@@ -135,8 +135,7 @@
   margin: 0;
   color: $blue;
 }
-
-/* End Блок с инфой пользователя */
+// End user-profile 
 /* End header__top */
 
 /* Start header__bottom */
@@ -161,17 +160,15 @@
   }
 
   &__link {
-
     font-weight: 550;
     color: $black;
     font-size: 15px;
     line-height: 42px;
   }
 }
-
 /* End Navigation */
 
-/* Start Form-search */
+// Start form-search 
 .search-product {
   position: relative;
   width: 31%;
@@ -212,15 +209,14 @@
     line-height: 30px;
   }
 }
-
-/* End form-search */
+// End form-search
 /* End header__bottom */
 
 /* Start intro */
 .intro {
   background-image: linear-gradient(180deg, rgb(0, 48, 222) 0%, rgb(23, 69, 237) 54%, rgb(46, 90, 251) 100%);
   opacity: 0.8;
-  
+
   &__wrapper {
     min-height: 730px;
     display: flex;
@@ -332,6 +328,7 @@
   font-size: 12px;
   padding-left: 10px;
 }
+
 /* End intro */
 
 /* Start benefits */
@@ -348,6 +345,7 @@
     }
   }
 }
+
 /* End benefits */
 
 /* Start product */
@@ -358,6 +356,7 @@
 .swiper-button-next {
   margin-right: 7px;
 }
+
 /* End product */
 
 /* Start products */
@@ -385,9 +384,8 @@
   vertical-align: top;
 }
 
-.filter-btn__icon {
-  
-}
+.filter-btn__icon {}
+
 /* End products */
 
 /* Start products-feed */
@@ -398,6 +396,7 @@
 .products-feed__item {
   flex-direction: column;
 }
+
 /* End products-feed */
 
 /* Start stats */
@@ -447,6 +446,7 @@
     color: #fff;
   }
 }
+
 /* End stats */
 
 /* Start benefits */
@@ -492,6 +492,7 @@
     color: rgba(92, 135, 248, 0.2);
   }
 }
+
 /* End benefits */
 
 
@@ -528,6 +529,7 @@
     }
   }
 }
+
 /* End offers (предложения) */
 
 /* Start feedback (отзывы) */
@@ -556,7 +558,7 @@
     justify-content: space-between;
     margin-bottom: 30px;
   }
-  
+
   &__user {
     display: flex;
   }
@@ -587,6 +589,7 @@
     margin: 30px auto;
   }
 }
+
 /* End feedback (отзывы) */
 
 /* Start latest */
@@ -616,19 +619,20 @@
     width: 50%;
   }
 }
+
 /* End latest */
 
 
 /* Start info */
 .info {
   background-color: #fff;
-  
+
   &__inner {
     display: flex;
     font-size: 24px;
     color: #333;
   }
-  
+
   &__item {
     width: calc(100% / 2);
     /* блок расширил за счет отступов, чтобы линия посередине соответствовала макету. Мне показалось это наиболее доступным */
@@ -645,8 +649,7 @@
     margin: 0 auto 30px;
   }
 
-  &__link {
-  }
+  &__link {}
 
   &__link--blue {
     color: $blue-light;
@@ -656,6 +659,7 @@
     color: $purple;
   }
 }
+
 /* End info */
 
 /* Start join */
@@ -680,6 +684,7 @@
     margin: 0 auto 20px;
   }
 }
+
 /* End join */
 
 /* Start footer */
@@ -733,8 +738,10 @@
 
   &__form {
     margin-bottom: 50px;
+
     .search-product {
       width: 100%;
+
       &__icon {
         font-size: 15px;
         line-height: 32px;
@@ -748,6 +755,7 @@
     text-align: center;
     font-size: 15px;
     line-height: 27px;
+
     span {
       color: #fff;
     }
@@ -756,10 +764,11 @@
 
 .footer-list {
   line-height: 32px;
+
   &__contacts {
     line-height: 26px;
   }
-  
+
   &__item-text {
     margin-bottom: 30px;
     line-height: 28px;
@@ -769,9 +778,11 @@
     position: relative;
     font-size: 15px;
     color: $footer-text;
+
     &--padding {
       padding-left: 30px;
     }
+
     span {
       position: absolute;
       left: 0;
@@ -825,4 +836,5 @@
     }
   }
 }
+
 /* End footer */

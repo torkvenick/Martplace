@@ -30,20 +30,20 @@
           </div>
 
           <div class="header__profile">
-            <button class=" btn header__btn" type="button">Become a seller</button>
-            <div class="user-notification">
-              <a class="user-notification__link" href="#">
+            <button class=" btn btn--blue header__btn" type="button">Become a seller</button>
+            <div class="header__user">
+              <a class="header__user-link" href="#">
                 Alarm
                 <span class="lnr lnr-alarm"></span>
                 <!-- Если поставить span вместо p, то блок с цифрами опускается ниже. Заметка просто для себя -->
                 <span class="lnr-num lnr-num--red">25</span>
               </a>
-              <a class="user-notification__link" href="#">
+              <a class="header__user-link" href="#">
                 Envelope
                 <span class="lnr lnr-envelope"></span>
                 <span class="lnr-num lnr-num--green">6</span>
               </a>
-              <a class="user-notification__link" href="#">
+              <a class="header__user-link" href="#">
                 Cart
                 <span class="lnr lnr-cart"></span>
                 <span class="lnr-num lnr-num--blue">2</span>
@@ -273,59 +273,8 @@
                     <span class="lnr lnr-cart"></span>
                     634
                   </a>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="swiper-slide">
-            <article class="product-item">
-              <!-- Заменить на img!!! -->
-              <div class="product-item__img">
-                <img src="images/content/products-1.jpg" alt="products-1">
-              </div>
-              <div class="product-item__inner product-item__inner--wide">
-                <a class="product-item__title" href="#">
-                  One Page Resume Template
-                </a>
-                <div class="product-item__user">
-                  <a class="avatar" href="#">Avatar
-                    <img class="avatar__img avatar__img--sm" src="images/user.png" alt="user">
-                  </a>
-                  <a class="product-item__user-name" href="#">
-                    AazzTech
-                  </a>
-                  <a class="product-item__link" href="#">
-                    <img src="images/wp.svg" alt="WordPress">
-                    WordPress
-                  </a>
-                </div>
-                <div class="product-item__text">
-                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
-                  quam
-                  aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
-                  mattis, leo quam aliquet congue justo ut scelerisque.
-                </div>
-                <div class="product-item__tags">
-                  <a class="btn-cat" href="#">
-                    website
-                  </a>
-                  <a class="btn-cat" href="#">
-                    plugin
-                  </a>
-                  <a class="btn-cat" href="#">
-                    landing page
-                  </a>
-                </div>
-                <div class="product-item__info product-item__info--wide">
-                  <a class="product-item__price" href="#">$10 - $50</a>
-                  <a class="product-item__fav" href="#">
-                    <span class="lnr lnr-heart"></span>
-                    46
-                  </a>
-                  <a class="product-item__cart" href="#">
-                    <span class="lnr lnr-cart"></span>
-                    634
+                  <a class="product-item__rate product-item__rate--wide" href="#">
+                    Rate
                   </a>
                 </div>
               </div>
@@ -380,6 +329,66 @@
                   <a class="product-item__cart" href="#">
                     <span class="lnr lnr-cart"></span>
                     634
+                  </a>
+                  <a class="product-item__rate product-item__rate--wide" href="#">
+                    Rate
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="product-item">
+              <!-- Заменить на img!!! -->
+              <div class="product-item__img">
+                <img src="images/content/products-1.jpg" alt="products-1">
+              </div>
+              <div class="product-item__inner product-item__inner--wide">
+                <a class="product-item__title" href="#">
+                  One Page Resume Template
+                </a>
+                <div class="product-item__user">
+                  <a class="avatar" href="#">Avatar
+                    <img class="avatar__img avatar__img--sm" src="images/user.png" alt="user">
+                  </a>
+                  <a class="product-item__user-name" href="#">
+                    AazzTech
+                  </a>
+                  <a class="product-item__link" href="#">
+                    <img src="images/wp.svg" alt="WordPress">
+                    WordPress
+                  </a>
+                </div>
+                <div class="product-item__text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+                  quam
+                  aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                  mattis, leo quam aliquet congue justo ut scelerisque.
+                </div>
+                <div class="product-item__tags">
+                  <a class="btn-cat" href="#">
+                    website
+                  </a>
+                  <a class="btn-cat" href="#">
+                    plugin
+                  </a>
+                  <a class="btn-cat" href="#">
+                    landing page
+                  </a>
+                </div>
+                <div class="product-item__info product-item__info--wide">
+                  <a class="product-item__price" href="#">$10 - $50</a>
+                  <a class="product-item__fav" href="#">
+                    <span class="lnr lnr-heart"></span>
+                    46
+                  </a>
+                  <a class="product-item__cart" href="#">
+                    <span class="lnr lnr-cart"></span>
+                    634
+                  </a>
+                  <a class="product-item__rate product-item__rate--wide" href="#">
+                    Rate
                   </a>
                 </div>
               </div>
@@ -447,8 +456,11 @@
                 <a class="product-item__fav" href="#">
                   <span class="lnr lnr-heart"></span>
                   90
+                </a> 
+                <a class="product-item__rate" href="#">
+                  Rate
                 </a>
-                <a class="product-item__cart" href="#">
+                <a class="product-item__cart product-item__cart--right" href="#">
                   <span class="lnr lnr-cart"></span>
                   246
                 </a>
@@ -486,7 +498,10 @@
                   <span class="lnr lnr-heart"></span>
                   48
                 </a>
-                <a class="product-item__cart" href="#">
+                <a class="product-item__rate" href="#">
+                  Rate
+                </a>
+                <a class="product-item__cart product-item__cart--right" href="#">
                   <span class="lnr lnr-cart"></span>
                   50
                 </a>
@@ -524,7 +539,10 @@
                   <span class="lnr lnr-heart"></span>
                   56
                 </a>
-                <a class="product-item__cart" href="#">
+                <a class="product-item__rate" href="#">
+                  Rate
+                </a>
+                <a class="product-item__cart product-item__cart--right" href="#">
                   <span class="lnr lnr-cart"></span>
                   68
                 </a>
@@ -562,7 +580,10 @@
                   <span class="lnr lnr-heart"></span>
                   90
                 </a>
-                <a class="product-item__cart" href="#">
+                <a class="product-item__rate" href="#">
+                  Rate
+                </a>
+                <a class="product-item__cart product-item__cart--right" href="#">
                   <span class="lnr lnr-cart"></span>
                   246
                 </a>
@@ -600,7 +621,10 @@
                   <span class="lnr lnr-heart"></span>
                   48
                 </a>
-                <a class="product-item__cart" href="#">
+                <a class="product-item__rate" href="#">
+                  Rate
+                </a>
+                <a class="product-item__cart product-item__cart--right" href="#">
                   <span class="lnr lnr-cart"></span>
                   50
                 </a>
@@ -638,7 +662,10 @@
                   <span class="lnr lnr-heart"></span>
                   56
                 </a>
-                <a class="product-item__cart" href="#">
+                <a class="product-item__rate" href="#">
+                  Rate
+                </a>
+                <a class="product-item__cart product-item__cart--right" href="#">
                   <span class="lnr lnr-cart"></span>
                   68
                 </a>
@@ -704,7 +731,10 @@
                   <span class="lnr lnr-heart"></span>
                   90
                 </a>
-                <a class="product-item__cart" href="#">
+                <a class="product-item__rate" href="#">
+                  Rate
+                </a>
+                <a class="product-item__cart product-item__cart--right" href="#">
                   <span class="lnr lnr-cart"></span>
                   246
                 </a>
@@ -744,7 +774,10 @@
                   <span class="lnr lnr-heart"></span>
                   48
                 </a>
-                <a class="product-item__cart" href="#">
+                <a class="product-item__rate" href="#">
+                  Rate
+                </a>
+                <a class="product-item__cart product-item__cart--right" href="#">
                   <span class="lnr lnr-cart"></span>
                   50
                 </a>
@@ -784,7 +817,10 @@
                   <span class="lnr lnr-heart"></span>
                   56
                 </a>
-                <a class="product-item__cart" href="#">
+                <a class="product-item__rate" href="#">
+                  Rate
+                </a>
+                <a class="product-item__cart product-item__cart--right" href="#">
                   <span class="lnr lnr-cart"></span>
                   68
                 </a>
@@ -824,7 +860,10 @@
                   <span class="lnr lnr-heart"></span>
                   90
                 </a>
-                <a class="product-item__cart" href="#">
+                <a class="product-item__rate" href="#">
+                  Rate
+                </a>
+                <a class="product-item__cart product-item__cart--right" href="#">
                   <span class="lnr lnr-cart"></span>
                   246
                 </a>
@@ -864,7 +903,10 @@
                   <span class="lnr lnr-heart"></span>
                   48
                 </a>
-                <a class="product-item__cart" href="#">
+                <a class="product-item__rate" href="#">
+                  Rate
+                </a>
+                <a class="product-item__cart product-item__cart--right" href="#">
                   <span class="lnr lnr-cart"></span>
                   50
                 </a>
@@ -904,7 +946,10 @@
                   <span class="lnr lnr-heart"></span>
                   56
                 </a>
-                <a class="product-item__cart" href="#">
+                <a class="product-item__rate" href="#">
+                  Rate
+                </a>
+                <a class="product-item__cart product-item__cart--right" href="#">
                   <span class="lnr lnr-cart"></span>
                   68
                 </a>
