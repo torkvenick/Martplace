@@ -344,6 +344,18 @@
       box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.08);
     }
   }
+
+  &__img--1 {
+    background-image: url(../images/book.png);
+  }
+
+  &__img--2 {
+    background-image: url(../images/table.png);
+  }
+
+  &__img--3 {
+    background-image: url(../images/phone.png);
+  }
 }
 
 /* End benefits */
@@ -505,6 +517,17 @@
 
   &__img {
     margin-bottom: 50px;
+    min-height: 105px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    &--1 {
+      background-image: url(../images/sell-icon.svg);
+    }
+
+    &--2 {
+      background-image: url(../images/buy-icon.svg);
+    }
   }
 
   &__item {
@@ -631,12 +654,12 @@
     display: flex;
     font-size: 24px;
     color: #333;
+    padding: 60px 0;
   }
 
   &__item {
     width: calc(100% / 2);
     /* блок расширил за счет отступов, чтобы линия посередине соответствовала макету. Мне показалось это наиболее доступным */
-    padding: 60px 0;
     text-align: center;
   }
 
@@ -645,8 +668,18 @@
   }
 
   &__img {
-    display: block;
-    margin: 0 auto 30px;
+    min-height: 130px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-bottom: 30px;
+
+    &--1 {
+      background-image: url(../images/cash-icon.png);
+    }
+    
+    &--2 {
+      background-image: url(../images/user-icon.png);
+    }
   }
 
   &__link {}

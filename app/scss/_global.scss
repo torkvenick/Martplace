@@ -231,6 +231,8 @@ body {
   &__img {
     //позволяет выровнять текст по высоте во всех карточках
     min-height: 157px;
+    background-repeat: no-repeat;
+    background-position: top center;
   }
 
   &__title {
@@ -269,18 +271,18 @@ body {
   }
 
   &__img {
-    overflow: hidden;
-    img {
-      width: 100%;
-      height: 100%;
-    }
+    min-height: 230px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &__inner {
     position: relative;
     padding: 30px 30px 0 30px;
     &--wide {
-      max-width: calc(100% / 2);
+      max-width: calc(100% / 2 + 2%);
       padding: 50px 50px 25px 50px;
     }
   }
