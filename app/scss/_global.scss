@@ -61,15 +61,18 @@ body {
 
   &--big {
     padding: 20px 33px;
+
     &:hover {
       background-color: #fff;
       box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.08);
       color: $blue-light;
     }
   }
+
   &--blue {
     background-color: $blue-light;
   }
+
   &--white {
     background-color: #fff;
     color: $blue-light;
@@ -101,25 +104,26 @@ body {
 
 //аватарка
 .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 7px;
+  vertical-align: top;
   font-size: 0;
   line-height: 0;
-  margin-right: 7px;
+  background-color: $dark-grey;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 
-  &__img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: $dark-grey;
+  &--sm {
+    width: 28px;
+    height: 28px;
+  }
 
-    &--sm {
-      width: 28px;
-      height: 28px;
-    }
-
-    &--big {
-      width: 80px;
-      height: 80px;
-    }
+  &--big {
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -127,7 +131,7 @@ body {
 .block {
   padding: 90px 0 60px;
   background-color: $bg-grey;
-  
+
   &__wrapper {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -137,6 +141,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
     &--pad {
       padding-top: 60px;
     }
@@ -149,6 +154,7 @@ body {
 
   &__title-top {
     margin-bottom: 16px;
+
     span {
       color: $blue-light;
     }
@@ -160,7 +166,7 @@ body {
     font-size: 16px;
     line-height: 30px;
   }
-  
+
   &__item {
     display: flex;
     align-items: center;
@@ -169,6 +175,7 @@ body {
     border-radius: 4px;
     background-color: #fff;
     margin-bottom: 50px;
+
     &--sm {
       margin-bottom: 30px;
     }
@@ -201,6 +208,7 @@ body {
     background-color: $blue-light;
   }
 }
+
 //Стрелки кнопки слайдера
 
 .swiper-button-prev::after,
@@ -222,6 +230,7 @@ body {
     background-color: #fff;
     text-align: center;
     transition: box-shadow 0.3s;
+
     &--big {
       padding: 50px 35px 60px;
       box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.08);
@@ -241,7 +250,7 @@ body {
     font-weight: 550;
     color: #010101;
   }
-  
+
   &__text {
     font-size: 16px;
     line-height: 30px;
@@ -281,6 +290,7 @@ body {
   &__inner {
     position: relative;
     padding: 30px 30px 0 30px;
+
     &--wide {
       max-width: calc(100% / 2 + 2%);
       padding: 50px 50px 25px 50px;
@@ -291,10 +301,12 @@ body {
     margin-bottom: 15px;
     font-weight: 700;
     color: #000;
+
     &--mid {
       font-size: 22px;
       line-height: 28px;
     }
+
     &--bg {
       font-size: 24px;
     }
@@ -306,12 +318,11 @@ body {
   }
 
   &__user-name {
-    padding-left: 10px;
     vertical-align: top;
+    margin-right: 20px;
   }
 
   &__link {
-    padding-left: 25px;
     color: #7347c1;
     vertical-align: top;
   }
@@ -339,6 +350,7 @@ body {
     border-top: 1px solid #ececec;
     font-size: 15px;
     line-height: 30px;
+
     &--wide {
       padding: 23px 0 0;
     }
@@ -364,7 +376,7 @@ body {
   &__cart {
     margin-left: 20px;
     color: $blue-light;
-    
+
     &--right {
       position: absolute;
       right: 30px;
