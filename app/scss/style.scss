@@ -201,9 +201,18 @@
     position: absolute;
     right: 0;
     font-size: 0;
-    background: $blue-light;
+    background-color: $blue-light;
     cursor: pointer;
-
+    
+    &:focus {
+      outline: transparent;
+    }
+  }
+  
+  &__btn-header {
+    background-image: url(../images/icons/lnr-magnifier.svg);
+    background-position: center;
+    background-repeat: no-repeat;  
   }
 }
 // End form-search
@@ -247,7 +256,6 @@
 
 //form 
 .intro-form {
-  z-index: 56;
   position: absolute;
   display: flex;
   justify-content: space-between;
