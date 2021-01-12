@@ -25,5 +25,8 @@
 
   var mixer = mixitup('.products__inner');
 
+  $('.filter-btn').on('click', function(){
+    $('.filter-choice').slideToggle();
+   });
 
 

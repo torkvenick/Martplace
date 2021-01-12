@@ -105,7 +105,8 @@
           <div class="header__form">
             <form class="form" id="search" action="#">
               <label for="formSearch"></label>
-              <input class="form__input" type="search" id="formSearch" name="formSearch" placeholder="Search product here...">
+              <input class="form__input" type="search" id="formSearch" name="formSearch"
+                placeholder="Search product here...">
               <input class="form__btn form__btn-header" type="submit" value="Submit">
             </form>
           </div>
@@ -146,8 +147,10 @@
           <!-- start form-search -->
           <div class="intro__form">
             <form class="form-search" action="#">
+              <div class="form-search__field">
                 <label for="formCat"></label>
-                <input class="form-search__input" type="search" id="formCat" name="formCat" placeholder="Search your products...">
+                <input class="form-search__input" type="search" id="formCat" name="formCat"
+                  placeholder="Search your products...">
                 <label for="pages"></label>
                 <select class="form-search__select" name="pages" id="pages">
                   <option value="all categories" selected>All categories</option>
@@ -160,22 +163,11 @@
                   <option value="landing page">Landing page</option>
                   <option value="software">Software</option>
                 </select>
+              </div>
               <input class="form-search__submit" type="submit" value="Search now">
             </form>
           </div>
-
           <!-- end form-search -->
-
-          <!--  <form class="intro-form">
-            <label for="intro-form__search"></label>
-            <input class="intro-form__search" id="intro-form__search" name="intro-form__search" type="search"
-              placeholder="Search your products...">
-            <button class="btn intro-form__btn" type="button">
-              All categories
-              <span class="lnr lnr-chevron-down"></span>
-            </button>
-            <button class="btn intro-form__btn-search" type="button">Search now</button>
-          </form> -->
         </div>
       </div>
     </section>
@@ -421,13 +413,44 @@
         <div class="block__wrapper">
           <div class="block__item block__item--sm block__item-title">
             <span>Newest Release Products</span>
-            <button class="filter-btn">
-              <span class="filter-btn__text">Filter by:</span>
-              <svg class="filter-btn__icon" width="5px" height="20px">
-                <path fill-rule="evenodd" fill="rgb(163, 177, 196)"
-                  d="M2.704,4.003 C1.481,3.969 0.519,3.047 0.557,1.944 C0.594,0.840 1.617,-0.028 2.840,0.006 C4.064,0.039 5.026,0.962 4.988,2.066 C4.950,3.169 3.928,4.037 2.704,4.003 ZM4.716,10.060 C4.678,11.164 3.656,12.031 2.432,11.998 C1.208,11.963 0.247,11.041 0.284,9.938 C0.322,8.833 1.344,7.967 2.568,8.000 C3.792,8.034 4.753,8.956 4.716,10.060 ZM4.443,18.054 C4.406,19.158 3.383,20.025 2.160,19.992 C0.936,19.957 -0.026,19.035 0.012,17.932 C0.050,16.828 1.072,15.961 2.296,15.994 C3.519,16.028 4.481,16.950 4.443,18.054 Z" />
-              </svg>
-            </button>
+            <div class="products__filter">
+              <button class="filter-btn">
+                <span class="filter-btn__text">Filter by:</span>
+                <svg class="filter-btn__icon" width="5px" height="20px">
+                  <path fill-rule="evenodd" fill="rgb(163, 177, 196)"
+                    d="M2.704,4.003 C1.481,3.969 0.519,3.047 0.557,1.944 C0.594,0.840 1.617,-0.028 2.840,0.006 C4.064,0.039 5.026,0.962 4.988,2.066 C4.950,3.169 3.928,4.037 2.704,4.003 ZM4.716,10.060 C4.678,11.164 3.656,12.031 2.432,11.998 C1.208,11.963 0.247,11.041 0.284,9.938 C0.322,8.833 1.344,7.967 2.568,8.000 C3.792,8.034 4.753,8.956 4.716,10.060 ZM4.443,18.054 C4.406,19.158 3.383,20.025 2.160,19.992 C0.936,19.957 -0.026,19.035 0.012,17.932 C0.050,16.828 1.072,15.961 2.296,15.994 C3.519,16.028 4.481,16.950 4.443,18.054 Z" />
+                </svg>
+              </button>
+              <div class="filter-choice">
+                <ul class="filter-choice__list">
+                  <li class="filter-choice__item">
+                    <a class="filter-choice__link" href="#">
+                      Trending items
+                    </a>
+                  </li>
+                  <li class="filter-choice__item">
+                    <a class="filter-choice__link" href="#">
+                      Best seller
+                    </a>
+                  </li>
+                  <li class="filter-choice__item">
+                    <a class="filter-choice__link" href="#">
+                      Best rating
+                    </a>
+                  </li>
+                  <li class="filter-choice__item">
+                    <a class="filter-choice__link" href="#">
+                      Low price
+                    </a>
+                  </li>
+                  <li class="filter-choice__item">
+                    <a class="filter-choice__link" href="#">
+                      High price
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div class="block__item block__item-tags">
             <button class="btn-cat btn-cat--big" type="button" data-filter=".category-plugins">Plugins</button>
