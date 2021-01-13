@@ -466,6 +466,35 @@
 
 /* End products */
 
+.product-item {
+
+  &__top {
+    min-height: 230px;
+    position: relative;
+    
+    &:hover .product-item__top-hover {
+      transition: opacity 0.3s;
+      opacity: 1;
+    }
+  }
+
+
+  &__top-hover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(240deg, rgb(6, 116, 236) 0%, rgb(61, 94, 215) 46%, rgb(115, 71, 193) 100%);
+    font-size: 15px;
+    font-weight: 550;
+    line-height: 1.6;
+    opacity: 0;
+  }
+}
+
 /* Start products-feed */
 .swiper-container--multi {
   overflow: hidden;
