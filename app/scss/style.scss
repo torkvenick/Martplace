@@ -465,21 +465,20 @@
 }
 
 /* End products */
-
 .product-item {
-
   &__top {
     min-height: 230px;
     position: relative;
-    
+    transition: opacity 0.3s;
+
     &:hover .product-item__top-hover {
       transition: opacity 0.3s;
       opacity: 1;
     }
   }
-
-
+  
   &__top-hover {
+    transition: opacity 0.3s;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -493,8 +492,8 @@
     line-height: 1.6;
     opacity: 0;
   }
+   
 }
-
 /* Start products-feed */
 .swiper-container--multi {
   overflow: hidden;
