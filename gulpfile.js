@@ -90,6 +90,7 @@ gulp.task('browser-sync', function () {
 gulp.task('watch', function () {
   //метод: если происходят изменения в style.scss, файлах html, js - запускается плагин "parallel" 
   gulp.watch('app/scss/style.scss', gulp.parallel('sass'))
+  gulp.watch('app/scss/_global.scss', gulp.parallel('sass'))
   gulp.watch('app/*.html', gulp.parallel('html'))
   gulp.watch('app/js/*.js', gulp.parallel('js'))
 });
