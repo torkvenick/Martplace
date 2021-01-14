@@ -248,6 +248,10 @@
     margin-bottom: 66px;
   }
 
+  & .btn + .btn {
+    margin-left: 30px;
+  }
+
   //form-body
   &__form {
     position: absolute;
@@ -471,10 +475,17 @@
   overflow: hidden;
 }
 
-.products-feed__item {
+.products-feed {
 
-  flex-direction: column;
+  &__item {
+    flex-direction: column;
+  }
+
+  &__img {
+    min-height: 230px;
+  }
 }
+  
 
 /* End products-feed */
 
