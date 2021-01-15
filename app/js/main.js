@@ -1,9 +1,9 @@
   var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
-    loop: false,
+    loop: true,
     slidesPerView: 1,
     spaceBetween: 30,
-    
+        
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
@@ -13,7 +13,10 @@
 
   var mySwiper = new Swiper('.swiper-container--multi', {
     // Optional parameters
-    loop: false,
+    keyboard: {
+      enabled: true,
+    },
+    loop: true,
     slidesPerView: 3,
     spaceBetween: 30,
     // Navigation arrows
