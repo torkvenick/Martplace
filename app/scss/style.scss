@@ -8,9 +8,6 @@
 
 // Start header__top 
 .header {
-  &__top {
-    background-color: $bg-grey;
-  }
 
   &__top-inner {
     padding: 25px 0 25px 8px;
@@ -33,7 +30,7 @@
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
     font-size: 14px;
     transition: box-shadow 0.3s;
-    
+
     &:hover {
       box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
     }
@@ -51,6 +48,7 @@
     padding-right: 17px;
     cursor: pointer;
     transition: transform 0.3s;
+
     &:hover {
       transform: rotate(-15deg);
     }
@@ -153,10 +151,16 @@
   margin: 0;
   color: $blue;
 }
+
 // End user-profile 
 /* End header__top */
 
 /* Start header__bottom */
+
+.header__bottom {
+  background-color: #fff;
+}
+
 .header__bottom-inner {
   padding: 16px 0;
   display: flex;
@@ -184,7 +188,7 @@
     line-height: 42px;
     position: relative;
     transition: 0.5s;
-    
+
     &::before {
       content: "";
       width: 0;
@@ -283,7 +287,7 @@
     margin-bottom: 66px;
   }
 
-  & .btn + .btn {
+  & .btn+.btn {
     margin-left: 30px;
   }
 
@@ -387,8 +391,9 @@
     line-height: 42px;
     color: #fff;
     transition: box-shadow 0.3s;
+
     &:hover {
-      box-shadow: inset 0px 0px 10px -1px rgba(255,255,255,1);
+      box-shadow: inset 0px 0px 10px -1px rgba(255, 255, 255, 1);
     }
   }
 }
@@ -434,6 +439,11 @@
   margin-right: 7px;
 }
 
+.lnr {
+  display: inline-block;
+  transition: 0.5s;
+}
+
 /* End product */
 
 /* Start products */
@@ -459,14 +469,26 @@
   font-size: 16px;
   color: #747b86;
 
+  &:hover &__icon {
+    transform: rotate(-90deg);
+  }
+
+  &__icon {
+    transition: transform 0.3s;
+  }
+  
   &:focus {
     outline: transparent;
   }
-}
+  
+  &:focus &__icon {
+    transform: rotate(-90deg);
+  } 
 
-.filter-btn__text {
-  margin-right: 25px;
-  vertical-align: top;
+  &__text {
+    margin-right: 25px;
+    vertical-align: top;
+  }
 }
 
 .filter-choice {
@@ -525,7 +547,7 @@
     min-height: 230px;
   }
 }
-  
+
 
 /* End products-feed */
 

@@ -453,6 +453,10 @@ body {
     margin-left: 20px;
     color: $text-black;
     
+    &:hover .lnr {
+      transform: rotate(180deg);
+    }
+
     .lnr {
       color: $purple;
     } 
@@ -461,6 +465,10 @@ body {
   &__cart {
     margin-left: 20px;
     color: $blue-light;
+
+    &:hover .lnr {
+      transform: translateX(45px);
+    }
 
     &--right {
       position: absolute;
