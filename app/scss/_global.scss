@@ -15,7 +15,7 @@ a {
   cursor: pointer;
 }
 
-//я убрал отступы, чтобы легче было разобраться в своих
+//я убрал отступы, чтобы легче было разобраться в своих. Если строго настрого запрещено - уберу :)
 ul,
 li {
   margin: 0;
@@ -38,8 +38,8 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: calc(100% - 20vw);
-  padding: 0 15px;
+  max-width: calc(100% - 38%);
+  padding: 0 10px;
 }
 
 //кнопка
@@ -94,7 +94,7 @@ body {
 
   &:hover {
     color: #fff;
-    background-color: #000;
+    background-color: $blue-light;
   }
 
   &:focus {
@@ -310,6 +310,7 @@ body {
   &__img {
     width: 100%;
     height: 100%;
+    background-color: #90bbc4;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -369,7 +370,7 @@ body {
     transition: letter-spacing 0.3s;
 
     &:hover {
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
     }
 
     &--mid {

@@ -10,6 +10,11 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
+<!-- Небольшой гайд по макету:
+  1. Состояние focus и active я почти никому не прописал, разве что убрал черную обводку при фокусе.
+  2. ul, li, p - им я убрал отступы чисто ради того, чтобы разобраться в своих и чтобы нигде не возникало лишних пикселей. Если скажешь, что это плохо - переделаю.
+  3.  -->
+
 <body>
 
   <!-- Start header -->
@@ -102,12 +107,13 @@
           <!-- End navigation -->
 
           <!-- Start form -->
+          <!-- Дополнительные классы элементов формы созданы лишь для того, чтобы понять что это за форма. У меня к ним стили никакие не прописаны, потому что формы в шапке и подвале почти идентичны. Если нужно что-то добавить конкретной форме, можно стилизовать через уникальный класс -->
           <div class="header__form">
-            <form class="form" id="search" action="#">
+            <form class="form product-search" id="search" action="#">
               <label for="formSearch"></label>
-              <input class="form__input" type="search" id="formSearch" name="formSearch"
+              <input class="form__input product-search__input" type="search" id="formSearch" name="formSearch"
                 placeholder="Search product here...">
-              <input class="form__btn form__btn-header" type="submit" value="Submit">
+              <input class="form__btn product-search__btn" type="submit" value="Submit">
             </form>
           </div>
           <!-- End form -->
@@ -244,7 +250,7 @@
           <div class="swiper-slide">
             <article class="product-item">
               <div class="product-item__top">
-                <a class="product-item__img" style="background-image: url(images/content/products-1.jpg);" href="#">
+                <a class="product-item__img" style="background-image: url(images/content/content-1.png);" href="#">
                 </a>
                 <div class="product-item__top-hover">
                   <a class="btn product-item__top-btn" href="#">More Info</a>
@@ -303,7 +309,7 @@
           <div class="swiper-slide">
             <article class="product-item">
               <div class="product-item__top">
-                <a class="product-item__img" style="background-image: url(images/content/products-1.jpg);" href="#">
+                <a class="product-item__img" style="background-image: url(images/content/content-1.png);" href="#">
                 </a>
                 <div class="product-item__top-hover">
                   <a class="btn product-item__top-btn" href="#">More Info</a>
@@ -362,7 +368,7 @@
           <div class="swiper-slide">
             <article class="product-item">
               <div class="product-item__top">
-                <a class="product-item__img" style="background-image: url(images/content/products-1.jpg);" href="#">
+                <a class="product-item__img" style="background-image: url(images/content/content-1.png);" href="#">
                 </a>
                 <div class="product-item__top-hover">
                   <a class="btn product-item__top-btn" href="#">More Info</a>
@@ -1496,7 +1502,7 @@
           <div class="logo footer__logo">
             <a class="logo__img" href="#">
               <img src="images/logo-white.png" alt="logo">
-            </a>
+            </a> 
             <a class="logo__text" href="#">
               <span class="logo__text--white">Mart</span>Place
             </a>
@@ -1628,11 +1634,11 @@
 
           <!-- Start form -->
           <div class="footer__form">
-            <form class="form" id="email" action="#">
+            <form class="form form-subscribe" id="email" action="#">
               <label for="formEmail"></label>
-              <input class="form__input form__input-footer" type="email" id="formEmail" name="formEmail"
+              <input class="form__input form-subscribe__input" type="email" id="formEmail" name="formEmail"
                 placeholder="Enter email">
-              <input class="form__btn form__btn-footer" type="submit" value="Submit">
+              <input class="form__btn form-subscribe__btn" type="submit" value="Submit">
             </form>
           </div>
           <!-- End form -->

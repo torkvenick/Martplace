@@ -10,7 +10,7 @@
 .header {
 
   &__top-inner {
-    padding: 25px 0 25px 8px;
+    padding: 25px 3px 25px 25px;
     display: flex;
     justify-content: space-between;
   }
@@ -24,7 +24,7 @@
   &__btn {
     //чтобы кнопка не растягивалась по высоте
     align-self: center;
-    margin-right: 47px;
+    margin-right: 49px;
     padding: 11px 18px;
     border: none;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
@@ -38,14 +38,14 @@
 
   // Иконки
   &__user {
-    margin-right: 48px;
-    padding-top: 15px;
+    margin-right: 30px;
+    padding-top: 10px;
   }
 
   &__user-link {
     position: relative;
     font-size: 0;
-    padding-right: 17px;
+    padding-right: 13px;
     cursor: pointer;
     transition: opacity 0.3s;
 
@@ -89,14 +89,14 @@
   }
 
   &__form {
-    width: 31%;
+    width: 32%;
   }
 }
 
 
 // Logo
 .logo {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -111,7 +111,7 @@
   }
 
   &__text {
-    padding-left: 5px;
+    padding-left: 2px;
     color: $blue-light;
 
     &--black {
@@ -138,7 +138,7 @@
 
 .user-name {
   color: $black;
-  padding: 7px 0 4px;
+  padding: 6px 0 4px;
   transition: opacity 0.3s;
 
   &:hover {
@@ -147,7 +147,7 @@
 }
 
 .user-wallet {
-  padding-top: 4px;
+  padding-top: 2px;
   margin: 0;
   color: $blue;
 }
@@ -162,7 +162,7 @@
 }
 
 .header__bottom-inner {
-  padding: 16px 0;
+  padding: 16px 0 16px 16px;
   display: flex;
   justify-content: space-between;
 }
@@ -172,6 +172,7 @@
   &__items {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 3px;
     text-transform: uppercase;
   }
 
@@ -286,7 +287,7 @@
 
     &--bold {
       display: block;
-      font-weight: 550;
+      font-weight: 700;
     }
   }
 
@@ -948,11 +949,11 @@
   &__form {
     margin-bottom: 50px;
 
-    .form__input-footer {
+    .form-subscribe__input {
       padding: 9px 120px 9px 25px;
     }
 
-    .form__btn-footer {
+    .form-subscribe__btn {
       padding: 10px 30px;
       font-size: 15px;
       line-height: 30px;
@@ -975,6 +976,7 @@
 
   &__bottom-link {
     color: #fff;
+    cursor: pointer;
   }
 }
 
@@ -994,6 +996,11 @@
     position: relative;
     font-size: 15px;
     color: $footer-text;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
 
     &--padding {
       padding-left: 30px;
@@ -1028,6 +1035,11 @@
     background-position: center;
     background-repeat: no-repeat;
     font-size: 0;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
 
     &--fb {
       background-color: #395799;
