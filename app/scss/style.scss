@@ -47,10 +47,10 @@
     font-size: 0;
     padding-right: 17px;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: opacity 0.3s;
 
     &:hover {
-      transform: rotate(-15deg);
+      opacity: 0.6; 
     }
 
     &+& {
@@ -246,6 +246,14 @@
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
+
+    &:hover {
+      background-size: 30%;
+    }
+
+    &:focus {
+      outline: transparent;
+    }
   }
 }
 
@@ -375,6 +383,7 @@
     background-image: url(../images/icons/lnr-chevron-down.svg);
     background-repeat: no-repeat;
     background-position: 160px 22px;
+    cursor: pointer;
 
     &:focus {
       outline: transparent;
@@ -393,7 +402,7 @@
     transition: box-shadow 0.3s;
 
     &:hover {
-      box-shadow: inset 0px 0px 10px -1px rgba(255, 255, 255, 1);
+      box-shadow: inset 0px 0px 10px -1px rgba(0, 0, 0, 0.8);
     }
   }
 }
@@ -548,7 +557,6 @@
   }
 }
 
-
 /* End products-feed */
 
 /* Start stats */
@@ -686,9 +694,16 @@
 
   &__link {
     margin-top: 50px;
-
+    transition: 0.3;
+    
     &--purple {
+      transition: 0.3;
       color: $purple;
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: #fff;
     }
   }
 }
@@ -735,6 +750,11 @@
     margin-bottom: 15px;
     font-size: 20px;
     color: #000;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   &__text {
@@ -822,7 +842,13 @@
     }
   }
 
-  &__link {}
+  &__link {
+    transition: word-spacing 0.5s;
+
+    &:hover {
+      word-spacing: 7px;
+    }
+  }
 
   &__link--blue {
     color: $blue-light;
@@ -855,6 +881,12 @@
   &__link {
     display: inline-block;
     margin: 0 auto 20px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: transparent;
+      color: #fff;
+    }
   }
 }
 

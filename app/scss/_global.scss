@@ -214,7 +214,7 @@ body {
   background-color: $purple;
   border-radius: 30px;
   position: relative;
-
+  
   &--blue {
     background-color: $blue-light;
   }
@@ -228,6 +228,7 @@ body {
   line-height: 100%;
   color: #fff;
   opacity: 1;
+  cursor: pointer;
 }
 
 //Benefits (карточка преимущества)
