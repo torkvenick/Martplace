@@ -199,7 +199,7 @@ body {
 
   &__item-tags {
     flex-wrap: wrap;
-    padding: 28px 30px 12px;
+    padding: 28px 30px 15px;
     box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
   }
 }
@@ -243,7 +243,7 @@ body {
     box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.08);
 
     &--big {
-      padding: 50px 35px 60px;
+      padding: 50px 33px 56px;
       box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.08);
     }
   }
@@ -303,6 +303,10 @@ body {
 
   &__top-height {
     min-height: 230px;
+
+    & .product-item__img {
+      border-radius: 4px 4px 0 0;
+    }
   }
   
   &__img {
@@ -353,7 +357,7 @@ body {
 
   &__inner {
     position: relative;
-    padding: 30px 30px 0 30px;
+    padding: 26px 30px 0 30px;
 
     &--wide {
       max-width: 42%;
@@ -363,8 +367,8 @@ body {
 
   &__title {
     margin-bottom: 15px;
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 550;
     color: #000;
     transition: letter-spacing 0.3s;
 
@@ -373,12 +377,12 @@ body {
     }
 
     &--mid {
-      font-size: 22px;
       line-height: 28px;
     }
 
-    &--bg {
+    &--big {
       font-size: 24px;
+      font-weight: 700;
     }
   }
 
@@ -407,31 +411,27 @@ body {
   }
 
   &__text {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 30px;
     color: $text-black;
-
-    &--sm {
-      margin-bottom: 30px;
-      line-height: 150%;
-    }
   }
 
   &__tags {
     margin-bottom: 28px;
+    padding-top: 5px;
   }
 
   &__info {
     display: flex;
     position: relative;
-    padding: 23px 30px 15px;
+    padding: 15px 30px 15px;
     border-top: 1px solid #ececec;
     font-size: 15px;
     line-height: 30px;
 
     &--wide {
-      padding: 23px 0 0;
+      padding: 24px 0 0;
     }
   }
 
@@ -439,14 +439,21 @@ body {
     padding: 0 19px 0 18px;
     border: none;
     border-radius: 30px;
-    background-color: $blue-light;
-    color: #fff;
+    background-color: $btn-white;
+    font-size: 15px;
+    font-weight: 700;
+    color: $blue-light;
     transition: all 0.3s;
-
+    
     &:hover {
       box-shadow: inset 0px 0px 5px 0px rgba(6,116,236,1);
       background-color: #fff;
       color: $blue-light;
+    }
+    
+    &--blue {
+      background-color: $blue-light;
+      color: #fff;
     }
   }
 

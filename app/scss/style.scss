@@ -428,10 +428,6 @@
     &:hover {
       box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.08);
     }
-
-    & + & {
-      margin-left: 30px;
-    }
   }
 
   &__img--1 {
@@ -474,8 +470,12 @@
 .products {
   background-color: $bg-lightgrey;
 
+  &__wrapper {
+    padding: 30px 0 60px;
+  }
+
   &__inner {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   &__title {
@@ -491,7 +491,6 @@
     text-align: center;
   }
 }
-
 
 
 .filter-btn {
@@ -570,6 +569,10 @@
 
 .products-feed {
 
+  &__wrapper {
+    padding: 30px 0 60px;
+  }
+
   &__item {
     flex-direction: column;
   }
@@ -586,7 +589,7 @@
   background-color: rgba(0, 0, 0, 0.8);
 
   &__inner {
-    padding: 5px 0 35px;
+    padding-bottom: 38px;
   }
 
   &__item {
@@ -615,13 +618,13 @@
   }
 
   &__icon {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
 
   &__title {
     font-size: 36px;
     line-height: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
 
   &__text {
@@ -633,6 +636,11 @@
 
 /* Start benefits */
 .benefits {
+
+  &__inner {
+    padding-top: 52px;
+  }
+
   .lnr {
     font-size: 60px;
     display: block;
@@ -668,7 +676,7 @@
   &__num {
     position: absolute;
     line-height: 100%;
-    top: 20px;
+    top: 11px;
     left: 20px;
     font-size: 48px;
     color: rgba(92, 135, 248, 0.2);
@@ -686,7 +694,7 @@
   }
 
   &__img {
-    margin-bottom: 50px;
+    margin-bottom: 38px;
     min-height: 105px;
     background-repeat: no-repeat;
     background-position: center;
@@ -716,10 +724,10 @@
 
   &__link {
     margin-top: 50px;
-    transition: 0.3;
+    transition: 0.3s;
     
     &--purple {
-      transition: 0.3;
+      transition: 0.3s;
       color: $purple;
     }
 
