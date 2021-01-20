@@ -61,7 +61,7 @@ gulp.task('script', function () {
   return gulp.src([
     'node_modules/swiper/swiper-bundle.js',
     'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
-    'node_modules/mixitup/dist/mixitup.js' 
+    'node_modules/mixitup/dist/mixitup.js'
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -91,7 +91,7 @@ gulp.task('browser-sync', function () {
 
 //Подключаем file-include - позволяет соединять разные html файлы в один для удобства чтения разметки
 gulp.task('fileInclude', function () {
-  return gulp.src(['app/index.html'])
+  return gulp.src(['app/html/index.html'])
     .pipe(fileInclude({  
       prefix: '@@',
       basepath: '@file'
