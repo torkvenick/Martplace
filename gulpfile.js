@@ -80,6 +80,17 @@ gulp.task('js', function () {
     .pipe(browserSync.reload({ stream: true }))
 });
 
+//Подключаем file-include - позволяет соединять разные html файлы в один для удобства чтения разметки
+gulp.task('htmlInclude', function () {
+  return gulp.src(['app/html/index.html'])
+    .pipe(fileInclude({  
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(dest('app/'))
+    .pipe(browserSync.reload({ stream: true }))
+});
+
 //BrowserSync -- позволяет не обновлять страницу вручную для отображения изменений html, css, js
 gulp.task('browser-sync', function () {
   browserSync.init({
@@ -89,16 +100,6 @@ gulp.task('browser-sync', function () {
   });
 });
 
-//Подключаем file-include - позволяет соединять разные html файлы в один для удобства чтения разметки
-gulp.task('fileInclude', function () {
-  return gulp.src(['app/html/index.html'])
-    .pipe(fileInclude({  
-      prefix: '@@',
-      basepath: '@file'
-    }))
-    .pipe(dest('app/'))
-    .pipe(browserSync.reload({ stream: true }))
-});
 
 //Подключаем плагин, который следит за изменениями 
 gulp.task('watch', function () {
@@ -111,4 +112,4 @@ gulp.task('watch', function () {
 
 /* Запускаем task, который позволит автоматически обновлять страницу и работать с терминалом (gulp watch не будет забивать эфир). Пишем задание, default, за кем он будет наблюдать (за заданиями, которые мы вписываем)  */
 
-gulp.task('default', gulp.parallel('style', 'script', 'sass', 'fileInclude', 'watch', 'browser-sync'))
+gulp.task('default', gulp.parallel('style', 'script', 'sass', 'htmlInclude', 'watch', 'browser-sync'))
