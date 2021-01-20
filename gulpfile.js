@@ -2,6 +2,7 @@
 //Создаем переменные
 
 //"верстак" для подключения плагинов
+const { dest } = require('gulp');
 let gulp = require('gulp'),
   //препроцессор 
   sass = require('gulp-sass'),
@@ -16,7 +17,9 @@ let gulp = require('gulp'),
   //минифицирует в libs.min.js
   uglify = require('gulp-uglify'),
   //минифицирует в libs.min.css
-  cssmin = require('gulp-cssmin');
+  cssmin = require('gulp-cssmin'),
+  //компилирует файлы html в один
+  fileInclude = require('gulp-file-include');
 
 /* Конвертируем SASS в CSS. .task() -- метод (точка, слово, скобки)
 function нужен для того, чтобы метод не работал единожды */
@@ -86,6 +89,17 @@ gulp.task('browser-sync', function () {
   });
 });
 
+//Подключаем file-include - позволяет соединять разные html файлы в один для удобства чтения разметки
+gulp.task('fileInclude', function () {
+  return gulp.src(['app/index.html'])
+    .pipe(fileInclude({  
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(dest('app/'))
+    .pipe(browserSync.reload({ stream: true }))
+});
+
 //Подключаем плагин, который следит за изменениями 
 gulp.task('watch', function () {
   //метод: если происходят изменения в style.scss, файлах html, js - запускается плагин "parallel" 
@@ -97,4 +111,4 @@ gulp.task('watch', function () {
 
 /* Запускаем task, который позволит автоматически обновлять страницу и работать с терминалом (gulp watch не будет забивать эфир). Пишем задание, default, за кем он будет наблюдать (за заданиями, которые мы вписываем)  */
 
-gulp.task('default', gulp.parallel('style', 'script', 'sass', 'watch', 'browser-sync'))
+gulp.task('default', gulp.parallel('style', 'script', 'sass', 'fileInclude', 'watch', 'browser-sync'))
