@@ -16,6 +16,7 @@
   }
 
   &__profile {
+    margin-left: auto;
     display: flex;
     justify-content: space-between;
   }
@@ -951,7 +952,6 @@
 
   &__contacts {
     max-width: 270px;
-    margin-right: 15px;
   }
 
   &__logo {
@@ -961,10 +961,14 @@
 
   &__about {
     max-width: 130px;
+    margin-left: auto;
+    margin-right: 45px;
   }
 
   &__support {
     max-width: 140px;
+    margin-left: auto;
+    margin-right: 58px;
   }
 
   &__newsletter {
