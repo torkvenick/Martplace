@@ -1,0 +1,37 @@
+.btn {
+  padding: 19px 25px 18px 25px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:focus {
+    outline: transparent;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  &--big {
+    min-width: 190px;
+
+    &:hover {
+      background-color: #fff;
+      box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.08);
+      color: $blue-light;
+    }
+  }
+
+  &--blue {
+    background-color: $blue-light;
+  }
+
+  &--white {
+    background-color: #fff;
+    color: $blue-light;
+  }
+}

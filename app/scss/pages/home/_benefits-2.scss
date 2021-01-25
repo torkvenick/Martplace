@@ -1,0 +1,47 @@
+.benefits {
+
+  &__inner {
+    padding-top: 52px;
+  }
+
+  .lnr {
+    font-size: 60px;
+    display: block;
+    line-height: 100%;
+    margin-bottom: 40px;
+  }
+
+  .lnr-license {
+    color: $blue-light;
+  }
+
+  .lnr-magic-wand {
+    color: #7f4ec2;
+  }
+
+  .lnr-lock {
+    color: #77de51;
+  }
+
+  .lnr-chart-bars {
+    color: #feb71d;
+  }
+
+  .lnr-leaf {
+    color: #58c9e9;
+  }
+
+  .lnr-phone {
+    color: #ff6a6d;
+  }
+
+  //решил не ставить нумерацию в global, так как она только здесь есть
+  &__num {
+    position: absolute;
+    line-height: 100%;
+    top: 11px;
+    left: 20px;
+    font-size: 48px;
+    color: rgba(92, 135, 248, 0.2);
+  }
+}

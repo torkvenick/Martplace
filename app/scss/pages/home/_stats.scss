@@ -1,0 +1,46 @@
+.stats {
+  background-color: rgba(0, 0, 0, 0.8);
+
+  &__inner {
+    padding-bottom: 38px;
+  }
+
+  &__item {
+    text-align: center;
+
+    .lnr {
+      font-size: 48px;
+      line-height: 100%;
+    }
+
+    &--yellow {
+      color: #feb71d;
+    }
+
+    &--blue {
+      color: #58c9e9;
+    }
+
+    &--green {
+      color: #77de51;
+    }
+
+    &--red {
+      color: #ff6a6d;
+    }
+  }
+
+  &__icon {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 100%;
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    color: #fff;
+  }
+}

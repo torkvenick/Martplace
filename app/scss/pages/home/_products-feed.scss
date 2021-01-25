@@ -1,0 +1,18 @@
+.swiper-container--multi {
+  overflow: hidden;
+}
+
+.products-feed {
+
+  &__wrapper {
+    padding: 30px 0 60px;
+  }
+
+  &__item {
+    flex-direction: column;
+  }
+
+  &__img {
+    min-height: 230px;
+  }
+}

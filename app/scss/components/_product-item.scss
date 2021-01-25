@@ -1,0 +1,222 @@
+.product-item {
+  display: flex;
+  border-radius: 4px;
+  box-shadow: 0px 2px 20px 0px rgba(147, 155, 168, 0.1);
+  background-color: #fff;
+
+  &__vert {
+    max-width: calc(100% / 3 - 30px);
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  &__top {
+    width: 100%;
+    position: relative;
+    line-height: 0;
+
+    &:hover .product-item__top-hover {
+      transition: opacity 0.3s;
+      opacity: 1;
+    }
+  }
+
+  &__top-height {
+    min-height: 230px;
+
+    & .product-item__img {
+      border-radius: 4px 4px 0 0;
+    }
+  }
+  
+  &__img {
+    width: 100%;
+    height: 100%;
+    background-color: #90bbc4;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__top-hover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    /* Можно так растянуть и убрать ширину и высоту 100%, но я не знаю правильно ли это 
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(240deg, rgb(6, 116, 236) 0%, rgb(61, 94, 215) 46%, rgb(115, 71, 193) 100%);
+    
+    font-size: 15px;
+    font-weight: 550;
+    line-height: 1.6;
+    
+    transition: opacity 0.3s;
+    opacity: 0;
+  }
+
+  &__top-btn {
+    padding: 14px 24px 13px 24px;
+
+    &:hover {
+      background-color: #fff;
+      box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.08);
+      color: $blue-light;
+    }
+
+    & + & {
+      margin-left: 10px;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    padding: 26px 30px 0 30px;
+
+    &--wide {
+      max-width: 42%;
+      padding: 45px 50px 25px 50px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 550;
+    color: #000;
+    transition: letter-spacing 0.3s;
+
+    &:hover {
+      letter-spacing: 0.5px;
+    }
+
+    &--mid {
+      line-height: 28px;
+    }
+
+    &--big {
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+
+  &__user {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+
+  &__user-name {
+    vertical-align: top;
+    margin-right: 20px;
+    transition: opacity 0.3s;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__link {
+    color: #7347c1;
+    vertical-align: top;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    color: $text-black;
+  }
+
+  &__tags {
+    margin-bottom: 28px;
+    padding-top: 5px;
+  }
+
+  &__info {
+    display: flex;
+    position: relative;
+    padding: 15px 30px 15px;
+    border-top: 1px solid #ececec;
+    font-size: 15px;
+    line-height: 30px;
+
+    &--wide {
+      padding: 24px 0 0;
+    }
+  }
+
+  &__price {
+    padding: 0 19px 0 18px;
+    border: none;
+    border-radius: 30px;
+    background-color: $btn-white;
+    font-size: 15px;
+    font-weight: 700;
+    color: $blue-light;
+    transition: all 0.3s;
+    
+    &:hover {
+      box-shadow: inset 0px 0px 5px 0px rgba(6,116,236,1);
+      background-color: #fff;
+      color: $blue-light;
+    }
+    
+    &--blue {
+      background-color: $blue-light;
+      color: #fff;
+    }
+  }
+
+  &__fav {
+    margin-left: 20px;
+    color: $text-black;
+    
+    &:hover .lnr {
+      transform: rotate(180deg);
+    }
+
+    .lnr {
+      color: $purple;
+    } 
+  }
+
+  &__cart {
+    margin-left: 20px;
+    color: $blue-light;
+
+    &:hover .lnr {
+      transform: translateX(45px);
+    }
+
+    &--right {
+      position: absolute;
+      right: 30px;
+    }
+  }
+
+  &__rate {
+    margin-left: 15px;
+    width: 80px;
+    background-image: url(../images/content/rate.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-size: 0;
+
+    &--wide {
+      width: 90px;
+      position: absolute;
+      right: 0;
+    }
+  }
+}

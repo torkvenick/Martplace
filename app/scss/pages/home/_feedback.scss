@@ -1,0 +1,65 @@
+.feedback {
+  background-color: #fff;
+
+  &__wrapper {
+    padding-top: 22px;
+  }
+
+  &__item {
+    max-width: calc(100% / 2 - 15px);
+    padding: 47px 42px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    border-left: 2px solid $blue-light;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.08);
+    font-size: 16px;
+    color: $text-black;
+  }
+
+  &__profile {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 23px;
+  }
+
+  &__user {
+    display: flex;
+  }
+
+  &__user-info {
+    margin-left: 20px;
+  }
+
+  &__user-name {
+    padding-top: 12px;
+    margin-bottom: 13px;
+    font-size: 20px;
+    color: #000;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__text {
+    line-height: 30px;
+  }
+
+  .lnr {
+    font-size: 60px;
+    line-height: 100%;
+    color: #e8e8e8;
+  }
+
+  &__link {
+    margin: 27px auto 30px;
+  }
+}
+

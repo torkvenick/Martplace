@@ -1,0 +1,51 @@
+.info {
+  background-color: #fff;
+
+  &__inner {
+    display: flex;
+    font-size: 24px;
+    color: #333;
+    padding: 60px 0;
+  }
+
+  &__item {
+    width: calc(100% / 2);
+    /* блок расширил за счет отступов, чтобы линия посередине соответствовала макету. Мне показалось это наиболее доступным */
+    text-align: center;
+  }
+
+  &__item--border {
+    border-right: 1px solid #ececec;
+  }
+
+  &__img {
+    min-height: 130px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-bottom: 20px;
+
+    &--1 {
+      background-image: url(../images/icons/cash-icon.png);
+    }
+
+    &--2 {
+      background-image: url(../images/icons/user-icon.png);
+    }
+  }
+
+  &__link {
+    transition: word-spacing 0.5s;
+
+    &:hover {
+      word-spacing: 7px;
+    }
+  }
+
+  &__link--blue {
+    color: $blue-light;
+  }
+
+  &__link--purple {
+    color: $purple;
+  }
+}
