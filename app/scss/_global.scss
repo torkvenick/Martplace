@@ -18,25 +18,32 @@ ul,
 li {
   margin: 0;
   padding: 0;
+/*   list-style: none;
+ */}
+
+//list-style лучше убирать только тем классам, которым нужно
+ul[class], ol[class] {
   list-style: none;
 }
-// то же, что и с ul,li: мешало
+
+// обнулять разрешается
 p {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: 'Quicksand';
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   color: $text-black;
   background-color: $bg-grey;
 }
 
 .container {
   margin: 0 auto;
-  max-width: calc(100% - 38%);
+  max-width: 1170px;
   padding: 0 15px;
 }
 
@@ -131,7 +138,7 @@ body {
 
 .logo {
   max-width: 200px;
-  height: 65px;
+  height: 50px;
   
   &__img {
     width: 100%;
@@ -147,13 +154,11 @@ body {
     object-fit: contain;
     object-position: center;
     border-radius: 50%;
-    display: inline-block;
   }
 
   &__name {
     display: inline-block;
     vertical-align: top;
-    font-size: 15px;
     line-height: 1.5;
     color: #000;
   }

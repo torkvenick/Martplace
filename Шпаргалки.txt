@@ -180,32 +180,32 @@ footer            56. Блок footer: <div class="footer__item footer__contacts
 
                   80. Посмотреть подкод БЭМ, компонентый список. Как организовывают разметку и стили.
 
-                  81. SCSS: в этой папке создаем папку components и pages. B pages будут:
+   +              81. SCSS: в этой папке создаем папку components и pages. B pages будут:
                       folder pages --> folder home (элементы страницы home) + _home.scss (в нем пишем импорт с папки home) и так далее с каждой страницей.
                   В папке components будут те блоки, которые мы используем часто (шапка, подвал)
 
-                  82. В файле style.scss будут исключительно импорты @import. В components мы сохраняем файлы вот так: _header.scss 
+   +              82. В файле style.scss будут исключительно импорты @import. В components мы сохраняем файлы вот так: _header.scss 
 
-                  83. Импорт прописываем вот так: @import 'components/header';
+   +              83. Импорт прописываем вот так: @import 'components/header';
 
                   85. АДАПТИВ: прописываем там, где нужно, а не выводим отдельным файлом.
 
-          (body)  68. Body: сбросить margin (margin: 0;) и добавить шрифту семейство (font-family: 'Quicksand', sans-serif;)
+   +      (body)  68. Body: сбросить margin (margin: 0;) и добавить шрифту семейство (font-family: 'Quicksand', sans-serif;)
           
-      (container) 70. container: ширину задать можно и пикселем, а не процентами. Max-width: 1170px; padding: 0 15px;
+   +  (container) 70. container: ширину задать можно и пикселем, а не процентами. Max-width: 1170px; padding: 0 15px;
           
-          (list)  67. Ul и li: лучше всем в global не прописывать list-style: none. Можно сделать так:
+   +       (list)  67. Ul и li: лучше всем в global не прописывать list-style: none. Можно сделать так:
                     ul[class], ol[class] {
                       list-style: none;
                     }
 
-          (links) 64. Ссылкам inline-block мы не прописываем. -------ГОТОВО
+   +      (links) 64. Ссылкам inline-block мы не прописываем. 
 
-                  65. Cursor: pointer у всех ссылок по умолчанию есть. -------ГОТОВО
+   +              65. Cursor: pointer у всех ссылок по умолчанию есть. 
 
-                  66. Цвет в global можно прописать inherit, а не задавать какой-то цвет. -------ГОТОВО
+   +              66. Цвет в global можно прописать inherit, а не задавать какой-то цвет. 
 
-      +   (logo)  84. Логотип logo можно вынести в global. User-profile тоже в global после того, как переделаю.
+   +      (logo)  84. Логотип logo можно вынести в global. User-profile тоже в global после того, как переделаю.
 
           (menu)  85. Menu можно запихнуть в header.
 

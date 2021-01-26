@@ -4,15 +4,14 @@
 .header {
 
   &__top-inner {
-    padding: 25px 0px 25px 20px;
+    padding: 25px 0px 25px 15px;
     display: flex;
     justify-content: space-between;
   }
 
   &__profile {
-    margin-left: auto;
     display: flex;
-    justify-content: space-between;
+    margin-left: auto;
   }
 
   //Button registration
@@ -20,8 +19,9 @@
     //чтобы кнопка не растягивалась по высоте
     align-self: center;
     margin-right: 49px;
-    padding: 11px 18px;
-    border: none;
+    min-width: 140px;
+    padding: 4px 18px 3px;
+    border: transparent;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
     font-size: 14px;
     transition: box-shadow 0.3s;
@@ -33,34 +33,38 @@
 
   // Иконки
   &__icons {
-    margin-right: 30px;
+    margin-right: 31px;
     padding-top: 10px;
   }
 
   &__icon {
+    display: inline-block;
+    padding-right: 13px;
+    transition: opacity 0.3s;
+    
+    & + & {
+      margin-left: 15px;
+    }
+  }
+  
+  &__link {
     position: relative;
     font-size: 0;
-    padding-right: 13px;
-    cursor: pointer;
-    transition: opacity 0.3s;
 
     &:hover {
       opacity: 0.6; 
     }
 
-    &+& {
-      margin-left: 15px;
-    }
   }
 
-  .lnr {
+  .icon {
     font-size: 20px;
     color: $grey;
   }
 
   .lnr-num {
     position: absolute;
-    bottom: 17px;
+    bottom: 12px;
     left: 12px;
     padding: 3px 7px;
     height: 22px;
@@ -99,15 +103,14 @@
   &__avatar {
     width: 50px;
     height: 50px;
-    
+    margin-right: 11px;
   }
 
   &__name {
-    padding-top: 8px;
     font-weight: 550;
   }
 
-  .user__price {
+  &__price {
     color: $blue;
   }
 }

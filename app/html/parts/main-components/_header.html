@@ -11,33 +11,41 @@
 
         <div class="header__profile">
           <button class=" btn btn--blue header__btn" type="button">Become a seller</button>
-          <div class="header__icons">
-            <a class="header__icon" href="#">
-              Alarm
-              <span class="lnr lnr-alarm"></span>
-              <!-- Если поставить span вместо p, то блок с цифрами опускается ниже. Заметка просто для себя -->
-              <span class="lnr-num lnr-num--red">25</span>
-            </a>
-            <a class="header__icon" href="#">
+          <ul class="header__icons">
+            <li class="header__icon">
+              <a class="header__link" href="#">
+                Alarm
+                <span class="icon lnr lnr-alarm"></span>
+                <!-- Если поставить span вместо p, то блок с цифрами опускается ниже. Заметка просто для себя -->
+                <span class="lnr-num lnr-num--red">25</span>
+              </a>
+            </li>
+            <li class="header__icon">
+              <a class="header__link" href="#">
               Envelope
-              <span class="lnr lnr-envelope"></span>
-              <span class="lnr-num lnr-num--green">6</span>
-            </a>
-            <a class="header__icon" href="#">
+                <span class="icon lnr lnr-envelope"></span>
+                <span class="lnr-num lnr-num--green">6</span>
+              </a>
+
+            </li>
+            <li class="header__icon">
+              <a class="header__link" href="#">
               Cart
-              <span class="lnr lnr-cart"></span>
-              <span class="lnr-num lnr-num--blue">2</span>
-            </a>
-          </div>
+                <span class="icon lnr lnr-cart"></span>
+                <span class="lnr-num lnr-num--blue">2</span>
+              </a>
+
+            </li>
+          </ul>
 
           <a class="user header__user" href="#">
             <img class="user__avatar header__avatar" src="../../../images/user.png" alt="avatar">
             <p class="user__name header__name">
               Taofiq Hakim
             </p>
-            <p class="user__price">
+            <!-- <p class="header__price">
               $20.45
-            </p>
+            </p> -->
           </a>        
         </div>
 
