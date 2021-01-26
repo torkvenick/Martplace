@@ -4,45 +4,41 @@
     <div class="container">
       <div class="header__top-inner">
 
-        <!-- Logo сделал дивом и в нем поместил ссылки, потому что я этот блок использую и в шапке и в подвале. К тому же, текст логотипа менят цвет на макете. Если logo сделать ссылкой, а не div, как у меня, то логотип крашится. Я правильно сделал?-->
-        <div class="logo" href="#">
-          <a class="logo__img" href="#">
-            <img src="images/logo.png" alt="logo">
-          </a>
-          <a class="logo__text" href="#">
-            <span class="logo__text--black">Mart</span>Place
-          </a>
-        </div>            
+        <!-- Логотип - ВСЕГДА картинка со ссылкой-->
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.png" alt="logo">
+        </a>      
 
         <div class="header__profile">
           <button class=" btn btn--blue header__btn" type="button">Become a seller</button>
-          <div class="header__user">
-            <a class="header__user-link" href="#">
+          <div class="header__icons">
+            <a class="header__icon" href="#">
               Alarm
               <span class="lnr lnr-alarm"></span>
               <!-- Если поставить span вместо p, то блок с цифрами опускается ниже. Заметка просто для себя -->
               <span class="lnr-num lnr-num--red">25</span>
             </a>
-            <a class="header__user-link" href="#">
+            <a class="header__icon" href="#">
               Envelope
               <span class="lnr lnr-envelope"></span>
               <span class="lnr-num lnr-num--green">6</span>
             </a>
-            <a class="header__user-link" href="#">
+            <a class="header__icon" href="#">
               Cart
               <span class="lnr lnr-cart"></span>
               <span class="lnr-num lnr-num--blue">2</span>
             </a>
           </div>
-          <div class="user-profile">
-            <!-- поставил картинку на бэкграунд, чтобы можно было вставить любую картинку и оно не ломалось. И впредь по макету контентные толко на бэкграунде -->
-            <a class="avatar header__top-avatar" style="background-image: url(images/user.png);" href="#">Avatar</a>
-            <div class="user-info">
-              <a class="user-name" href="#">Taofiq Hakim
-              </a>
-              <p class="user-wallet">$20.45</p>
-            </div>
-          </div>
+
+          <a class="user header__user" href="#">
+            <img class="user__avatar header__avatar" src="../../../images/user.png" alt="avatar">
+            <p class="user__name header__name">
+              Taofiq Hakim
+            </p>
+            <p class="user__price">
+              $20.45
+            </p>
+          </a>        
         </div>
 
       </div>

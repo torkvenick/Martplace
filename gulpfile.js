@@ -68,11 +68,11 @@ gulp.task('script', function () {
     .pipe(gulp.dest('app/js'))
 });
 
-//подключаем BrowserSync для html
+/* //подключаем BrowserSync для html
 gulp.task('html', function () {
   return gulp.src('app/*.html')
     .pipe(browserSync.reload({ stream: true }))
-});
+}); */
 
 //подключаем BrowserSync для js
 gulp.task('js', function () {
@@ -80,9 +80,9 @@ gulp.task('js', function () {
     .pipe(browserSync.reload({ stream: true }))
 });
 
-//Подключаем file-include - позволяет соединять разные html файлы в один для удобства чтения разметки
+//Подключаем file-include - позволяет соединять разные html файлы в один для удобства чтения разметки. Первый путь - что возвращать, второй со ! - что игнорировать
 gulp.task('htmlInclude', function () {
-  return gulp.src(['app/html/index.html'])
+  return gulp.src(['app/html/pages/*.html', '!app/html/parts/**/*.html'])
     .pipe(fileInclude({  
       prefix: '@@',
       basepath: '@file'
@@ -104,9 +104,8 @@ gulp.task('browser-sync', function () {
 //Подключаем плагин, который следит за изменениями 
 gulp.task('watch', function () {
   //метод: если происходят изменения в style.scss, файлах html, js - запускается плагин "parallel" 
-  gulp.watch('app/scss/style.scss', gulp.parallel('sass'))
-  gulp.watch('app/scss/_global.scss', gulp.parallel('sass'))
-  gulp.watch('app/*.html', gulp.parallel('html'))
+  gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'))
+  gulp.watch('app/html/**/*.html', gulp.parallel('htmlInclude'))
   gulp.watch('app/js/*.js', gulp.parallel('js'))
 });
 
