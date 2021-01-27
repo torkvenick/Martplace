@@ -29,23 +29,19 @@
   }
 
   &__user {
-    display: flex;
+    max-width: 300px;
   }
 
-  &__user-info {
-    margin-left: 20px;
+  &__avatar {
+    width: 80px;
+    height: 80px;
+    margin-right: 19px;
   }
 
-  &__user-name {
-    padding-top: 12px;
-    margin-bottom: 13px;
+  &__name {
+    padding-top: 8px;
+    margin-bottom: 9px;
     font-size: 20px;
-    color: #000;
-    transition: opacity 0.3s;
-
-    &:hover {
-      opacity: 0.6;
-    }
   }
 
   &__text {

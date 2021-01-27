@@ -106,7 +106,12 @@
     }
   }
 
+  &__author {
+    display: flex;
+  }
+
   &__user {
+    max-width: 140px;
     display: flex;
     padding-top: 15px;
     font-size: 15px;
@@ -117,6 +122,7 @@
   &__avatar {
     width: 30px;
     height: 30px;
+    margin-right: 9px;
   }
 
   &__user-name {
