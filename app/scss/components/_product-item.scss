@@ -108,12 +108,12 @@
 
   &__author {
     display: flex;
+    padding-top: 15px;
   }
 
   &__user {
     max-width: 140px;
     display: flex;
-    padding-top: 15px;
     font-size: 15px;
     line-height: 2;
     margin-bottom: 25px;
@@ -135,7 +135,7 @@
   }
 
   &__link {
-    margin-left: 24px;
+    margin-left: 20px;
     line-height: 2;
     color: #7347c1;
 
