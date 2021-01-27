@@ -107,9 +107,16 @@
   }
 
   &__user {
+    display: flex;
+    padding-top: 15px;
     font-size: 15px;
-    line-height: 30px;
+    line-height: 2;
     margin-bottom: 25px;
+  }
+
+  &__avatar {
+    width: 30px;
+    height: 30px;
   }
 
   &__user-name {
@@ -122,8 +129,9 @@
   }
 
   &__link {
+    margin-left: 24px;
+    line-height: 2;
     color: #7347c1;
-    vertical-align: top;
 
     &:hover {
       opacity: 0.6;
