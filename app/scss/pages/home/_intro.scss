@@ -5,7 +5,6 @@
   &__wrapper {
     min-height: 730px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -14,27 +13,27 @@
 
   &__inner {
     color: $white-title;
-    padding-bottom: 70px;
+    padding-bottom: 85px;
   }
 
   &__title {
+    display: flex;
+    flex-direction: column;
     font-size: 60px;
-    line-height: 70px;
-    margin-bottom: 35px;
-
-    &--bold {
-      display: block;
-      font-weight: 700;
-    }
+    line-height: 1.15;
+    margin-bottom: 30px;
   }
 
-  &__text {
+  &__subtitle {
+    font-size: 20px;
     font-weight: 550;
     margin-bottom: 68px;
   }
 
-  & .btn+.btn {
-    margin-left: 30px;
+  &__link {
+    @include btn-big;
+    border: 1px solid #fff;
+    margin: 0 15px;
   }
 
   //form-body
@@ -110,7 +109,7 @@
   &__select {
     position: absolute;
     right: 0;
-    padding: 6px 70px 5px 16px;
+    padding: 6px 70px 0 16px;
     border: none;
     border-left: 1px solid #dcdcdc;
     border-radius: 0 4px 4px 0;

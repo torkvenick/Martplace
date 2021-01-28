@@ -1,5 +1,5 @@
 .btn {
-  border: 1px solid #fff;
+  border: transparent;
   border-radius: 30px;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -11,17 +11,6 @@
   &:focus {
     outline: transparent;
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
-  }
-
-  &--big {
-    min-width: 190px;
-    line-height: 72px;
-
-    &:hover {
-      background-color: #fff;
-      box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.08);
-      color: $blue-light;
-    }
   }
 
   &--white {

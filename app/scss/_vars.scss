@@ -30,6 +30,11 @@ $border-button: #d9dfe5;
 
 $footer-text: #ababab;
 
+@mixin btn-big {
+  min-width: 190px;
+  padding: 17px 30px 17px;
+}
+
 
 
 
