@@ -21,14 +21,17 @@
     margin-right: 49px;
     min-width: 140px;
     padding: 4px 18px 3px;
-    border: transparent;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
     font-size: 14px;
     transition: box-shadow 0.3s;
-
+    
     &:hover {
       box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
     }
+  }
+  //стиль btn перебивает любое свойство border, поэтому я повысил специфичность
+  & &__btn {
+    border: transparent;
   }
 
   // Иконки
@@ -91,8 +94,8 @@
   &__form {
     width: 32%;
   }
-//start user
 
+//start user
   &__user {
     max-width: 240px;
   }
@@ -120,7 +123,7 @@
 }
 
 .header__bottom-inner {
-  padding: 16px 0 16px 16px;
+  padding: 16px 0 18px 16px;
   display: flex;
   justify-content: space-between;
 }
@@ -142,7 +145,7 @@
     font-weight: 550;
     color: $black;
     font-size: 15px;
-    line-height: 42px;
+    line-height: 2.8;
     position: relative;
     transition: 0.5s;
 
@@ -176,11 +179,10 @@
 
   &__input {
     width: 100%;
-    padding: 8px 80px 7px 25px;
+    padding: 12px 80px 15px 25px;
     border: 1px solid $border-button;
     border-radius: 30px;
     font-size: 15px;
-    line-height: 30px;
 
     &::-webkit-search-cancel-button {
       display: none;
