@@ -24,11 +24,14 @@
       <div class="intro__form">
         <form class="form-search" action="#">
           <div class="form-search__field">
-            <label for="formCat"></label>
-            <input class="form-search__input" type="search" id="formCat" name="formCat"
-              placeholder="Search your products...">
-            <label for="pages"></label>
-            <select class="form-search__select" name="pages" id="pages">
+            <label for="formCat">
+              <span class="sr-only">Search your products</span>
+            </label>
+            <input class="form-search__input" type="search" id="formCat" name="formCat" placeholder="Search your products...">
+            <label for="categories">
+              <span class="sr-only">Categories</span>
+            </label>
+            <select class="form-search__select" name="categories" id="categories">
               <option value="all categories" selected>All Categories</option>
               <option value="plugins">Plugins</option>
               <option value="wordpress">Wordpress</option>
@@ -40,7 +43,7 @@
               <option value="software">Software</option>
             </select>
           </div>
-          <input class="form-search__submit" type="submit" value="Search now">
+          <button class="form-search__submit" type="submit">Search now</button>
         </form>
       </div>
       <!-- end form-search -->
