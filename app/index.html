@@ -239,10 +239,10 @@
     <div class="container swiper-container">
       <div class="block__item block__item-title product__title">
         <span>Weekly Featured Products</span>
-        <div class="swiper-btn__wrapper">
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+        <div class="product__wrapper-arrows">
+          <!-- Стрелки прокрутки всё равно нужно prev и next. Я постарался сделать по минимуму стилей отдельным стрелкам  -->
+          <button class="swiper-button-prev arrow bg-purple" type="button"></button>
+          <button class="swiper-button-next arrow arrow--right bg-purple" type="button"></button>
         </div>
       </div>
       <!-- Additional required wrapper -->
@@ -802,15 +802,15 @@
 <!-- End products -->  
   
    <!-- Start products-feed -->
- <section class="block products-feed">
+ <section class="block products-feed product">
   <div class="products-feed__wrapper">
     <div class="container swiper-container--multi">
       <div class="block__item block__item-title">
         <span>Your Followers Feed</span>
-        <div class="swiper-btn__wrapper swiper-btn__wrapper--blue">
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+        <div class="product__wrapper-arrows">
+          <!-- Стрелки прокрутки всё равно нужно prev и next. Я постарался сделать по минимуму стилей отдельным стрелкам  -->
+          <button class="swiper-button-prev arrow bg-blue" type="button"></button>
+          <button class="swiper-button-next arrow arrow--right bg-blue" type="button"></button>
         </div>
       </div>
       <!-- Additional required wrapper -->

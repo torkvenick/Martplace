@@ -109,7 +109,7 @@
     outline: transparent;
     
     &:focus {
-      background-color: rgba(6, 116, 236, 0.3);
+      background-color: rgba(6, 116, 236, 0.05);
     }
 
     &::placeholder {
@@ -138,7 +138,7 @@
     transition: border-left 0.3s;
 
     &:focus {
-      background-color: rgba(6, 116, 236, 0.1);
+      background-color: rgba(6, 116, 236, 0.05);
     }
 
     &:hover {
