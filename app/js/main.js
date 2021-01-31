@@ -3,7 +3,7 @@
     loop: true,
     slidesPerView: 1,
     spaceBetween: 30,
-        
+
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
@@ -26,10 +26,17 @@
     },
   });
 
+  $('.rate-star').rateYo({
+    starWidth: "15px",
+    normalFill: "#ffffff",
+    ratedFill: "#ffa726",
+    readOnly: true,
+    rating: 5
+  });
+
   var mixer = mixitup('.products__inner');
 
-  $('.filter-btn').on('click', function(){
+  $('.filter-btn').on('click', function () {
     $('.filter-choice').slideToggle();
-   });
 
-
+  });

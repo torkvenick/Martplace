@@ -22,7 +22,7 @@
     "mixitup": "^3.3.1",
     "normalize": "^0.3.1",
     "normalize.css": "^8.0.1",
-    "rateyo": "^3.0.0-alpha.2",
+    "rateyo": "^2.3.5",
     "swiper": "^6.4.5"
   },
   "dependencies": {}

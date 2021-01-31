@@ -1,0 +1,21 @@
+.title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-bottom: 50px;
+  
+  &__arrows {
+    width: 110px;
+    position: relative;
+    }
+  //перебить стандартные стили
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 14px;
+    color: #fff;
+   }
+  
+}

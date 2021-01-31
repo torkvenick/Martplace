@@ -1,8 +1,48 @@
-.product__title {
-  margin-bottom: 20px;
+.product {
+  &__title {
+    justify-content: space-between;
+    padding: 33px 30px 32px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  &__card-inner {
+    max-width: 42%;
+    padding: 35px 56px 25px 50px;
+  }
+
+  &__card-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+  }
+
+  &__tags {
+    margin-bottom: 40px;
+  }
+  &__info {
+    padding: 24px 0 0;
+  }
+  &__btn {
+    padding: 0;
+  }
+
+  &__heart {
+    margin-right: 5px;
+  }
+
+  &__price {
+    background-color: $blue-light;
+    color: #fff;
+  }
+
+  &__star {
+    position: absolute;
+    right: 0;
+    bottom: 6px;
+  }
 }
 
-.lnr {
-  display: inline-block;
-  transition: 0.5s;
-}
+

@@ -9,33 +9,30 @@
     flex-direction: column;
     margin: 0 15px 30px;
   }
-
-  &__top {
-    width: 100%;
+  
+  &__top-height {
+    min-height: 230px;
+  }
+  
+  &__content {
     position: relative;
+    width: 100%;
     line-height: 0;
+    background-color: #90bbc4;
 
-    &:hover .product-item__top-hover {
+    &:hover .product-item__hover {
       transition: opacity 0.3s;
       opacity: 1;
     }
   }
 
-  &__top-height {
-    min-height: 230px;
-
-    & .product-item__img {
-      border-radius: 4px 4px 0 0;
-    }
-  }
-  
   &__img {
     width: 100%;
     height: 100%;
-    background-color: #90bbc4;
+    object-fit: cover;
   }
 
-  &__top-hover {
+  &__hover {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -54,7 +51,10 @@
     opacity: 0;
   }
 
-  &__top-btn {
+  &__link {
+    min-width: 130px;
+    border: 1px solid #fff;
+    margin: 0 5px;
     padding: 14px 24px 13px 24px;
 
     &:hover {
@@ -62,20 +62,11 @@
       box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.08);
       color: $blue-light;
     }
-
-    & + & {
-      margin-left: 10px;
-    }
   }
 
   &__inner {
     position: relative;
     padding: 26px 21px 0 30px;
-
-    &--wide {
-      max-width: 42%;
-      padding: 45px 50px 25px 50px;
-    }
   }
 
   &__title {
@@ -90,26 +81,19 @@
     }
 
     &--mid {
-      line-height: 28px;
-    }
-
-    &--big {
-      font-size: 24px;
-      font-weight: 700;
+      line-height: 1.4;
     }
   }
 
   &__author {
     display: flex;
-    padding-top: 15px;
-    margin-bottom: 15px;
+    padding-top: 5px;
   }
 
   &__user {
     max-width: 210px;
     display: flex;
     font-size: 15px;
-    line-height: 2;
     margin-bottom: 25px;
   }
 
@@ -127,11 +111,16 @@
       opacity: 0.6;
     }
   }
-
-  &__link {
-    margin-left: 20px;
-    line-height: 2;
+  //line-height здесь по макету 2, но чтобы иконка соответствовала размерам, приходится делать высоту блока 15px и из-за этого уменьшать line-height до 1
+  &__icon {
+    margin: 7px 0 0 20px;
+    padding-left: 25px;
+    height: 15px;
+    line-height: 1;
     color: #7347c1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
 
     &:hover {
       opacity: 0.6;
@@ -139,7 +128,7 @@
   }
 
   &__text {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     font-size: 16px;
     line-height: 1.9;
     color: $text-black;
@@ -147,7 +136,6 @@
 
   &__tags {
     margin-bottom: 28px;
-    padding-top: 5px;
   }
 
   &__info {
@@ -156,11 +144,6 @@
     padding: 15px 30px 15px;
     border-top: 1px solid #ececec;
     font-size: 15px;
-    line-height: 30px;
-
-    &--wide {
-      padding: 24px 0 0;
-    }
   }
 
   &__price {
@@ -169,7 +152,7 @@
     border-radius: 30px;
     background-color: $btn-white;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 550;
     color: $blue-light;
     transition: all 0.3s;
     
@@ -187,6 +170,7 @@
 
   &__fav {
     margin-left: 20px;
+    @include btn-transp;
     color: $text-black;
     
     &:hover .lnr {
@@ -200,6 +184,7 @@
 
   &__cart {
     margin-left: 20px;
+    @include btn-transp;
     color: $blue-light;
 
     &:hover .lnr {
@@ -209,22 +194,6 @@
     &--right {
       position: absolute;
       right: 30px;
-    }
-  }
-
-  &__rate {
-    margin-left: 15px;
-    width: 80px;
-    background-image: url(../images/content/rate.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    font-size: 0;
-
-    &--wide {
-      width: 90px;
-      position: absolute;
-      right: 0;
     }
   }
 }

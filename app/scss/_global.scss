@@ -87,24 +87,6 @@ body {
     font-size: 16px;
   }
 
-  &__item {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 30px;
-    border-radius: 4px;
-    background-color: #fff;
-    margin-bottom: 50px;
-  }
-
-  &__item-title {
-    justify-content: space-between;
-    padding: 33px 30px 32px;
-    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
-    font-size: 30px;
-    color: #000;
-  }
-
   &__item-tags {
     flex-wrap: wrap;
     padding: 28px 30px 15px;
@@ -115,17 +97,6 @@ body {
 // Start навигационные кнопки слайдера
 
 //обертка стрелкам для позиционирования
-.product__wrapper-arrows {
-  width: 110px;
-  position: relative;
-  }
-//перебить стандартные стили
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  font-size: 14px;
-  color: #fff;
- }
-
 .arrow {
   width: 55px;
   height: 45px;
@@ -173,6 +144,16 @@ body {
     line-height: 2;
     color: #000;
   }
+}
+
+//звёздный рейтинг
+.jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group>svg {
+    margin-right: 3px;
+}
+.jq-ry-normal-group svg 
+{
+  stroke:#ffa726;
+  stroke-width:20;
 }
 
 //Вспомогательные классы

@@ -1,210 +1,207 @@
  <!-- Start product-->
  <section class="block product">
-   
+
    <div class="block__wrapper">
-    <div class="container swiper-container">
-      <div class="block__item block__item-title product__title">
-        <span>Weekly Featured Products</span>
-        <div class="product__wrapper-arrows">
-          <!-- Стрелки прокрутки всё равно нужно prev и next. Я постарался сделать по минимуму стилей отдельным стрелкам  -->
-          <button class="swiper-button-prev arrow bg-purple" type="button"></button>
-          <button class="swiper-button-next arrow arrow--right bg-purple" type="button"></button>
-        </div>
-      </div>
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper block__wrapper">
+     <div class="container swiper-container">
+       <div class="title product__title">
+         <span>Weekly Featured Products</span>
+         <div class="title__arrows">
+           <!-- Задал стрелкам общий класс и модификатор для разворота (иначе кавардак получается) -->
+           <button class="swiper-button-prev arrow bg-purple" type="button"></button>
+           <button class="swiper-button-next arrow arrow--right bg-purple" type="button"></button>
+         </div>
+       </div>
+       <!-- Additional required wrapper -->
+       <div class="swiper-wrapper block__wrapper">
 
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <article class="product-item">
-            <div class="product-item__top">
-              <a class="product-item__img" style="background-image: url(../images/content/content-1.png);" href="#">
-              </a>
-              <div class="product-item__top-hover">
-                <a class="btn product-item__top-btn" href="#">More Info</a>
-                <a class="btn product-item__top-btn" href="#">Live Demo</a>
-              </div>
-            </div>
-            <div class="product-item__inner product-item__inner--wide">
-              <a class="product-item__title product-item__title--big" href="#">
-                One Page Resume Template
-              </a>
-              <div class="product-item__author">
-                <a class="user product-item__user" href="#">
-                  <img class="user__avatar product-item__avatar" src="../../../images/user.png" alt="avatar">
-                  <div class="user__info">
-                    <p class="user__name">
-                      AazzTech
-                    </p>
-                  </div>
-                </a>         
-                <a class="product-item__link" href="#">
-                  <img src="images/icons/wp.svg" alt="WordPress">
-                  WordPress
-                </a>
-              </div>
-              <div class="product-item__text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
-                quam
-                aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
-                mattis, leo quam aliquet congue justo ut scelerisque.
-              </div>
-              <div class="product-item__tags">
-                <a class="btn-cat" href="#">
-                  website
-                </a>
-                <a class="btn-cat" href="#">
-                  plugin
-                </a>
-                <a class="btn-cat" href="#">
-                  landing page
-                </a>
-              </div>
-              <div class="product-item__info product-item__info--wide">
-                <a class="product-item__price product-item__price--blue" href="#">$10 - $50</a>
-                <a class="product-item__fav" href="#">
-                  <span class="lnr lnr-heart"></span>
-                  46
-                </a>
-                <a class="product-item__cart" href="#">
-                  <span class="lnr lnr-cart"></span>
-                  634
-                </a>
-                <a class="product-item__rate product-item__rate--wide" href="#">
-                  Rate
-                </a>
-              </div>
-            </div>
-          </article>
-        </div>
+         <!-- Slides -->
+         <div class="swiper-slide">
+           <article class="product-item">
+             <!-- раньше product-item__content был product-item__img, но тогда я не мог придумать класс картинке. Поэтому назвал его так как есть-->
+             <div class="product-item__content">
+               <img class="product-item__img" src="../../../images/content/content-1.png" alt="content">
+               <div class="product-item__hover">
+                 <a class="btn product-item__link" href="#">More Info</a>
+                 <a class="btn product-item__link" href="#">Live Demo</a>
+               </div>
+             </div>
+             <div class="product__card-inner ">
+               <a class="product__card-title" href="#">
+                 One Page Resume Template
+               </a>
+               <div class="product-item__author">
+                 <a class="user product-item__user" href="#">
+                   <img class="user__avatar product-item__avatar" src="../../../images/user.png" alt="avatar">
+                   <div class="user__info">
+                     <p class="user__name">
+                       AazzTech
+                     </p>
+                   </div>
+                 </a>
+                 <a class="product-item__icon" href="#" style="background-image: url(../../../images/icons/wp.svg);">
+                   WordPress
+                 </a>
+               </div>
+               <div class="product-item__text product__text">
+                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+                 quam
+                 aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                 mattis, leo quam aliquet congue justo ut scelerisque.
+               </div>
+               <div class="product-item__tags product__tags">
+                 <a class="btn btn--cat" href="#">
+                   website
+                 </a>
+                 <a class="btn btn--cat" href="#">
+                   plugin
+                 </a>
+                 <a class="btn btn--cat" href="#">
+                   landing page
+                 </a>
+               </div>
+               <div class="product-item__info product__info">
+                 <span class="product-item__price product__price" href="#">$10 - $50</span>
+                 <button class="product-item__fav product__btn" type="button">
+                   <span class="lnr lnr-heart product__heart"></span>
+                   46
+                 </button>
+                 <button class="product-item__cart product__btn" type="button">
+                   <span class="lnr lnr-cart"></span>
+                   634
+                 </button>
+                 <div class="product-item__star product__star">
+                   <div class="rate-star"></div>
+                 </div>
+               </div>
+             </div>
+           </article>
+         </div>
 
-        <div class="swiper-slide">
-          <article class="product-item">
-            <div class="product-item__top">
-              <a class="product-item__img" style="background-image: url(images/content/content-1.png);" href="#">
-              </a>
-              <div class="product-item__top-hover">
-                <a class="btn product-item__top-btn" href="#">More Info</a>
-                <a class="btn product-item__top-btn" href="#">Live Demo</a>
-              </div>
-            </div>
-            <div class="product-item__inner product-item__inner--wide">
-              <a class="product-item__title product-item__title--big" href="#">
-                One Page Resume Template
-              </a>
-              <div class="product-item__author">
-                <a class="user product-item__user" href="#">
-                  <img class="user__avatar product-item__avatar" src="../../../images/user.png" alt="avatar">
-                  <div class="user__info">
-                    <p class="user__name">
-                      AazzTech
-                    </p>
-                  </div>
-                </a>     
-                <a class="product-item__link" href="#">
-                  <img src="images/icons/wp.svg" alt="WordPress">
-                  WordPress
-                </a>
-              </div>
-              <div class="product-item__text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
-                quam
-                aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
-                mattis, leo quam aliquet congue justo ut scelerisque.
-              </div>
-              <div class="product-item__tags">
-                <a class="btn-cat" href="#">
-                  website
-                </a>
-                <a class="btn-cat" href="#">
-                  plugin
-                </a>
-                <a class="btn-cat" href="#">
-                  landing page
-                </a>
-              </div>
-              <div class="product-item__info product-item__info--wide">
-                <a class="product-item__price product-item__price--blue" href="#">$10 - $50</a>
-                <a class="product-item__fav" href="#">
-                  <span class="lnr lnr-heart"></span>
-                  46
-                </a>
-                <a class="product-item__cart" href="#">
-                  <span class="lnr lnr-cart"></span>
-                  634
-                </a>
-                <a class="product-item__rate product-item__rate--wide" href="#">
-                  Rate
-                </a>
-              </div>
-            </div>
-          </article>
-        </div>
+         <div class="swiper-slide">
+           <article class="product-item">
+             <!-- раньше product-item__content был product-item__img, но тогда я не мог придумать класс картинке. Поэтому назвал его так как есть-->
+             <div class="product-item__content">
+               <img class="product-item__img" src="../../../images/content/content-1.png" alt="content">
+               <div class="product-item__hover">
+                 <a class="btn product-item__link" href="#">More Info</a>
+                 <a class="btn product-item__link" href="#">Live Demo</a>
+               </div>
+             </div>
+             <div class="product__card-inner ">
+               <a class="product__card-title" href="#">
+                 One Page Resume Template
+               </a>
+               <div class="product-item__author">
+                 <a class="user product-item__user" href="#">
+                   <img class="user__avatar product-item__avatar" src="../../../images/user.png" alt="avatar">
+                   <div class="user__info">
+                     <p class="user__name">
+                       AazzTech
+                     </p>
+                   </div>
+                 </a>
+                 <a class="product-item__icon" href="#" style="background-image: url(../../../images/icons/wp.svg);">
+                   WordPress
+                 </a>
+               </div>
+               <div class="product-item__text product__text">
+                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+                 quam
+                 aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                 mattis, leo quam aliquet congue justo ut scelerisque.
+               </div>
+               <div class="product-item__tags product__tags">
+                 <a class="btn btn--cat" href="#">
+                   website
+                 </a>
+                 <a class="btn btn--cat" href="#">
+                   plugin
+                 </a>
+                 <a class="btn btn--cat" href="#">
+                   landing page
+                 </a>
+               </div>
+               <div class="product-item__info product__info">
+                 <span class="product-item__price product__price" href="#">$10 - $50</span>
+                 <button class="product-item__fav product__btn" type="button">
+                   <span class="lnr lnr-heart product__heart"></span>
+                   46
+                 </button>
+                 <button class="product-item__cart product__btn" type="button">
+                   <span class="lnr lnr-cart"></span>
+                   634
+                 </button>
+                 <div class="product-item__star product__star">
+                   <div class="rate-star"></div>
+                 </div>
+               </div>
+             </div>
+           </article>
+         </div>
 
-        <div class="swiper-slide">
-          <article class="product-item">
-            <div class="product-item__top">
-              <a class="product-item__img" style="background-image: url(images/content/content-1.png);" href="#">
-              </a>
-              <div class="product-item__top-hover">
-                <a class="btn product-item__top-btn" href="#">More Info</a>
-                <a class="btn product-item__top-btn" href="#">Live Demo</a>
-              </div>
-            </div>
-            <div class="product-item__inner product-item__inner--wide">
-              <a class="product-item__title product-item__title--big" href="#">
-                One Page Resume Template
-              </a>
-              <div class="product-item__author">
-                <a class="user product-item__user" href="#">
-                  <img class="user__avatar product-item__avatar" src="../../../images/user.png" alt="avatar">
-                  <div class="user__info">
-                    <p class="user__name">
-                      AazzTech
-                    </p>
-                  </div>
-                </a>     
-                <a class="product-item__link" href="#">
-                  <img src="images/icons/wp.svg" alt="WordPress">
-                  WordPress
-                </a>
-              </div>
-              <div class="product-item__text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
-                quam
-                aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
-                mattis, leo quam aliquet congue justo ut scelerisque.
-              </div>
-              <div class="product-item__tags">
-                <a class="btn-cat" href="#">
-                  website
-                </a>
-                <a class="btn-cat" href="#">
-                  plugin
-                </a>
-                <a class="btn-cat" href="#">
-                  landing page
-                </a>
-              </div>
-              <div class="product-item__info product-item__info--wide">
-                <a class="product-item__price product-item__price--blue" href="#">$10 - $50</a>
-                <a class="product-item__fav" href="#">
-                  <span class="lnr lnr-heart"></span>
-                  46
-                </a>
-                <a class="product-item__cart" href="#">
-                  <span class="lnr lnr-cart"></span>
-                  634
-                </a>
-                <a class="product-item__rate product-item__rate--wide" href="#">
-                  Rate
-                </a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End product -->
+         <div class="swiper-slide">
+           <article class="product-item">
+             <!-- раньше product-item__content был product-item__img, но тогда я не мог придумать класс картинке. Поэтому назвал его так как есть-->
+             <div class="product-item__content">
+               <img class="product-item__img" src="../../../images/content/content-1.png" alt="content">
+               <div class="product-item__hover">
+                 <a class="btn product-item__link" href="#">More Info</a>
+                 <a class="btn product-item__link" href="#">Live Demo</a>
+               </div>
+             </div>
+             <div class="product__card-inner ">
+               <a class="product__card-title" href="#">
+                 One Page Resume Template
+               </a>
+               <div class="product-item__author">
+                 <a class="user product-item__user" href="#">
+                   <img class="user__avatar product-item__avatar" src="../../../images/user.png" alt="avatar">
+                   <div class="user__info">
+                     <p class="user__name">
+                       AazzTech
+                     </p>
+                   </div>
+                 </a>
+                 <a class="product-item__icon" href="#" style="background-image: url(../../../images/icons/wp.svg);">
+                   WordPress
+                 </a>
+               </div>
+               <div class="product-item__text product__text">
+                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+                 quam
+                 aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+                 mattis, leo quam aliquet congue justo ut scelerisque.
+               </div>
+               <div class="product-item__tags product__tags">
+                 <a class="btn btn--cat" href="#">
+                   website
+                 </a>
+                 <a class="btn btn--cat" href="#">
+                   plugin
+                 </a>
+                 <a class="btn btn--cat" href="#">
+                   landing page
+                 </a>
+               </div>
+               <div class="product-item__info product__info">
+                 <span class="product-item__price product__price" href="#">$10 - $50</span>
+                 <button class="product-item__fav product__btn" type="button">
+                   <span class="lnr lnr-heart product__heart"></span>
+                   46
+                 </button>
+                 <button class="product-item__cart product__btn" type="button">
+                   <span class="lnr lnr-cart"></span>
+                   634
+                 </button>
+                 <div class="product-item__star product__star">
+                   <div class="rate-star"></div>
+                 </div>
+               </div>
+             </div>
+           </article>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+ <!-- End product -->
