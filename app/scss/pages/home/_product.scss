@@ -3,6 +3,17 @@
     margin-bottom: 20px;
   }
   
+  &__card {
+    max-width: 100%;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  &__img {
+    border-radius: 4px 0 0 4px;
+    height: 100%;
+  }
+
   &__card-inner {
     max-width: 42%;
     padding: 35px 56px 25px 50px;

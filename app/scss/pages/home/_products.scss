@@ -13,8 +13,10 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 50px;
-    padding: 30px 30px 15px;  
+    padding: 30px 30px 15px; 
+    border-radius: 4px; 
     background-color: #fff;
+    margin-bottom: 50px;
   }
 
   /* Расстояния между кнопками (как и сами кнопки) неодинаковые. Поэтому от PixelPerfect отличается */
@@ -63,7 +65,7 @@
 .filter-choice {
   display: none;
   position: absolute;
-  width: 181px;
+  width: 182px;
   top: 57px;
   right: -22px;
   border-radius: 3px;
@@ -90,11 +92,16 @@
   }
 
   &__list {
-    padding: 6px 0 9px 28px;
+    padding: 14px 10px 15px 28px;
+    line-height: 1;
   }
-
+  
   &__link {
     font-size: 15px;
     color: #747b86;
+    transition: color 0.3s;
+    &:hover {
+      color: $blue-light;
+    }
   }
 }
