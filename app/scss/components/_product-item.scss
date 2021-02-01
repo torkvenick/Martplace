@@ -63,8 +63,7 @@
   }
 
   &__inner {
-    position: relative;
-    padding: 26px 21px 0 30px;
+    padding: 19px 26px 0 28px;
   }
 
   &__title {
@@ -127,7 +126,6 @@
 
   &__text {
     margin-bottom: 35px;
-    font-size: 16px;
     line-height: 1.9;
     color: $text-black;
   }
@@ -138,8 +136,6 @@
 
   &__info {
     display: flex;
-    position: relative;
-    padding: 15px 30px 15px;
     border-top: 1px solid #ececec;
     font-size: 15px;
   }
@@ -180,8 +176,12 @@
     } 
   }
 
+  &__star {
+    align-self: center;
+  }
+
   &__cart {
-    margin-left: 20px;
+    margin-left: auto;
     @include btn-transp;
     color: $blue-light;
 

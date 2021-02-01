@@ -1,7 +1,7 @@
 <!-- Start products -->
 <section class="section products">
   <div class="container">
-    <div class="section__wrapper products__wrapper">
+    <div class="products__wrapper">
       <div class="title products__title">
         <span>Newest Release Products</span>
         <div class="products__filter">
@@ -54,7 +54,7 @@
         <button class="btn btn--cat products__btn" type="button" data-filter=".category-software">Software</button>
       </div>
 
-      <div class="section__inner">
+      <div class="section__inner products__inner">
 
         <article class="product-item mix category-plugins" data-order="1">
           <div class="product-item__content">
@@ -69,16 +69,15 @@
               E-commerce Shopping Cart
             </a>
             <div class="product-item__author">
-              <a class="user" href="#">
-                <img class="user__avatar" src="../../../images/user.png" alt="avatar">
+              <a class="user product-item__user" href="#">
+                <img class="user__avatar product-item__avatar" src="../../../images/user.png" alt="avatar">
                 <div class="user__info">
                   <p class="user__name">
                     Theme-Valley
                   </p>
                 </div>
               </a>
-              <a class="product-item__link" href="#">
-                <img src="images/icons/wp.svg" alt="WordPress">
+              <a class="product-item__icon" href="#" style="background-image: url(../../../images/icons/wp.svg);">
                 Plugin
               </a>
             </div>
@@ -88,18 +87,18 @@
             </div>
           </div>
           <div class="product-item__info">
-            <a class="product-item__price" href="#">$20</a>
-            <a class="product-item__fav" href="#">
+            <span class="product-item__price" href="#">$20</span>
+            <button class="product-item__fav" type="button">
               <span class="lnr lnr-heart"></span>
               90
-            </a>
-            <a class="product-item__rate" href="#">
-              Rate
-            </a>
-            <a class="product-item__cart product-item__cart--right" href="#">
+            </button>
+            <!--  <div class="product-item__star">
+                <div class="rate-star"></div>
+              </div> -->
+            <button class="product-item__cart" type="button">
               <span class="lnr lnr-cart"></span>
               246
-            </a>
+            </button>
           </div>
         </article>
 

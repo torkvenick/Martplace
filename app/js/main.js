@@ -26,6 +26,8 @@
     },
   });
 
+  var mixer = mixitup('.products__inner');
+
   $('.rate-star').rateYo({
     starWidth: "15px",
     normalFill: "#ffffff",
@@ -34,9 +36,8 @@
     rating: 4.5
   });
 
-  var mixer = mixitup('.products__inner');
-
+  
   $('.filter-btn').on('click', function () {
     $('.filter-choice').slideToggle();
-
+    
   });
