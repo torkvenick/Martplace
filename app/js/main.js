@@ -31,7 +31,7 @@
     normalFill: "#ffffff",
     ratedFill: "#ffa726",
     readOnly: true,
-    rating: 5
+    rating: 4.5
   });
 
   var mixer = mixitup('.products__inner');

@@ -5,24 +5,32 @@
     padding: 30px 0 60px;
   }
 
-  &__inner {
-    margin-bottom: 25px;
+  &__title {
+    margin-bottom: 30px;
   }
 
-  &__title {
-    padding: 40px 30px;
-    margin-bottom: 30px;
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    padding: 30px 30px 15px;  
+    background-color: #fff;
+  }
+
+  /* Расстояния между кнопками (как и сами кнопки) неодинаковые. Поэтому от PixelPerfect отличается */
+  &__btn {
+    padding: 0 20px;
+    margin-bottom: 15px;
+  }
+
+  &__inner {
+    margin-bottom: 25px;
   }
 
   &__filter {
     position: relative;
   }
-
-  &__btn {
-    text-align: center;
-  }
 }
-
 
 .filter-btn {
   background-color: transparent;

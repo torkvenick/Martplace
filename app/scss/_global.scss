@@ -49,8 +49,8 @@ body {
   padding: 0 15px;
 }
 
-//block
-.block {
+//section
+.section {
   padding: 90px 0 60px;
 
   &__wrapper {
@@ -147,8 +147,9 @@ body {
 }
 
 //звёздный рейтинг
+
 .jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group>svg {
-    margin-right: 3px;
+  margin-right: 3px;
 }
 .jq-ry-normal-group svg 
 {
