@@ -53,7 +53,7 @@
     min-width: 130px;
     border: 1px solid #fff;
     margin: 0 5px;
-    padding: 14px 24px 13px 24px;
+    padding: 7px 24px 6px 24px;
 
     &:hover {
       background-color: #fff;
@@ -64,14 +64,15 @@
 
   &__inner {
     padding: 19px 26px 0 28px;
+    line-height: 1.6;
   }
 
   &__title {
-    margin-bottom: 15px;
     font-size: 20px;
     font-weight: 550;
     color: #000;
     transition: letter-spacing 0.3s;
+    @include trim;
 
     &:hover {
       letter-spacing: 0.5px;
@@ -84,7 +85,7 @@
 
   &__author {
     display: flex;
-    padding-top: 5px;
+    padding-top: 9px;
   }
 
   &__user {
@@ -125,9 +126,10 @@
   }
 
   &__text {
-    margin-bottom: 35px;
+    margin-bottom: 32px;
     line-height: 1.9;
     color: $text-black;
+    @include trim(3);
   }
 
   &__tags {
@@ -136,6 +138,7 @@
 
   &__info {
     display: flex;
+    padding: 15px 30px;
     border-top: 1px solid #ececec;
     font-size: 15px;
   }
@@ -163,7 +166,7 @@
   }
 
   &__fav {
-    margin-left: 20px;
+    margin-left: 9px;
     @include btn-transp;
     color: $text-black;
     

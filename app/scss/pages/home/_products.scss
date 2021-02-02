@@ -21,8 +21,15 @@
     margin-bottom: 15px;
   }
 
+  &__btn-all {
+    display: block;
+    min-width: 190px;
+    margin: 0 auto;
+    padding: 11px 30px 12px;
+  }
+
   &__inner {
-    margin: 0 -30px 25px 0;
+    margin: 0 -30px 30px 0;
   }
 
   &__filter {
