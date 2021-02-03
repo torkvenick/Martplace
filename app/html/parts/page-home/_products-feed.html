@@ -1,334 +1,298 @@
  <!-- Start products-feed -->
- <section class="block products-feed product">
-  <div class="products-feed__wrapper">
-    <div class="container swiper-container--multi">
-      <div class="title product__title">
-        <span>Your Followers Feed</span>
-        <div class="title__arrows">
-          <!-- Задал стрелкам общий класс и модификатор для разворота (иначе кавардак получается) -->
-          <button class="swiper-button-prev arrow bg-blue" type="button"></button>
-          <button class="swiper-button-next arrow arrow--right bg-blue" type="button"></button>
-        </div>
-      </div>
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
+ <section class="section products-feed">
+   <div class="section__wrapper products-feed__wrapper">
+     <div class="container products-feed__container">
+       <div class="title products-feed__title">
+         <span>Your Followers Feed</span>
+         <div class="title__arrows">
+           <!-- Задал стрелкам общий класс и модификатор для разворота (иначе кавардак получается) -->
+           <button class="swiper-button-prev arrow bg-blue" type="button"></button>
+           <button class="swiper-button-next arrow arrow--right bg-blue" type="button"></button>
+         </div>
+       </div>
+       <!-- Additional required wrapper -->
+       <div class="swiper-wrapper">
 
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <article class="product-item products-feed__item">
-            <div class="product-item__top">
-              <a class="product-item__img products-feed__img"
-                style="background-image: url(images/content/products-1.jpg);" href="#">
-              </a>
-              <div class="product-item__top-hover">
-                <a class="btn product-item__top-btn" href="#">More Info</a>
-                <a class="btn product-item__top-btn" href="#">Live Demo</a>
-              </div>
-            </div>
-            <div class="product-item__inner">
-              <a class="product-item__title" href="#">
-                E-commerce Shopping Cart
-              </a>
-              <div class="product-item__author">
-                <a class="user" href="#">
-                  <img class="user__avatar" src="../../../images/user.png" alt="avatar">
-                  <div class="user__info">
-                    <p class="user__name">
-                      Theme-Valley
-                    </p>
-                  </div>
-                </a>
-                <a class="product-item__link" href="#">
-                  <img src="images/icons/wp.svg" alt="WordPress">
-                  Plugin
-                </a>
-              </div>
-              <div class="product-item__text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
-                quam
-                aliquet congue.
-              </div>
-            </div>
-            <div class="product-item__info">
-              <a class="product-item__price" href="#">$20</a>
-              <a class="product-item__fav" href="#">
-                <span class="lnr lnr-heart"></span>
-                90
-              </a>
-              <a class="product-item__rate" href="#">
-                Rate
-              </a>
-              <a class="product-item__cart product-item__cart--right" href="#">
-                <span class="lnr lnr-cart"></span>
-                246
-              </a>
-            </div>
-          </article>
-        </div>
+         <!-- Slides -->
+         <div class="swiper-slide">
+           <article class="product-item products-feed__card">
+             <div class="product-item__content">
+               <img class="product-item__img" src="../../../images/content/picture-1.jpg" alt="content">
+               <div class="product-item__hover">
+                 <a class="btn product-item__link" href="#">More Info</a>
+                 <a class="btn product-item__link" href="#">Live Demo</a>
+               </div>
+             </div>
+             <div class="product-item__inner">
+               <a class="product-item__title" href="#">
+                 E-commerce Shopping Cart
+               </a>
+               <div class="product-item__author">
+                 <a class="user product-item__user" href="#">
+                   <img class="user__avatar product-item__avatar" src="../../../images/user.png" alt="avatar">
+                   <div class="user__info">
+                     <p class="user__name">
+                       Theme-Valley
+                     </p>
+                   </div>
+                 </a>
+                 <a class="product-item__icon" href="#" style="background-image: url(../../../images/icons/wp.svg);">
+                   Plugin
+                 </a>
+               </div>
+               <div class="product-item__text">
+                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                 aliquet congue.
+               </div>
+             </div>
+             <div class="product-item__info">
+               <span class="product-item__price" href="#">$20</span>
+               <button class="product-item__fav" type="button">
+                 <span class="lnr lnr-heart"></span>
+                 90
+               </button>
+               <button class="product-item__cart" type="button">
+                 <span class="lnr lnr-cart"></span>
+                 246
+               </button>
+             </div>
+           </article>
+         </div>
 
-        <div class="swiper-slide">
-          <article class="product-item products-feed__item">
-            <div class="product-item__top">
-              <a class="product-item__img products-feed__img"
-                style="background-image: url(images/content/products-1.jpg);" href="#">
-              </a>
-              <div class="product-item__top-hover">
-                <a class="btn product-item__top-btn" href="#">More Info</a>
-                <a class="btn product-item__top-btn" href="#">Live Demo</a>
-              </div>
-            </div>
-            <div class="product-item__inner">
-              <a class="product-item__title" href="#">
-                Marketify Coffee Shop
-              </a>
-              <div class="product-item__author">
-                <a class="user" href="#">
-                  <img class="user__avatar" src="../../../images/user.png" alt="avatar">
-                  <div class="user__info">
-                    <p class="user__name">
-                      EchoTheme
-                    </p>
-                  </div>
-                </a>
-                <a class="product-item__link" href="#">
-                  <img src="images/icons/ps.svg" alt="Photoshop">
-                  PSD
-                </a>
-              </div>
-              <div class="product-item__text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
-                quam
-                aliquet congue.
-              </div>
-            </div>
-            <div class="product-item__info">
-              <a class="product-item__price" href="#">$18</a>
-              <a class="product-item__fav" href="#">
-                <span class="lnr lnr-heart"></span>
-                48
-              </a>
-              <a class="product-item__rate" href="#">
-                Rate
-              </a>
-              <a class="product-item__cart product-item__cart--right" href="#">
-                <span class="lnr lnr-cart"></span>
-                50
-              </a>
-            </div>
-          </article>
-        </div>
+         <div class="swiper-slide">
+           <article class="product-item products-feed__card">
+             <div class="product-item__content">
+               <img class="product-item__img" src="../../../images/content/picture-2.jpg" alt="content">
+               <div class="product-item__hover">
+                 <a class="btn product-item__link" href="#">More Info</a>
+                 <a class="btn product-item__link" href="#">Live Demo</a>
+               </div>
+             </div>
+             <div class="product-item__inner">
+               <a class="product-item__title" href="#">
+                 Marketify Coffee Shop
+               </a>
+               <div class="product-item__author">
+                 <a class="user product-item__user" href="#">
+                   <img class="user__avatar product-item__avatar" src="../../../images/user.png" alt="avatar">
+                   <div class="user__info">
+                     <p class="user__name">
+                       EchoTheme
+                     </p>
+                   </div>
+                 </a>
+                 <a class="product-item__icon" href="#" style="background-image: url(../../../images/icons/ps.svg);">
+                   PSD
+                 </a>
+               </div>
+               <div class="product-item__text">
+                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                 aliquet congue.
+               </div>
+             </div>
+             <div class="product-item__info">
+               <span class="product-item__price" href="#">$18</span>
+               <button class="product-item__fav" type="button">
+                 <span class="lnr lnr-heart"></span>
+                 48
+               </button>
+               <button class="product-item__cart" type="button">
+                 <span class="lnr lnr-cart"></span>
+                 50
+               </button>
+             </div>
+           </article>
+         </div>
+         <div class="swiper-slide">
+           <article class="product-item products-feed__card">
+             <div class="product-item__content">
+               <img class="product-item__img" src="../../../images/content/picture-3.png" alt="content">
+               <div class="product-item__hover">
+                 <a class="btn product-item__link" href="#">More Info</a>
+                 <a class="btn product-item__link" href="#">Live Demo</a>
+               </div>
+             </div>
+             <div class="product-item__inner">
+               <a class="product-item__title" href="#">
+                 Bryson - Portfolio Template
+               </a>
+               <div class="product-item__author">
+                 <a class="user product-item__user" href="#">
+                   <img class="user__avatar product-item__avatar" src="../../../images/user.png" alt="avatar">
+                   <div class="user__info">
+                     <p class="user__name">
+                       Artcorner
+                     </p>
+                   </div>
+                 </a>
+                 <a class="product-item__icon" href="#" style="background-image: url(../../../images/icons/html.png);">
+                   HTML
+                 </a>
+               </div>
+               <div class="product-item__text">
+                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                 aliquet congue.
+               </div>
+             </div>
+             <div class="product-item__info">
+               <span class="product-item__price" href="#">$10</span>
+               <button class="product-item__fav" type="button">
+                 <span class="lnr lnr-heart"></span>
+                 56
+               </button>
+               <div class="product-item__star">
+                 <div class="rate-star"></div>
+               </div>
+               <button class="product-item__cart" type="button">
+                 <span class="lnr lnr-cart"></span>
+                 68
+               </button>
+             </div>
+           </article>
+         </div>
+         <div class="swiper-slide">
+           <article class="product-item products-feed__card">
+             <div class="product-item__content">
+               <img class="product-item__img" src="../../../images/content/picture-1.jpg" alt="content">
+               <div class="product-item__hover">
+                 <a class="btn product-item__link" href="#">More Info</a>
+                 <a class="btn product-item__link" href="#">Live Demo</a>
+               </div>
+             </div>
+             <div class="product-item__inner">
+               <a class="product-item__title" href="#">
+                 E-commerce Shopping Cart
+               </a>
+               <div class="product-item__author">
+                 <a class="user product-item__user" href="#">
+                   <img class="user__avatar product-item__avatar" src="../../../images/user.png" alt="avatar">
+                   <div class="user__info">
+                     <p class="user__name">
+                       Design-Hub
+                     </p>
+                   </div>
+                 </a>
+                 <a class="product-item__icon" href="#" style="background-image: url(../../../images/icons/wp.svg);">
+                   Plugin
+                 </a>
+               </div>
+               <div class="product-item__text">
+                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                 aliquet congue.
+               </div>
+             </div>
+             <div class="product-item__info">
+               <span class="product-item__price" href="#">$10 - $50</span>
+               <button class="product-item__fav" type="button">
+                 <span class="lnr lnr-heart"></span>
+                 90
+               </button>
+               <div class="product-item__star">
+                 <div class="rate-star"></div>
+               </div>
+               <button class="product-item__cart" type="button">
+                 <span class="lnr lnr-cart"></span>
+                 45
+               </button>
+             </div>
+           </article>
+         </div>
 
-        <div class="swiper-slide">
-          <article class="product-item products-feed__item">
-            <div class="product-item__top">
-              <a class="product-item__img products-feed__img"
-                style="background-image: url(images/content/products-1.jpg);" href="#">
-              </a>
-              <div class="product-item__top-hover">
-                <a class="btn product-item__top-btn" href="#">More Info</a>
-                <a class="btn product-item__top-btn" href="#">Live Demo</a>
-              </div>
-            </div>
-            <div class="product-item__inner">
-              <a class="product-item__title" href="#">
-                Bryson - Portfolio Template
-              </a>
-              <div class="product-item__author">
-                <a class="user" href="#">
-                  <img class="user__avatar" src="../../../images/user.png" alt="avatar">
-                  <div class="user__info">
-                    <p class="user__name">
-                      Artcorner
-                    </p>
-                  </div>
-                </a>
-                <a class="product-item__link" href="#">
-                  <img src="images/icons/html.png" alt="html">
-                  HTML
-                </a>
-              </div>
-              <div class="product-item__text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
-                quam
-                aliquet congue.
-              </div>
-            </div>
-            <div class="product-item__info">
-              <a class="product-item__price" href="#">$10</a>
-              <a class="product-item__fav" href="#">
-                <span class="lnr lnr-heart"></span>
-                56
-              </a>
-              <a class="product-item__rate" href="#">
-                Rate
-              </a>
-              <a class="product-item__cart product-item__cart--right" href="#">
-                <span class="lnr lnr-cart"></span>
-                68
-              </a>
-            </div>
-          </article>
-        </div>
+         <div class="swiper-slide">
+           <article class="product-item products-feed__card">
+             <div class="product-item__content">
+               <img class="product-item__img" src="../../../images/content/picture-2.jpg" alt="content">
+               <div class="product-item__hover">
+                 <a class="btn product-item__link" href="#">More Info</a>
+                 <a class="btn product-item__link" href="#">Live Demo</a>
+               </div>
+             </div>
+             <div class="product-item__inner">
+               <a class="product-item__title" href="#">
+                 Marketify Coffee Shop
+               </a>
+               <div class="product-item__author">
+                 <a class="user product-item__user" href="#">
+                   <img class="user__avatar product-item__avatar" src="../../../images/user.png" alt="avatar">
+                   <div class="user__info">
+                     <p class="user__name">
+                       AazzTech
+                     </p>
+                   </div>
+                 </a>
+                 <a class="product-item__icon" href="#" style="background-image: url(../../../images/icons/ps.svg);">
+                   PSD
+                 </a>
+               </div>
+               <div class="product-item__text">
+                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                 aliquet congue.
+               </div>
+             </div>
+             <div class="product-item__info">
+               <span class="product-item__price" href="#">$10 - $50</span>
+               <button class="product-item__fav" type="button">
+                 <span class="lnr lnr-heart"></span>
+                 48
+               </button>
+               <button class="product-item__cart" type="button">
+                 <span class="lnr lnr-cart"></span>
+                 50
+               </button>
+             </div>
+           </article>
+         </div>
 
-        <div class="swiper-slide">
-          <article class="product-item products-feed__item">
-            <div class="product-item__top">
-              <a class="product-item__img products-feed__img"
-                style="background-image: url(images/content/products-1.jpg);" href="#">
-              </a>
-              <div class="product-item__top-hover">
-                <a class="btn product-item__top-btn" href="#">More Info</a>
-                <a class="btn product-item__top-btn" href="#">Live Demo</a>
-              </div>
-            </div>
-            <div class="product-item__inner">
-              <a class="product-item__title" href="#">
-                E-commerce Shopping Cart
-              </a>
-              <div class="product-item__author">
-                <a class="user" href="#">
-                  <img class="user__avatar" src="../../../images/user.png" alt="avatar">
-                  <div class="user__info">
-                    <p class="user__name">
-                      Theme-Valley
-                    </p>
-                  </div>
-                </a>
-                <a class="product-item__link" href="#">
-                  <img src="images/icons/wp.svg" alt="WordPress">
-                  Plugin
-                </a>
-              </div>
-              <div class="product-item__text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
-                quam
-                aliquet congue.
-              </div>
-            </div>
-            <div class="product-item__info">
-              <a class="product-item__price" href="#">$20</a>
-              <a class="product-item__fav" href="#">
-                <span class="lnr lnr-heart"></span>
-                90
-              </a>
-              <a class="product-item__rate" href="#">
-                Rate
-              </a>
-              <a class="product-item__cart product-item__cart--right" href="#">
-                <span class="lnr lnr-cart"></span>
-                246
-              </a>
-            </div>
-          </article>
-        </div>
+         <div class="swiper-slide">
+           <article class="product-item products-feed__card">
+             <div class="product-item__content">
+               <img class="product-item__img" src="../../../images/content/picture-3.png" alt="content">
+               <div class="product-item__hover">
+                 <a class="btn product-item__link" href="#">More Info</a>
+                 <a class="btn product-item__link" href="#">Live Demo</a>
+               </div>
+             </div>
+             <div class="product-item__inner">
+               <a class="product-item__title" href="#">
+                 Bryson - Portfolio Template
+               </a>
+               <div class="product-item__author">
+                 <a class="user product-item__user" href="#">
+                   <img class="user__avatar product-item__avatar" src="../../../images/user.png" alt="avatar">
+                   <div class="user__info">
+                     <p class="user__name">
+                       Coder-Lab
+                     </p>
+                   </div>
+                 </a>
+                 <a class="product-item__icon" href="#" style="background-image: url(../../../images/icons/html.png);">
+                   HTML
+                 </a>
+               </div>
+               <div class="product-item__text">
+                 Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                 aliquet congue.
+               </div>
+             </div>
+             <div class="product-item__info">
+               <span class="product-item__price" href="#">$10</span>
+               <button class="product-item__fav" type="button">
+                 <span class="lnr lnr-heart"></span>
+                 56
+               </button>
+               <div class="product-item__star">
+                 <div class="rate-star"></div>
+               </div>
+               <button class="product-item__cart" type="button">
+                 <span class="lnr lnr-cart"></span>
+                 68
+               </button>
+             </div>
+           </article>
+         </div>
 
-        <div class="swiper-slide">
-          <article class="product-item products-feed__item">
-            <div class="product-item__top">
-              <a class="product-item__img products-feed__img"
-                style="background-image: url(images/content/products-1.jpg);" href="#">
-              </a>
-              <div class="product-item__top-hover">
-                <a class="btn product-item__top-btn" href="#">More Info</a>
-                <a class="btn product-item__top-btn" href="#">Live Demo</a>
-              </div>
-            </div>
-            <div class="product-item__inner">
-              <a class="product-item__title" href="#">
-                Marketify Coffee Shop
-              </a>
-              <div class="product-item__author">
-                <a class="user" href="#">
-                  <img class="user__avatar" src="../../../images/user.png" alt="avatar">
-                  <div class="user__info">
-                    <p class="user__name">
-                      EchoTheme
-                    </p>
-                  </div>
-                </a>
-                <a class="product-item__link" href="#">
-                  <img src="images/icons/ps.svg" alt="Photoshop">
-                  PSD
-                </a>
-              </div>
-              <div class="product-item__text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
-                quam
-                aliquet congue.
-              </div>
-            </div>
-            <div class="product-item__info">
-              <a class="product-item__price" href="#">$18</a>
-              <a class="product-item__fav" href="#">
-                <span class="lnr lnr-heart"></span>
-                48
-              </a>
-              <a class="product-item__rate" href="#">
-                Rate
-              </a>
-              <a class="product-item__cart product-item__cart--right" href="#">
-                <span class="lnr lnr-cart"></span>
-                50
-              </a>
-            </div>
-          </article>
-        </div>
-
-        <div class="swiper-slide">
-          <article class="product-item products-feed__item">
-            <div class="product-item__top">
-              <a class="product-item__img products-feed__img"
-                style="background-image: url(images/content/products-1.jpg);" href="#">
-              </a>
-              <div class="product-item__top-hover">
-                <a class="btn product-item__top-btn" href="#">More Info</a>
-                <a class="btn product-item__top-btn" href="#">Live Demo</a>
-              </div>
-            </div>
-            <div class="product-item__inner">
-              <a class="product-item__title" href="#">
-                Bryson - Portfolio Template
-              </a>
-              <div class="product-item__author">
-                <a class="user" href="#">
-                  <img class="user__avatar" src="../../../images/user.png" alt="avatar">
-                  <div class="user__info">
-                    <p class="user__name">
-                      Artcorner
-                    </p>
-                  </div>
-                </a>
-                <a class="product-item__link" href="#">
-                  <img src="images/icons/html.png" alt="html">
-                  HTML
-                </a>
-              </div>
-              <div class="product-item__text">
-                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
-                quam
-                aliquet congue.
-              </div>
-            </div>
-            <div class="product-item__info">
-              <a class="product-item__price" href="#">$10</a>
-              <a class="product-item__fav" href="#">
-                <span class="lnr lnr-heart"></span>
-                56
-              </a>
-              <a class="product-item__rate" href="#">
-                Rate
-              </a>
-              <a class="product-item__cart product-item__cart--right" href="#">
-                <span class="lnr lnr-cart"></span>
-                68
-              </a>
-            </div>
-          </article>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</section>
-<!-- End products-feed -->
+       </div>
+     </div>
+   </div>
+ </section>
+ <!-- End products-feed -->

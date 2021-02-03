@@ -18,6 +18,11 @@
     max-width: 270px;
   }
 
+  &__icon {
+    font-size: 16px;
+    line-height: 1.75;  
+  }
+
   &__logo {
     font-size: 24px;
     margin-bottom: 25px;
@@ -129,11 +134,6 @@
   &__icon {
     bottom: 10px;
   }
-}
-
-.lnr {
-  font-size: 16px;
-  line-height: 28px;
 }
 
 .social-list {

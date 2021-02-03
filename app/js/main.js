@@ -11,7 +11,7 @@
     },
   });
 
-  var mySwiper = new Swiper('.swiper-container--multi', {
+  var mySwiper = new Swiper('.products-feed__container', {
     // Optional parameters
     keyboard: {
       enabled: true,
