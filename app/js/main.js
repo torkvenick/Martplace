@@ -29,15 +29,15 @@
   var mixer = mixitup('.products__inner');
 
   $('.rate-star').rateYo({
-    starWidth: "15px",
+    starWidth: "12px",
     normalFill: "#ffffff",
     ratedFill: "#ffa726",
     readOnly: true,
-    rating: 4.5
+    rating: 4.5   
   });
 
   
-  $('.filter-btn').on('click', function () {
-    $('.filter-choice').slideToggle();
+  $('.products__filter-btn').on('click', function () {
+    $('.products__options').slideToggle();
     
   });

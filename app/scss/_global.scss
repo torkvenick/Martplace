@@ -140,14 +140,18 @@ body {
 }
 
 //звёздный рейтинг
+.rate-star {
+  width: 84px !important;
+  padding: 0;
+}
 
 .jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group>svg {
-  margin-right: 3px;
+  margin-right: 5px;
 }
 .jq-ry-normal-group svg 
 {
   stroke:#ffa726;
-  stroke-width:20;
+  stroke-width:40;
 }
 
 //Вспомогательные классы
