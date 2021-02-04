@@ -60,24 +60,26 @@ body {
     flex-wrap: wrap;
     justify-content: center;
   }
-
+  
   &__title {
     text-align: center;
-    font-size: 36px;
+    line-height: 1.5;
+    margin-bottom: 60px;
   }
-
+  
   &__title-top {
     margin-bottom: 16px;
+    font-size: 36px;
 
     span {
       color: $blue-light;
     }
   }
 
-  &__title-bottom {
+  &__subtitle {
     max-width: 60%;
     margin: 0 auto;
-    font-size: 16px;
+    line-height: 1.9;
   }
 
   &__item-tags {
@@ -134,7 +136,6 @@ body {
   
   &__name {
     display: inline-block;
-    line-height: 2;
     color: #000;
   }
 }
@@ -179,6 +180,30 @@ body {
 
 .bg-white {
   background-color: #fff;
+}
+
+.clr-blue {
+  color: #58c9e9;
+}
+
+.clr-bluelight {
+  color: $blue-light;
+}
+
+.clr-green {
+  color: #77de51;
+}
+
+.clr-purple {
+  color: #7f4ec2;
+}
+
+.clr-red {
+  color: #ff6a6d;
+}
+
+.clr-yellow {
+  color: #feb71d;
 }
 
 .sr-only {

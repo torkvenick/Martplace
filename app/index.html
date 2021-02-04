@@ -251,6 +251,7 @@
          <!-- Slides -->
          <div class="swiper-slide">
            <article class="product-item product__card">
+             <!-- раньше product-item__content был product-item__img, но тогда я не мог придумать класс картинке. Поэтому назвал его так как есть-->
              <div class="product-item__content product__content">
                <img class="product-item__img product__img" src="../../../images/content/picture-1.jpg" alt="content">
                <div class="product-item__hover">
@@ -794,6 +795,7 @@
    <!-- Start products-feed -->
  <section class="section products-feed">
    <div class="section__wrapper products-feed__wrapper">
+     <!-- products-feed__container примиксован, чтобы слайды не выходили за рамки контейнера -->
      <div class="container products-feed__container">
        <div class="title products-feed__title">
          <span>Your Followers Feed</span>
@@ -1094,19 +1096,19 @@
 <section class="section stats">
   <div class="container">
     <ul class=" stats__inner">
-      <li class="stats__item stats__item--yellow">
-        <p class="stats__icon">
+      <li class="stats__item clr-yellow">
+        <p class="stats__icon lh-default">
           <span class="lnr lnr-briefcase"></span>
         </p>
-        <p class="stats__title ">
+        <p class="stats__title">
           38,436
         </p>
         <p class="stats__text">
           items for sale
         </p>
       </li>
-      <li  class="stats__item stats__item--blue">
-        <p class="stats__icon">
+      <li  class="stats__item clr-blue">
+        <p class="stats__icon lh-default">
           <span class="lnr lnr-cloud-download"></span>
         </p>
         <p class="stats__title">
@@ -1116,8 +1118,8 @@
           total sales
         </p>
       </li>
-      <li class="stats__item stats__item--green">
-        <p class="stats__icon">
+      <li class="stats__item clr-green">
+        <p class="stats__icon lh-default">
           <span class="lnr lnr-smile"></span>
         </p>
         <p class="stats__title">
@@ -1127,8 +1129,8 @@
           happy customers
         </p>
       </li>
-      <li class="stats__item stats__item--red">
-        <p class="stats__icon">
+      <li class="stats__item clr-red">
+        <p class="stats__icon lh-default">
           <span class="lnr lnr-users"></span>
         </p>
         <p class="stats__title">
@@ -1143,94 +1145,90 @@
 </section>
 <!-- End stats --> 
   
-  <!-- Start benefits -->
-<section class="block benefits">
+  <!-- Start advantages -->
+<section class="section advantages">
   <div class="container">
-    <div class="block__wrapper">
-      <div class="block__title">
-        <p class="block__title-top">
+    <div class="section__wrapper advantages__wrapper">
+      <div class="section__title lh-default">
+        <p class="section__title-top">
           Why Choose <span>MartPlace</span>
         </p>
-        <p class="block__title-bottom">
+        <p class="section__subtitle">
           Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est
           laborum dolo
           rumes fugats untras.
         </p>
       </div>
 
-      <div class="block__inner benefits__inner">
-        <article class="benefits__item benefits__item--big">
-          <span class="lnr lnr-license"></span>
-          <div class="benefits__title">
+      <div class="section__inner advantages__inner">
+        <article class="advantages__item">
+          <span class="advantages__icon lnr lnr-license clr-bluelight"></span>
+          <!--Задал сложный класс advantages__item-title, а не просто advantages__title, потому что если нужно будет менять что-то в заголовке блока, то я к section__title примиксую advantages__title -->
+          <div class="advantages__item-title lh-default">
             One Time Payment
           </div>
-          <span class="benefits__num">01</span>
-          <div class="benefits__text">
+          <div class="advantages__text">
             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
             the mattis, leo quam aliquet diam
             congue is laoreet elit metus.
           </div>
         </article>
 
-        <article class="benefits__item benefits__item--big">
-          <span class="lnr lnr-magic-wand"></span>
-          <div class="benefits__title">
+        <article class="advantages__item">
+          <span class="advantages__icon lnr lnr-magic-wand clr-purple"></span>
+          <div class="advantages__item-title lh-default">
             Quality Products
           </div>
-          <span class="benefits__num">02</span>
-          <div class="benefits__text">
+          <div class="advantages__text">
             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
             the mattis, leo quam aliquet diam
-            congue is laoreet elit metus.
+            congue is laoreet elit metus. 
           </div>
         </article>
+        
 
-        <article class="benefits__item benefits__item--big">
-          <span class="lnr lnr-lock"></span>
-          <div class="benefits__title">
+        <article class="advantages__item">
+          <span class="advantages__icon lnr lnr-lock clr-green"></span>
+          <div class="advantages__item-title lh-default">
             100% Secure Payment
           </div>
-          <span class="benefits__num">03</span>
-          <div class="benefits__text">
+          <div class="advantages__text">
             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
             the mattis, leo quam aliquet diam
             congue is laoreet elit metus.
           </div>
         </article>
 
-        <article class="benefits__item benefits__item--big">
-          <span class="lnr lnr-chart-bars"></span>
-          <div class="benefits__title">
+        <article class="advantages__item">
+          <span class="advantages__icon lnr lnr-chart-bars clr-yellow"></span>
+          <div class="advantages__item-title lh-default">
             Well Organized Code
           </div>
-          <span class="benefits__num">04</span>
-          <div class="benefits__text">
+          <div class="advantages__text">
             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
             the mattis, leo quam aliquet diam
             congue is laoreet elit metus.
           </div>
         </article>
 
-        <article class="benefits__item benefits__item--big">
-          <span class="lnr lnr-leaf"></span>
-          <div class="benefits__title">
+        <article class="advantages__item">
+          <span class="advantages__icon lnr lnr-leaf clr-blue"></span>
+          <div class="advantages__item-title lh-default">
             Life Time Free Update
           </div>
-          <span class="benefits__num">05</span>
-          <div class="benefits__text">
+          <div class="advantages__text">
             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
             the mattis, leo quam aliquet diam
             congue is laoreet elit metus.
           </div>
         </article>
 
-        <article class="benefits__item benefits__item--big">
-          <span class="lnr lnr-phone"></span>
-          <div class="benefits__title">
+        <article class="advantages__item">
+          <span class="advantages__icon lnr lnr-phone clr-red"></span>
+          <div class="advantages__item-title lh-default">
             Fast and Friendly Support
           </div>
-          <span class="benefits__num">06</span>
-          <div class="benefits__text">
+          <div class="advantages__text">
             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
             the mattis, leo quam aliquet diam
             congue is laoreet elit metus.
@@ -1240,7 +1238,7 @@
     </div>
   </div>
 </section>
-<!-- End benefits --> 
+<!-- End advantages --> 
   
   <!-- Start offers -->
 
