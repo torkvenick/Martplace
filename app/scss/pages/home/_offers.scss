@@ -1,52 +1,35 @@
 .offers {
-  &__inner {
+  
+  &__item {
+    max-width: 50%;
+    width: 100%;
+    padding: 100px 0;
     text-align: center;
     color: #fff;
   }
- 
-  &__item {
-    max-width: calc(100% / 2);
-    width: 100%;
-    padding: 100px 0;
-    &--blue {
-      background-color: $blue-light;
-    }
-    
-    &--purple {
-      background-color: $purple;
-    }
-  }
   
   &__img {
-    margin-bottom: 38px;
-    min-height: 105px;
+    width: 120px;
+    height: 100px;
+    margin: 0 auto 38px;
     background-repeat: no-repeat;
     background-position: center;
-
-    &--1 {
-      background-image: url(../images/icons/sell-icon.svg);
-    }
-
-    &--2 {
-      background-image: url(../images/icons/buy-icon.svg);
-    }
+    background-size: contain;
   }
 
   &__title {
     margin-bottom: 46px;
   }
 
-  &__link {
-    transition: 0.3s;
-    
-    &--purple {
-      transition: 0.3s;
-      color: $purple;
-    }
+  &__subtitle {
+    max-width: 580px;
+  }
 
-    &:hover {
-      background-color: transparent;
-      color: #fff;
-    }
+  &__link {
+    display: inline-block;
+    padding: 12px 0 11px;
+    min-width: 190px;
+    background-color: #fff;
+    color: $blue-light;
   }
 }
