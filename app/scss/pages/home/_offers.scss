@@ -18,11 +18,12 @@
   }
 
   &__title {
-    margin-bottom: 46px;
+    margin-bottom: 38px;
   }
 
   &__subtitle {
     max-width: 580px;
+    @include trim(4);
   }
 
   &__link {
@@ -31,5 +32,16 @@
     min-width: 190px;
     background-color: #fff;
     color: $blue-light;
+    transition: all 0.5s;
+
+    &--purple {
+      color: $purple;
+    }
+    
+    &:hover {
+      @include btn-transp;
+      border: 1px solid #fff;
+      color: #fff;
+    }
   }
 }

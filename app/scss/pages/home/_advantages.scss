@@ -36,13 +36,13 @@
   &__item-title {
     margin-bottom: 20px;
     font-size: 24px;
-    line-height: 1.15;
+    @include trim(2);
   }
 
   &__icon {
     font-size: 60px;
     display: block;
-    line-height: 100%;
+    line-height: 1;
     margin-bottom: 40px;
   }
 
@@ -52,15 +52,5 @@
     color: $text-black;
     @include trim(4);
   }
-
-  //решил не ставить нумерацию в global, так как она только здесь есть
- /*  &__num {
-    position: absolute;
-    line-height: 100%;
-    top: 11px;
-    left: 20px;
-    font-size: 48px;
-    color: rgba(92, 135, 248, 0.2);
-  } */
 }
 
