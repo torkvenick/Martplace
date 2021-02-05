@@ -1,7 +1,7 @@
  <!-- Start feedback -->
  <section class="section feedback">
-   <div class="container">
-     <div class="section__wrapper">
+   <div class="section__wrapper">
+     <div class="container feedback__container">
 
        <div class="section__title">
          <p class="section__title-top lh-default">
@@ -13,9 +13,64 @@
          </p>
        </div>
        
-       <div class="swiper-wrapper section__inner">
+       <button class="swiper-button-prev arw" type="button"></button>
+       <button class="swiper-button-next arw" type="button"></button>
+       
+       <div class="swiper-wrapper">
 
-         <div class="swiper-slide">
+         <div class="swiper-slide feedback__slide">
+           <article class="feedback__item">
+             <div class="feedback__info">
+               <a class="user" href="#">
+                 <img class="user__avatar feedback__avatar" src="../../../images/user.png" alt="avatar">
+                 <div class="user__info">
+                   <p class="user__name feedback__name">
+                     Taofiqul Hakim
+                   </p>
+                   <!-- Не писал user__price, потому что цена используется только здесь на всей странице -->
+                   <p class="feedback__prof">
+                     Product Designer
+                   </p>
+                 </div>
+               </a>
+               <span class="lnr lnr-bubble"></span>
+             </div>
+             <div class="feedback__text">
+               Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+               aliquet
+               diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the
+               pharetra,
+               justo ut scelerisque.
+             </div>
+           </article>
+         </div>
+         <div class="swiper-slide feedback__slide">
+           <article class="feedback__item">
+             <div class="feedback__info">
+               <a class="user" href="#">
+                 <img class="user__avatar feedback__avatar" src="../../../images/user.png" alt="avatar">
+                 <div class="user__info">
+                   <p class="user__name feedback__name">
+                     Taofiqul Hakim
+                   </p>
+                   <!-- Не писал user__price, потому что цена используется только здесь на всей странице -->
+                   <p class="feedback__prof">
+                     Product Designer
+                   </p>
+                 </div>
+               </a>
+               <span class="lnr lnr-bubble"></span>
+             </div>
+             <div class="feedback__text">
+               Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+               aliquet
+               diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the
+               pharetra,
+               justo ut scelerisque.
+             </div>
+           </article>
+         </div>
+         <div class="swiper-slide feedback__slide">
            <article class="feedback__item">
              <div class="feedback__info">
                <a class="user" href="#">
@@ -42,7 +97,7 @@
            </article>
          </div>
 
-         <div class="swiper-slide">
+         <div class="swiper-slide feedback__slide">
            <article class="feedback__item">
              <div class="feedback__info">
                <a class="user feedback__user" href="#">
@@ -64,13 +119,12 @@
                aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent
                the pharetra, justo ut scelerisque.
              </div>
-           </article> 
+           </article>
          </div>
-
-         <a class="feedback__link btn bg-blue" href="#">
-           View All Reviews
-         </a>
        </div>
+       <a class="feedback__link btn bg-blue" href="#">
+         View All Reviews
+       </a>
      </div>
    </div>
  </section>
