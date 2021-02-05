@@ -36,6 +36,7 @@
   &__item-title {
     margin-bottom: 20px;
     font-size: 24px;
+    line-height: 1.15;
     @include trim(2);
   }
 
