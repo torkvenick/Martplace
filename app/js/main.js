@@ -26,6 +26,21 @@
     },
   });
 
+  var mySwiper = new Swiper('.feedback__container', {
+    // Optional parameters
+    keyboard: {
+      enabled: true,
+    },
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 30,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
   var mixer = mixitup('.products__inner');
 
   $('.rate-star').rateYo({

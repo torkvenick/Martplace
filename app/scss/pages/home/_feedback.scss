@@ -1,12 +1,8 @@
 .feedback {
   background-color: #fff;
 
-  &__wrapper {
-    padding-top: 22px;
-  }
-
   &__item {
-    max-width: calc(100% / 2 - 15px);
+    max-width: 50%;
     padding: 47px 42px;
     margin-bottom: 30px;
     border-radius: 4px;
@@ -55,7 +51,9 @@
   }
 
   &__link {
-    margin: 27px auto 30px;
+    min-width: 190px;
+    margin: 27px auto 0;
+    padding: 12px 0 11px;
   }
 }
 
