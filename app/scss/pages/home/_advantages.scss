@@ -6,7 +6,7 @@
   }
 
   &__inner {
-    counter-reset: section;
+    counter-increment: questionNumber - 1;
   }
 
   &__item {
@@ -19,11 +19,10 @@
     background-color: #fff;
     text-align: center;
     transition: box-shadow 0.3s;
+    counter-increment: questionNumber;
 
     &::before {
-      counter-increment: section;
-      content: "" counter(section);
-      position: absolute;
+      content: counters(questionNumber, ".", decimal-leading-zero) " ";      position: absolute;
       top: 11px;
       left: 20px;
       font-size: 48px;

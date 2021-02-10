@@ -512,7 +512,7 @@
         <button class="btn btn--cat products__btn" type="button" data-filter=".category-software">Software</button>
       </div>
 
-      <div class="section__inner margin-neg">
+      <div class="section__inner products__inner margin-neg">
 
         <article class="product-item mix category-plugins category-joomla category-landing" data-order="1">
           <div class="product-item__content">
@@ -1529,19 +1529,21 @@
 <!-- End latest --> 
   
   <!-- Start info -->
+
+<!-- Линию посередине сделал за счёт ::before на info__inner. При чётном количестве info__item всё красиво, при нечётном линия проходит по одному из блоков. Это учитывать? -->
     <section class="info">
       <div class="container">
         <div class="info__inner">
-          <div class="info__item info__item--border">
+          <div class="info__item">
             <div class="info__img" style="background-image: url(../../../images/icons/cash-icon.png);"></div>
             <a class="info__link" href="#">
-              30 Days Money Back <span class="info__link--blue">Guarantee</span>
+              30 Days Money Back <span class="clr-bluelight">Guarantee</span>
             </a>
           </div>
           <div class="info__item">
             <div class="info__img" style="background-image: url(../../../images/icons/user-icon.png);"></div>
             <a class="info__link" href="#">
-              Fast and Friendly <span class="info__link--purple">Support</span>
+              Fast and Friendly <span class="clr-purple">Support</span>
             </a>
           </div>
         </div>
@@ -1550,14 +1552,14 @@
     <!-- End info -->
   
    <!-- Start join -->
- <section class="block join">
+ <section class=" section join">
   <div class="container">
-    <div class="block__wrapper join__wrapper">
-      <div class="block__title">
-        <p class="block__title-top">
+    <div class="join__wrapper">
+      <div class="section__title">
+        <p class="section__title-top">
           Ready to Join Our Marketplace!
         </p>
-        <p class="block__title-bottom join__title-bottom">
+        <p class="section__subtitle join__subtitle">
           Over 25,000 designers and developers trust the MartPlace.
         </p>
       </div>

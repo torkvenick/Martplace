@@ -6,16 +6,23 @@
     font-size: 24px;
     color: #333;
     padding: 60px 0;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 1px;
+      height: 100%;
+      position: absolute;
+      right: 50%;
+      top: 0;
+      background-color: #ececec;
+    }
   }
 
   &__item {
     width: 50%;
-    /* блок расширил за счет отступов, чтобы линия посередине соответствовала макету. Мне показалось это наиболее доступным */
     text-align: center;
-  }
-
-  &__item--border {
-    border-right: 1px solid #ececec;
+    line-height: 1.7;
   }
 
   &__img {
@@ -31,15 +38,7 @@
     transition: word-spacing 0.5s;
 
     &:hover {
-      word-spacing: 7px;
+      word-spacing: 2px;
     }
-  }
-
-  &__link--blue {
-    color: $blue-light;
-  }
-
-  &__link--purple {
-    color: $purple;
   }
 }

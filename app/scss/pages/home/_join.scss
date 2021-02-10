@@ -2,22 +2,17 @@
   background-image: linear-gradient(90deg, rgba(114, 33, 160, 0.9) 0%, rgba(64, 48, 201, 0.9) 46%, rgba(13, 62, 242, 0.9) 100%);
 
   &__wrapper {
-    padding-top: 15px;
-    display: flex;
-    flex-direction: column;
+    padding: 110px 0;
     text-align: center;
     color: #fff;
   }
 
-  &__title-bottom {
-    max-width: 100%;
-    margin-bottom: 46px;
+  &__subtitle {
     font-size: 18px;
   }
 
   &__link {
-    display: inline-block;
-    margin: 0 auto 20px;
+    @include btn-big;
     transition: 0.3s;
 
     &:hover {
