@@ -82,6 +82,7 @@
 
   &__text {
     line-height: 1.9;
+    @include trim(4);
   }
   
   &__link {

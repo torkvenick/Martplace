@@ -37,10 +37,11 @@
 
   &__tag {
     display: inline-block;
+    margin-bottom: 10px;
   }
 
   &__tags {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   &__info {
     padding: 24px 0 0;
@@ -58,10 +59,10 @@
     background-color: $blue-light;
     color: #fff;
   }
-
+/* 
   &__star {
     margin-left: auto;
-  }
+  } */
 }
 
 

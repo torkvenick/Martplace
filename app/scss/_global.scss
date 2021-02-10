@@ -70,10 +70,6 @@ body {
   &__title-top {
     margin-bottom: 16px;
     font-size: 36px;
-
-    span {
-      color: $blue-light;
-    }
   }
 
   &__subtitle {
@@ -157,11 +153,17 @@ body {
 
 //Вспомогательные классы
 
+//отрицательный отступ с правой стороны блока (для карточек)
+.margin-neg {
+  margin: 0 -30px 0 0;
+}
+
 //стандартная высота строки
 .lh-default {
   line-height: 1.15;
 }
 
+//жирный кегль
 .text-bold {
   font-weight: 700;
 }
