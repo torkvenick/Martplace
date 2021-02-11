@@ -35,6 +35,11 @@ $footer-text: #ababab;
   padding: 17px 30px 17px;
 }
 
+@mixin btn-white {
+  background-color: #fff;
+  color: $blue-light;
+}
+
 @mixin btn-transp {
   background-color: transparent;
   border: transparent;
