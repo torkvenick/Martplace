@@ -18,8 +18,7 @@
 
   &__link {
     @include btn-white;
-    display: inline-block;
-    padding: 11px 42px;
+    @include btn-big;
     transition: 0.3s;
 
     &:hover {

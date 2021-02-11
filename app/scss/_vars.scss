@@ -31,8 +31,9 @@ $border-button: #d9dfe5;
 $footer-text: #ababab;
 
 @mixin btn-big {
+  display: inline-block;
   min-width: 190px;
-  padding: 17px 30px 17px;
+  padding: 10px 0;
 }
 
 @mixin btn-white {

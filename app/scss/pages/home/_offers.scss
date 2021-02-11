@@ -27,11 +27,8 @@
   }
 
   &__link {
-    display: inline-block;
-    padding: 12px 0 11px;
-    min-width: 190px;
-    background-color: #fff;
-    color: $blue-light;
+    @include btn-white;
+    @include btn-big;
     transition: all 0.5s;
 
     &--purple {

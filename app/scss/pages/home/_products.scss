@@ -5,11 +5,17 @@
     margin-bottom: 30px;
   }
 
+  &__wrapper-btn {
+    text-align: center;
+  }
+
+  //был миксин btn-big, но я убрал, так как там display: inline-block, который портит здесь картину
   &__btn-all {
     display: block;
     min-width: 190px;
     margin: 0 auto;
-    padding: 11px 30px 12px;
+    padding: 10px 0;
+    line-height: 2;
   }
 
   &__filter {
@@ -89,7 +95,7 @@
 
   /* Расстояния между кнопками (как и сами кнопки) неодинаковые. Поэтому от PixelPerfect отличается */
   &__btn {
-    padding: 0 20px;
+    padding: 6px 20px;
     margin-bottom: 15px;
   }
 }
