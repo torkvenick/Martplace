@@ -1,47 +1,59 @@
 .footer {
   background-color: $bg-darkgrey;
-  padding-bottom: 0;
 
   &__top {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 27px 0 120px;
-    color: $footer-text;
-  }
-
-  &__item {
+    padding: 110px 0;
     font-size: 15px;
+    color: $footer-text;
   }
 
   &__contacts {
     max-width: 270px;
   }
 
-  &__icon {
-    font-size: 16px;
-    line-height: 1.75;  
-  }
-
   &__logo {
-    font-size: 24px;
-    margin-bottom: 25px;
+    display: inline-block;
+    margin-bottom: 20px;
   }
 
-  &__about {
-    max-width: 130px;
-    margin-left: auto;
-    margin-right: 45px;
+  &__text {
+    margin-bottom: 20px;
+    line-height: 1.9;
+  }
+  
+  &__address {
+    font-style: inherit;
+    line-height: 1.7;
   }
 
-  &__support {
-    max-width: 140px;
-    margin-left: auto;
-    margin-right: 58px;
+  &__link {
+    //чтобы все иконки размещались по центру текста
+    display: flex;
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 30px;
   }
 
-  &__newsletter {
-    max-width: 360px;
+  &__icon {
+    position: absolute;
+    align-self: center;
+    left: 0;
+    font-size: 16px;
+    line-height: 1.7;  
+  }
+
+  &__item {
+    margin-top: 7px;
+    max-width: 180px;
+    &--about {
+    }
+    &--support {
+    }
+    &--newsletter {
+      max-width: 360px;
+    }
   }
 
   &__item-title {
@@ -57,13 +69,6 @@
     line-height: 28px;
   }
 
-  &__address {
-    font-style: inherit;
-
-    & .footer-list__item {
-      margin-bottom: 7px;
-    }
-  }
 
   &__form {
     margin-bottom: 45px;
@@ -103,7 +108,6 @@
   line-height: 32px;
 
   &__contacts {
-    line-height: 26px;
   }
 
   &__item-text {
@@ -119,15 +123,6 @@
 
     &:hover {
       transform: scale(1.1);
-    }
-
-    &--padding {
-      padding-left: 30px;
-    }
-
-    span {
-      position: absolute;
-      left: 0;
     }
   }
 

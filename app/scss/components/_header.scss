@@ -24,7 +24,7 @@
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
     font-size: 14px;
     transition: box-shadow 0.3s;
-    
+
     &:hover {
       box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
     }
@@ -42,13 +42,13 @@
     padding-right: 13px;
     transition: opacity 0.3s;
   }
-  
+
   &__link {
     position: relative;
     font-size: 0;
 
     &:hover {
-      opacity: 0.6; 
+      opacity: 0.6;
     }
 
   }
@@ -91,7 +91,7 @@
     width: 32%;
   }
 
-//start user
+  //start user
   &__user {
     max-width: 240px;
   }
@@ -109,19 +109,18 @@
   &__price {
     color: $blue;
   }
-}
-/* End header__top */
+  /* End header__top */
 
-/* Start header__bottom */
+  /* Start header__bottom */
+  &__bottom {
+    background-color: #fff;
+  }
 
-.header__bottom {
-  background-color: #fff;
-}
-
-.header__bottom-inner {
-  padding: 16px 0 18px 16px;
-  display: flex;
-  justify-content: space-between;
+  &__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0 18px 16px;
+  }
 }
 
 // Start navigation 
@@ -211,6 +210,4 @@
     }
   }
 }
-
 // End form
-/* End header__bottom */
