@@ -28,139 +28,152 @@
         </address>
       </div>
      
-      <div class="footer__item footer__item--about">
-        <div class="footer__item-title">
+      <!-- У каждого блока общий только верхний отступ, из-за которого приходится создавать footer__item и footer__item--about например. Я сделаю просто footer__about и так далее, тем самым упростив классы. Так подойдет? -->
+      <div class="footer__about">
+        <div class="footer__title">
           Our Company
         </div>
-        <ul class="footer-list footer-list__about">
-          <li class="footer-list__item">
-            <a class="footer-list__link" href="#">
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">
               About us
             </a>
           </li>
-          <li class="footer-list__item">
-            <a class="footer-list__link" href="#">
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">
               How It Works
             </a>
           </li>
-          <li class="footer-list__item">
-            <a class="footer-list__link" href="#">
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">
               Affiliates
             </a>
           </li>
-          <li class="footer-list__item">
-            <a class="footer-list__link" href="#">
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">
               Testimonials
             </a>
           </li>
-          <li class="footer-list__item">
-            <a class="footer-list__link" href="#">
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">
               Contact Us
             </a>
           </li>
-          <li class="footer-list__item">
-            <a class="footer-list__link" href="#">
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">
               Copyright Notice
             </a>
           </li>
-          <li class="footer-list__item">
-            <a class="footer-list__link" href="#">
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">
               Blog
             </a>
           </li>
         </ul>
       </div>
 
-      <div class="footer__item footer__item--support">
-        <div class="footer__item-title">
+      <div class="footer__support">
+        <div class="footer__title">
           Help Support
         </div>
-        <ul class="footer-list footer-list__support">
-          <li class="footer-list__item">
-            <a class="footer-list__link" href="#">
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">
               Support Forum
             </a>
           </li>
-          <li class="footer-list__item">
-            <a class="footer-list__link" href="#">
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">
               Terms & Conditions
             </a>
           </li>
-          <li class="footer-list__item">
-            <a class="footer-list__link" href="#">
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">
               Support Policy
             </a>
           </li>
-          <li class="footer-list__item">
-            <a class="footer-list__link" href="#">
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">
               Refund Policy
             </a>
           </li>
-          <li class="footer-list__item">
-            <a class="footer-list__link" href="#">
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">
               FAQs
             </a>
           </li>
-          <li class="footer-list__item">
-            <a class="footer-list__link" href="#">
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">
               Buyers Faq
             </a>
           </li>
-          <li class="footer-list__item">
-            <a class="footer-list__link" href="#">
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="#">
               Sellers Faq
             </a>
           </li>
         </ul>
       </div>
 
-      <div class="footer__item footer__item--newsletter">
-        <div class="footer__item-title">
+      <div class="footer__newsletter">
+        <div class="footer__title">
           Newsletter
         </div>
-        <p class="footer__item-text">
+        <p class="footer__text">
           Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!
         </p>
 
-        <!-- Start form -->
-        <div class="footer__form">
-          <form class="form form-subscribe" id="email" action="#">
-            <label for="formEmail"></label>
-            <input class="form__input form-subscribe__input" type="email" id="formEmail" name="formEmail"
-              placeholder="Enter email">
-            <input class="form__btn form-subscribe__btn" type="submit" value="Submit">
-          </form>
-        </div>
-        <!-- End form -->
+          <!-- Start form -->
+          <div class="footer__form">
+            <!-- Нужно ли поменять класс form на более понятный или примиксовать ещё один? Эта форма у меня в шапке и подвале и если нужно что-то индивидуальное добавить, я могу сделать ещё один класс. Но пока что добавлять нечего-->
+            <form class="form" id="email" action="#">
+              <label for="formEmail">
+                <span class="sr-only">Submit</span>
+               </label>
+              <input class="form__input" type="email" id="formEmail" name="formEmail"
+                placeholder="Enter email">
+              <button class="btn form__btn bg-blue" type="submit">
+                Submit
+              </button>
+            </form>
+          </div>
+          <!-- End form -->
 
-        <ul class="social-list">
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--fb" href="#">
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <img src="../../../images/social/fb.png" alt="facebook">
+
               facebook
             </a>
           </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--twitter" href="#">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <img src="../../../images/social/twit.png" alt="twitter">
               twitter
             </a>
           </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--google" href="#">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <img src="../../../images/social/google.png" alt="google">
               google
             </a>
           </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--pinterest" href="#">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <img src="../../../images/social/pinterest.png" alt="pinterest">
               pinterest
             </a>
           </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--linkedin" href="#">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <img src="../../../images/social/linked.png" alt="linked">
               linkedin
             </a>
           </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--dribbble" href="#">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
+              <img src="../../../images/social/dribbble.png" alt="dribbble">
               dribbble
             </a>
           </li>

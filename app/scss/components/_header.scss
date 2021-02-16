@@ -62,13 +62,13 @@
     position: absolute;
     bottom: 12px;
     left: 12px;
-    padding: 3px 7px;
+    padding: 3px 8px 3px 7px;
     height: 22px;
     border-radius: 20px;
     font-weight: 550;
     font-size: 14px;
     color: #fff;
-
+  
     &--red {
       background-color: #ff6a6c;
       left: 10px;
@@ -87,8 +87,9 @@
     margin-right: 5px;
   }
 
-  &__form {
-    width: 32%;
+  &__form {  
+  max-width: 360px;
+  width: 100%;
   }
 
   //start user
@@ -168,46 +169,6 @@
 
 // End Navigation 
 
-// Start form
-.form {
-  position: relative;
 
-  &__input {
-    width: 100%;
-    padding: 12px 80px 15px 25px;
-    border: 1px solid $border-button;
-    border-radius: 30px;
-    font-size: 15px;
 
-    &::-webkit-search-cancel-button {
-      display: none;
-    }
 
-    &:focus {
-      outline: transparent;
-    }
-  }
-
-  &__btn {
-    padding: 23px 35px;
-    border: transparent;
-    border-radius: 30px;
-    position: absolute;
-    right: 0;
-    font-size: 0;
-    background-color: $blue-light;
-    background-image: url(../images/icons/lnr-magnifier.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-
-    &:hover {
-      background-size: 30%;
-    }
-
-    &:focus {
-      outline: transparent;
-    }
-  }
-}
-// End form

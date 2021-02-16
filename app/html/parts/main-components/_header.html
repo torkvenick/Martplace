@@ -92,13 +92,17 @@
         <!-- End navigation -->
 
         <!-- Start form -->
-        <!-- Дополнительные классы элементов формы созданы лишь для того, чтобы понять что это за форма. У меня к ним стили никакие не прописаны, потому что формы в шапке и подвале почти идентичны. Если нужно что-то добавить конкретной форме, можно стилизовать через уникальный класс -->
         <div class="header__form">
-          <form class="form product-search" id="search" action="#">
-            <label for="formSearch"></label>
-            <input class="form__input product-search__input" type="search" id="formSearch" name="formSearch"
+          <!-- Нужно ли поменять класс form на более понятный или примиксовать ещё один? Эта форма у меня в шапке и подвале и если нужно что-то индивидуальное добавить, я могу сделать ещё один класс. Но пока что добавлять нечего-->
+          <form class="form" id="search" action="#">
+            <label for="formSearch">
+              <span class="sr-only">Search</span>
+             </label>
+            <input class="form__input" type="search" id="formSearch" name="formSearch"
               placeholder="Search product here...">
-            <input class="form__btn product-search__btn" type="submit" value="Submit">
+            <button class="btn form__btn bg-blue" type="search">
+              <span class="lnr lnr-magnifier form__icon"></span>
+            </button>
           </form>
         </div>
         <!-- End form -->
