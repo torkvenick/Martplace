@@ -220,7 +220,7 @@ footer            56. Блок footer: <div class="footer__item footer__contacts
 
    +      (menu)  85. Menu можно запихнуть в header.
 
-          (lnr)   79. Разобраться с lnr: если прописал ему стили - меняется всё. 
+   +       (lnr)   79. Разобраться с lnr: если прописал ему стили - меняется всё. 
 
 
 
@@ -231,22 +231,22 @@ footer            56. Блок footer: <div class="footer__item footer__contacts
 
         2. Проверить везде cursor: pointer.
 
-        3. Разобраться с краями слайдера ВЕЗДЕ.
+ +      3. Разобраться с краями слайдера ВЕЗДЕ.
 
-        5. Загуглить класс sr-only/ Его вставили в span между label для формы. 
+ +      5. Загуглить класс sr-only/ Его вставили в span между label для формы. 
                   <label for="formSearch">
                     <span class="sr-only">Search</span>
                   </label>
 
         6. Проверить все однотипные элементы - списки ли они.
 
-        7. Иконки в подвале сделать контентными. эТО SVG иконки в кружочке.
+    +   7. Иконки в подвале сделать контентными. эТО SVG иконки в кружочке.
 
         8. Проверить тэги в карточка товара. Краш-тест
 
         9. В блоке feedback при увеличении ломается заголовок (посмотреть видео)
 
         10. Form: В форме лучше кнопку инпутом не делать, а вот так:
-                      <button class="form__btn product-search__btn" type="submit">Submit</button>
+    +       <button class="form__btn product-search__btn" type="submit">Submit</button>
 
         11. Обычно, сначала стилизуется focus, а потом hover, чтобы работало нормально. 

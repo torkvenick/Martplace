@@ -38,14 +38,14 @@
     border-top: 1px solid #ececec;
     font-size: 15px;
     color: #999;
-
-    .lnr-eye {
-      margin-left: 30px;
-    }
   }
 
   &__date {
     border-right: 1px solid #ececec;
     width: 50%;
+  }
+
+  &__icon {
+    margin-left: 30px;
   }
 }

@@ -157,26 +157,27 @@
         <form class="form-search" action="#">
           <div class="form-search__field">
             <label for="formCat">
-              <span class="sr-only">Search your products</span>
+              <span class="sr-only">Search products</span>
             </label>
             <input class="form-search__input" type="search" id="formCat" name="formCat" placeholder="Search your products...">
             <label for="categories">
               <span class="sr-only">Categories</span>
             </label>
-            <span class="form-search__icon lnr lnr-chevron-down"></span>
-            <select class="form-search__select" name="categories" id="categories">
-              <option value="all categories" selected>All Categories</option>
-              <option value="plugins">Plugins</option>
-              <option value="wordpress">Wordpress</option>
-              <option value="site template">Site template</option>
-              <option value="psd template">PSD template</option>
-              <option value="joomla">Joomla</option>
-              <option value="user interface">User interface</option>
-              <option value="landing page">Landing page</option>
-              <option value="software">Software</option>
-            </select>
+            <!-- При клике на саму стрелку ничего не происходит. Если кликать вне её - всё нормально. Можно как-то исправить? -->
+              <span class="form-search__icon lnr lnr-chevron-down"></span>
+              <select class="form-search__select" name="categories" id="categories">
+                <option value="all categories" selected>All Categories</option>
+                <option value="plugins">Plugins</option>
+                <option value="wordpress">Wordpress</option>
+                <option value="site template">Site template</option>
+                <option value="psd template">PSD template</option>
+                <option value="joomla">Joomla</option>
+                <option value="user interface">User interface</option>
+                <option value="landing page">Landing page</option>
+                <option value="software">Software</option>
+              </select>
           </div>
-          <button class="form-search__submit" type="submit">Search now</button>
+          <button class="btn bg-blue form-search__submit" type="submit">Search now</button>
         </form>
       </div>
       <!-- end form-search -->
@@ -256,9 +257,9 @@
          <div class="swiper-slide">
            <article class="product-item product__card">
              <!-- раньше product-item__content был product-item__img, но тогда я не мог придумать класс картинке. Поэтому назвал его так как есть-->
-             <div class="product-item__content product__content">
+             <div class="product-item__content">
                <img class="product-item__img product__img" src="../../../images/content/picture-1.jpg" alt="content">
-               <div class="product-item__hover">
+               <div class="product-item__hover product__hover">
                  <a class="btn product-item__link" href="#">More Info</a>
                  <a class="btn product-item__link" href="#">Live Demo</a>
                </div>
@@ -326,7 +327,7 @@
              <!-- раньше product-item__content был product-item__img, но тогда я не мог придумать класс картинке. Поэтому назвал его так как есть-->
              <div class="product-item__content">
                <img class="product-item__img product__img" src="../../../images/content/picture-2.jpg" alt="content">
-               <div class="product-item__hover">
+               <div class="product-item__hover product__hover">
                  <a class="btn product-item__link" href="#">More Info</a>
                  <a class="btn product-item__link" href="#">Live Demo</a>
                </div>
@@ -394,7 +395,7 @@
              <!-- раньше product-item__content был product-item__img, но тогда я не мог придумать класс картинке. Поэтому назвал его так как есть-->
              <div class="product-item__content">
                <img class="product-item__img product__img" src="../../../images/content/picture-3.png" alt="content">
-               <div class="product-item__hover">
+               <div class="product-item__hover product__hover">
                  <a class="btn product-item__link" href="#">More Info</a>
                  <a class="btn product-item__link" href="#">Live Demo</a>
                </div>
