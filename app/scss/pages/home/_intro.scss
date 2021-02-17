@@ -159,7 +159,17 @@
   &__submit {
     padding: 0 67px;
     border-radius: 4px;
-    transition: all 0.3s;
+    box-shadow: none;
+    transition: box-shadow 0.3s;
+
+    &:hover {
+      box-shadow: inset 0px 0px 0px 4px #fff;
+    }
+    
+    &:focus,
+    &:active {
+      box-shadow: inset 0px 0px 10px 2px #000;
+    }
   }
 }
 

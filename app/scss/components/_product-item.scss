@@ -72,9 +72,9 @@
     transition: letter-spacing 0.3s;
     @include trim(2);
 
-   /*  &:hover {
-      letter-spacing: 0.5px;
-    } */
+    &:hover {
+      letter-spacing: 0.3px;
+    }
   }
 
   &__author {
@@ -113,6 +113,11 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left center;
+    transition: padding-left 0.3s;
+
+    &:hover {
+      padding-left: 17px;
+    }
   }
 
   &__text {

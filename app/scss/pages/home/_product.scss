@@ -33,6 +33,11 @@
     font-weight: 700;
     color: #000;
     @include trim;
+    transition: letter-spacing 0.3s;
+
+    &:hover {
+      letter-spacing: 0.5px;
+    }
   }
 
   &__text {
