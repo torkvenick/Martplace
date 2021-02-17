@@ -140,7 +140,7 @@ body {
     padding: 14px 27px;
     position: absolute;
     right: 0;    
-    transition: transform, opacity 0.3s;
+    transition: transform opacity 0.3s;
     
     &:hover {
       transform: rotate(5deg);
