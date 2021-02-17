@@ -104,11 +104,6 @@ body {
     background-color: #f1f3f6;
     color: $text-grey;
   }
-
-  &:focus {
-    border: 1px solid #000;
-    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
-  }
 }
 //End btn
 
@@ -124,6 +119,17 @@ body {
     border-radius: 30px;
     font-size: 15px;
     outline: transparent;
+    transition: border-color, box-shadow 0.3s;
+    &:hover {
+      border-color: rgba(98, 142, 189, 0.5);
+      box-shadow: inset 0px 0px 3px 1px $blue-light;
+    }
+    
+    &:focus,
+    &:active {
+      border-color: $blue-light;
+      box-shadow: inset 0px 0px 3px 1px $blue-light;
+    }
 
     &::-webkit-search-cancel-button {
       display: none;
@@ -133,7 +139,17 @@ body {
   &__btn {
     padding: 14px 27px;
     position: absolute;
-    right: 0;
+    right: 0;    
+    transition: transform, opacity 0.3s;
+    
+    &:hover {
+      transform: rotate(5deg);
+    }
+
+    &:focus,
+    &:active {
+      opacity: 0.7;
+    }
   }
   
   &__icon {
@@ -172,6 +188,15 @@ body {
 .logo {
   max-width: 200px;
   height: 50px;
+  transition: transform 0.3s;
+  
+  &:hover {
+    transform: scale(0.9);
+  }
+  
+    &:active {
+      opacity: 0.5;
+    }
   
   &__img {
     width: 100%;
@@ -181,8 +206,15 @@ body {
   }
 }
 
+//Данные пользователя
 .user { 
   display: flex;
+  transition: opacity 0.3s;
+  
+  &:hover {
+    opacity: 0.6;
+  }
+
   //отступ справа и размер аватарки наиболее популярные по макету
   &__avatar {   
     width: 28px;
@@ -192,6 +224,7 @@ body {
     object-position: center;
     border-radius: 50%;
   }
+
   
   &__name {
     display: inline-block;
@@ -213,8 +246,6 @@ body {
   stroke:#ffa726;
   stroke-width:40;
 }
-
-
 
 
 //Вспомогательные классы

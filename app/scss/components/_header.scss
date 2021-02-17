@@ -20,40 +20,45 @@
     align-self: center;
     margin-right: 49px;
     min-width: 140px;
-    padding: 10px 18px;
+    padding: 10px 0;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
     font-size: 14px;
-    transition: box-shadow 0.3s;
-
+    transition: box-shadow padding-bottom 0.3s;
+    
     &:hover {
-      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 3px 5px 0px #000;
     }
+
+    &:focus {
+      padding-bottom: 7px;
+      box-shadow: 0px 3px 5px 0px #000;
+    }
+
   }
 
   // Иконки
-  &__icons {
+  &__items {
     margin-right: 16px;
     padding-top: 10px;
   }
 
-  &__icon {
+  &__item {
     display: inline-block;
     margin-right: 15px;
     padding-right: 13px;
     transition: opacity 0.3s;
-  }
-
-  &__link {
-    position: relative;
-    font-size: 0;
-
+    
     &:hover {
       opacity: 0.6;
     }
-
+  }
+  
+  &__link {
+    position: relative;
+    font-size: 0;
   }
 
-  .icon {
+  &__icon {
     font-size: 20px;
     color: $grey;
   }
@@ -76,10 +81,6 @@
 
     &--green {
       background-color: #62d03b;
-    }
-
-    &--blue {
-      background-color: $blue-light;
     }
   }
 
@@ -150,10 +151,10 @@
       width: 0;
       left: auto;
       right: 0;
-      bottom: 5px;
+      bottom: -6px;
       position: absolute;
       height: 3px;
-      transform: rotate(5deg);
+      transform: rotate(2deg);
       background-color: $blue-light;
       opacity: 0.7;
       transition: 0.5s;
