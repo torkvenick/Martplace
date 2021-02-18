@@ -163,6 +163,7 @@
     @include btn-transp;
     color: $text-black;
     transition: transform 0.3s;
+    outline: transparent;
     span {
       padding-right: 5px;
     }
