@@ -146,15 +146,15 @@
     border-radius: 30px;
     background-color: $btn-white;
     font-size: 15px;
-    font-weight: 550;
+    font-weight: 700;
     color: $blue-light;
     transition: all 0.3s;
     
-   /*  &:hover {
+    &:hover {
       box-shadow: inset 0px 0px 5px 0px rgba(6,116,236,1);
       background-color: #fff;
       color: $blue-light;
-    } */
+    }
   }
 
   &__fav {
@@ -162,8 +162,17 @@
     padding: 0;
     @include btn-transp;
     color: $text-black;
+    transition: transform 0.3s;
     span {
       padding-right: 5px;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &:active {
+      transform: translateX(2px);
     }
   }
   
@@ -171,6 +180,16 @@
     margin-left: auto;
     @include btn-transp;
     color: $blue-light;
+    outline: transparent;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &:active {
+      transform: translateX(2px);
+    }
   }
 }
 

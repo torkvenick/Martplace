@@ -18,11 +18,13 @@ ul,
 li {
   margin: 0;
   padding: 0;
-/*   list-style: none;
- */}
+  /*   list-style: none;
+ */
+}
 
 //list-style лучше убирать только тем классам, которым нужно
-ul[class], ol[class] {
+ul[class],
+ol[class] {
   list-style: none;
 }
 
@@ -60,13 +62,13 @@ body {
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   &__title {
     margin-bottom: 60px;
     text-align: center;
     line-height: 1.15;
   }
-  
+
   &__title-top {
     margin-bottom: 16px;
     font-size: 36px;
@@ -84,6 +86,7 @@ body {
     box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
   }
 }
+
 //End section
 
 //Start btn
@@ -103,6 +106,12 @@ body {
     box-shadow: none;
     background-color: #f1f3f6;
     color: $text-grey;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: $blue-light;
+      color: #fff;
+    }
   }
 }
 //End btn
@@ -113,18 +122,19 @@ body {
 
   &__input {
     width: 100%;
-    //правый отступ взят с запасом, чтобы в подвале текст не заходил под кнопку. В шапке из-за этого расстояние до кнопки кажется слишком большим.
+    //правый отступ взят с запасом, чтобы в подвале текст не заходил под кнопку. При вводе текста в шапке из-за этого расстояние до кнопки кажется слишком большим.
     padding: 12px 120px 15px 25px;
     border: 1px solid $border-button;
     border-radius: 30px;
     font-size: 15px;
     outline: transparent;
     transition: border-color, box-shadow 0.3s;
+
     &:hover {
       border-color: rgba(98, 142, 189, 0.5);
       box-shadow: inset 0px 0px 3px 1px $blue-light;
     }
-    
+
     &:focus,
     &:active {
       border-color: $blue-light;
@@ -139,9 +149,9 @@ body {
   &__btn {
     padding: 14px 27px;
     position: absolute;
-    right: 0;    
+    right: 0;
     transition: transform opacity 0.3s;
-    
+
     &:hover {
       transform: rotate(5deg);
     }
@@ -151,12 +161,13 @@ body {
       opacity: 0.7;
     }
   }
-  
+
   &__icon {
     object-fit: contain;
     object-position: center;
   }
 }
+
 // End form
 
 // Start навигационные кнопки слайдера
@@ -169,18 +180,24 @@ body {
   border-radius: 30px 0 0 30px;
   left: 0;
   outline: transparent;
-  transition: all 0.6s;
-  
+  transition: transform 0.3s, background-color 0.3s;
+
+  &:hover {
+    background-color: #feb71d;
+  }
+
+  &:focus,
+  &:active {
+    transform: scale(0.9);
+  }
+
   &--right {
     left: auto;
     right: 0;
     border-radius: 0 30px 30px 0px;
   }
-
-  &:hover {
-    background-color: #ff6a6d;
-  }
 }
+
 // End навигационные кнопки слайдера
 
 
@@ -189,15 +206,15 @@ body {
   max-width: 200px;
   height: 50px;
   transition: transform 0.3s;
-  
+
   &:hover {
     transform: scale(0.9);
   }
-  
-    &:active {
-      opacity: 0.5;
-    }
-  
+
+  &:active {
+    opacity: 0.5;
+  }
+
   &__img {
     width: 100%;
     height: 100%;
@@ -207,16 +224,20 @@ body {
 }
 
 //Данные пользователя
-.user { 
+.user {
   display: flex;
-  transition: opacity 0.3s;
-  
+  transition: transform 0.3s;
+
   &:hover {
-    opacity: 0.6;
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: translate(2px);
   }
 
   //отступ справа и размер аватарки наиболее популярные по макету
-  &__avatar {   
+  &__avatar {
     width: 28px;
     height: 28px;
     margin-right: 7px;
@@ -225,7 +246,7 @@ body {
     border-radius: 50%;
   }
 
-  
+
   &__name {
     display: inline-block;
     color: #000;
@@ -241,10 +262,10 @@ body {
 .jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group>svg {
   margin-right: 5px;
 }
-.jq-ry-normal-group svg 
-{
-  stroke:#ffa726;
-  stroke-width:40;
+
+.jq-ry-normal-group svg {
+  stroke: #ffa726;
+  stroke-width: 40;
 }
 
 
@@ -314,4 +335,3 @@ body {
   font-size: 0;
   overflow: hidden;
 }
-

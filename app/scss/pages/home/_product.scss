@@ -67,6 +67,13 @@
   &__price {
     background-color: $blue-light;
     color: #fff;
+    transition: all 0.3s;
+
+    &:hover {
+      box-shadow: inset 0px 0px 5px 0px rgba(6,116,236,1);
+      background-color: #fff;
+      color: $blue-light;
+    }
   }
 
   &__star {
