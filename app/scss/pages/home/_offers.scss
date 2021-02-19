@@ -29,20 +29,20 @@
   &__link {
     @include btn-white;
     @include btn-big;
-    transition: all 0.5s;
-
+    
     &--purple {
       color: $purple;
-    }
-
-    &:focus {
-      box-shadow: inset 0px 0px 0px 3px #000;
     }
     
     &:hover {
       @include btn-transp;
-      border: 1px solid #fff;
+      box-shadow: inset 0px 0px 0px 1px #fff;
       color: #fff;
+    }
+    
+    &:focus,
+    &:active {
+      transform: scale(0.9);
     }
   }
 }

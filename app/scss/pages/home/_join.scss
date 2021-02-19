@@ -19,11 +19,15 @@
   &__link {
     @include btn-white;
     @include btn-big;
-    transition: 0.3s;
 
     &:hover {
       background-color: transparent;
       color: #fff;
+      box-shadow: inset 0px 0px 0px 1px #fff;
+    }
+
+    &:active {
+      transform: scale(0.9);
     }
   }
 }

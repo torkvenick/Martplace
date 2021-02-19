@@ -97,7 +97,7 @@ body {
   text-align: center;
   color: #fff;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s;
   outline: transparent;
 
   &--cat {
@@ -106,14 +106,20 @@ body {
     box-shadow: none;
     background-color: #f1f3f6;
     color: $text-grey;
-    transition: background-color 0.3s, color 0.3s;
+    transition: all .3s;
 
     &:hover {
       background-color: $blue-light;
       color: #fff;
     }
+
+    &:active {
+      background-color: $btn-hover;
+      transform: scale(0.9);
+    }
   }
 }
+
 //End btn
 
 // Start form
@@ -150,7 +156,6 @@ body {
     padding: 14px 27px;
     position: absolute;
     right: 0;
-    transition: transform opacity 0.3s;
 
     &:hover {
       transform: rotate(5deg);
@@ -233,7 +238,7 @@ body {
   }
 
   &:active {
-    transform: translate(2px);
+    transform: scale(1);
   }
 
   //отступ справа и размер аватарки наиболее популярные по макету

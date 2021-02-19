@@ -49,11 +49,11 @@
     normalFill: "#ffffff",
     ratedFill: "#ffa726",
     readOnly: true,
-    rating: 4.5  
+    rating: 4.5
   });
 
-  
-  $('.products__filter-btn').on('click', function () {
+
+  $('.products__filter').on('click', function () {
     $('.products__options').slideToggle();
-    
   });
+  

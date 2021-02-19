@@ -34,14 +34,13 @@
     @include btn-big;
     border: 1px solid #fff;
     margin: 0 15px;
-    transition: color transform 0.3s;
 
     &:hover {
       background-color: #fff;
       color: $blue-light;
     }
 
-    &:focus {
+    &:active {
       transform: scale(0.9);
     }
   }
@@ -161,7 +160,6 @@
     padding: 0 67px;
     border-radius: 4px;
     box-shadow: none;
-    transition: all 0.3s;
 
     &:hover {
       box-shadow: inset 0px 0px 0px 1px #555;

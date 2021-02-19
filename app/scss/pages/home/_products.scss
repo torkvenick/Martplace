@@ -9,17 +9,30 @@
     text-align: center;
   }
 
-  //был миксин btn-big, но я убрал, так как там display: inline-block, который портит здесь картину
   &__btn-all {
+    @include btn-big;
     display: block;
-    min-width: 190px;
     margin: 0 auto;
-    padding: 10px 0;
     line-height: 2;
+
+    &:hover {
+      background-color: $btn-hover;
+    }
+
+    &:focus,
+    &:active {
+      box-shadow: 0px 0px 5px 0px #0b63c2;
+    }
   }
 
   &__filter {
     position: relative;
+
+    &:hover {
+      .products__filter-icon {
+        transform: rotate(45deg);
+      }
+    }
   }
 
   &__filter-btn {
@@ -27,17 +40,26 @@
     border: transparent;
     font-size: 16px;
     color: #747b86;
+    cursor: pointer;
+    outline: transparent;
+
+    &:focus,
+    &:active {
+      .products__filter-icon {
+        transform: rotate(90deg);
+      }
+    }
   }
 
   &__filter-text {
     margin-right: 25px;
     vertical-align: top;
   }
-  
+
   &__filter-icon {
     transition: transform 0.3s;
   }
-  
+
   &__options {
     display: none;
     position: absolute;
@@ -45,14 +67,14 @@
     right: -22px;
     width: 182px;
     padding: 14px 10px 15px 28px;
-    
+
 
     border-radius: 3px;
     box-shadow: 0px 5px 20px 0px rgba(82, 85, 90, 0.2);
     background-color: #fff;
     line-height: 1;
-    
-    
+
+
     &::after,
     &::before {
       content: '';
@@ -66,7 +88,7 @@
       box-shadow: 0px 5px 20px 0px rgba(82, 85, 90, 0.2);
       z-index: -1;
     }
-    
+
     &::before {
       z-index: 1;
       box-shadow: none;
@@ -77,7 +99,7 @@
     font-size: 15px;
     color: #747b86;
     transition: color 0.3s;
-  
+
     &:hover {
       color: $blue-light;
     }
