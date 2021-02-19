@@ -33,6 +33,15 @@
     position: relative;
     margin-bottom: 10px;
     padding-left: 30px;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &:active {
+      transform: rotate(1deg);
+    }
   }
 
   &__icon {
@@ -44,7 +53,7 @@
   }
 
   &__about {
-    max-width: 160px;
+    max-width: 190px;
     margin: 10px auto 0 70px;
   }
 
@@ -57,10 +66,18 @@
 
   &__list {
     line-height: 2.15;
+  }
 
-    &-link {
-      color: $footer-text;
-      transition: transform 0.3s;
+  &__list-item {
+    color: $footer-text;
+    transition: color 0.2s, transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+
+      &:active {
+        color: #fff;
+      }
     }
   }
 
@@ -82,25 +99,45 @@
 
   &__social {
     display: flex;
+    transition: all 0.3s;
+  }
 
-    &-item {
-      margin-right: 13px;
+  &__social-item {
+    margin-right: 13px;
+
+    img {
+      border-radius: 50%;
+      transition: all 0.3s;
+
+      &:active {
+        box-shadow: 0px 0px 10px 2px #fff;
+      }
     }
 
-    &-link {
-      font-size: 0;
+    &:nth-child(even):hover img {
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(odd):hover img {
+      transform: rotate(-45deg);
     }
   }
+
+  &__social-link {
+    font-size: 0;
+  }
+
+
 
   &__bottom {
     background-color: #192027;
     padding: 28px 0 40px;
     text-align: center;
     line-height: 1.8;
+  }
 
-    &-link {
-      color: #fff;
-      cursor: pointer;
-    }
+  &__bottom-link {
+    color: #fff;
+    cursor: pointer;
   }
 }

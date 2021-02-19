@@ -161,7 +161,10 @@ body {
       transform: rotate(5deg);
     }
 
-    &:focus,
+    &:focus {
+      transform: rotate(5deg);
+    }
+
     &:active {
       opacity: 0.7;
     }
@@ -215,9 +218,9 @@ body {
   &:hover {
     transform: scale(0.9);
   }
-
+  
   &:active {
-    opacity: 0.5;
+    transform: rotate(2deg);
   }
 
   &__img {

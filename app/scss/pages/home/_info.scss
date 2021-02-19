@@ -35,10 +35,30 @@
   }
 
   &__link {
-    transition: word-spacing 0.5s;
+    position: relative;
+    transition: all 0.5s;
+
+    &:active {
+      word-spacing: 4px;
+    }
+
+    &::before {
+      content: "";
+      width: 0;
+      right: 50%;
+      bottom: -6px;
+      position: absolute;
+      height: 3px;
+      background-color: $blue-light;
+      transition: all 0.5s;
+    }
 
     &:hover {
-      word-spacing: 2px;
+      &::before {
+        width: 100%;
+        right: 0;
+        left: auto;
+      }
     }
   }
 }
