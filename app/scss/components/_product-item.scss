@@ -1,6 +1,7 @@
 .product-item {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   max-width: calc(100% / 3 - 30px);
   margin: 0 30px 30px 0;
   border-radius: 4px;

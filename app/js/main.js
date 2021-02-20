@@ -58,7 +58,7 @@
     $(".products__options").slideToggle(200);
     $(document).mouseup(function (e) {
       // событие клика по веб-документу
-      let div = $(".products__filter"); // тут указываем ID элемента
+      let div = $(".products__filter"); // тут указываем ID или класс элемента
       if (
         !div.is(e.target) && // если клик был не по нашему блоку
         div.has(e.target).length === 0

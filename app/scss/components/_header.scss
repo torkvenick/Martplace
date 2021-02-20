@@ -47,14 +47,14 @@
     transition: all 0.3s;
 
     &:hover {
-
+      
       .header__icon {
         color: #000;
         font-weight: 550;
       }
 
       .lnr-num {
-        border: 1px solid $bg-grey;
+        transform: scale(0.9);
       }
     }
   }
@@ -80,6 +80,7 @@
     font-weight: 550;
     font-size: 14px;
     color: #fff;
+    transition: transform 0.3s;
 
     &--red {
       background-color: #ff6a6c;
