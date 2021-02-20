@@ -91,7 +91,6 @@
     display: flex;
     border: 1px solid #dcdcdc;
     border-radius: 4px;
-    position: relative;
     transition: border-color 0.3s;
 
     &:hover {
@@ -102,7 +101,6 @@
   &__input {
     width: 100%;
     padding: 17px 15px 18px 27px;
-    margin-right: 191px;
     border: none;
     border-radius: 4px 0 0 4px;
     outline: transparent;
@@ -124,9 +122,11 @@
     }
   }
 
+  &__wrapper {
+    position: relative;
+  }
+
   &__select {
-    position: absolute;
-    right: 0;
     padding: 6px 70px 6px 16px;
     border: none;
     border-left: 1px solid #dcdcdc;
@@ -152,7 +152,6 @@
     right: 20px;
     bottom: 20px;
     font-size: 12px;
-    z-index: 1;
   }
 
 

@@ -1,32 +1,33 @@
 .products {
   background-color: $bg-lightgrey;
-
+  
   &__title {
     margin-bottom: 30px;
   }
-
+  
   &__wrapper-btn {
     text-align: center;
   }
-
+  
   &__btn-all {
     @include btn-big;
     display: block;
     margin: 0 auto;
     line-height: 2;
-
+    
     &:hover {
       background-color: $btn-hover;
     }
-
+    
     &:focus,
     &:active {
       box-shadow: 0px 0px 5px 0px #0b63c2;
     }
   }
-
+  
   &__filter {
     position: relative;
+    z-index: 2;
 
     &:hover {
       .products__filter-icon {
@@ -49,7 +50,7 @@
         transform: rotate(90deg);
       }
     }
-  }
+  } 
 
   &__filter-text {
     margin-right: 25px;
@@ -67,7 +68,6 @@
     right: -22px;
     width: 182px;
     padding: 14px 10px 15px 28px;
-
 
     border-radius: 3px;
     box-shadow: 0px 5px 20px 0px rgba(82, 85, 90, 0.2);

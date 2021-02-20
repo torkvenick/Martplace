@@ -218,7 +218,7 @@ body {
   &:hover {
     transform: scale(0.9);
   }
-  
+
   &:active {
     transform: rotate(2deg);
   }
@@ -241,7 +241,7 @@ body {
   }
 
   &:active {
-    transform: scale(1);
+    transform: scale(0.9);
   }
 
   //отступ справа и размер аватарки наиболее популярные по макету
@@ -262,15 +262,6 @@ body {
 }
 
 //звёздный рейтинг
-.rate-star {
-  width: 84px !important;
-  padding: 0;
-}
-
-.jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group>svg {
-  margin-right: 5px;
-}
-
 .jq-ry-normal-group svg {
   stroke: #ffa726;
   stroke-width: 40;

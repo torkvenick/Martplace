@@ -53,7 +53,18 @@
   });
 
 
-  $('.products__filter').on('click', function () {
-    $('.products__options').slideToggle();
+  $(".products__filter").on("click", function (e) {
+    e.preventDefault();
+    $(".products__options").slideToggle(200);
+    $(document).mouseup(function (e) {
+      // событие клика по веб-документу
+      let div = $(".products__filter"); // тут указываем ID элемента
+      if (
+        !div.is(e.target) && // если клик был не по нашему блоку
+        div.has(e.target).length === 0
+      ) {
+        $(".products__options").hide(200); // скрываем его
+      }
+    });
+
   });
-  
