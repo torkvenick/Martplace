@@ -32,7 +32,7 @@
     font-size: 24px;
     font-weight: 700;
     color: #000;
-    @include trim;
+    @include trim; //ограничивает заголовок одной строкой. Миксин в фвйле _vars.scss
     transition: letter-spacing 0.3s;
 
     &:hover {

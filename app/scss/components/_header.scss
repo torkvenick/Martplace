@@ -12,6 +12,7 @@
   &__profile {
     display: flex;
     margin-left: auto;
+    line-height: 1.15;
   }
 
   //Button registration
@@ -21,15 +22,19 @@
     margin-right: 49px;
     min-width: 140px;
     padding: 10px 0;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px 0px rgba(19, 10, 10, 0.1);
     font-size: 14px;
+
+    &:focus {
+      box-shadow: 0px 0px 5px 0px $btn-hover;
+    }
 
     &:hover {
       background-color: $btn-hover;
     }
 
-    &:focus {
-      box-shadow: 0px 0px 5px 0px $btn-hover;
+    &:active {
+      transform: scale(0.9);
     }
 
   }
@@ -47,7 +52,7 @@
     transition: all 0.3s;
 
     &:hover {
-      
+
       .header__icon {
         color: #000;
         font-weight: 550;
@@ -76,7 +81,7 @@
     left: 12px;
     padding: 3px 8px 3px 7px;
     height: 22px;
-    border-radius: 20px;
+    border-radius: 20px; //вместо 50%, как было у меня раньше
     font-weight: 550;
     font-size: 14px;
     color: #fff;
@@ -132,55 +137,54 @@
     justify-content: space-between;
     padding: 16px 0 18px 16px;
   }
-}
 
-// Start navigation 
-.menu {
-  &__items {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 3px;
-    text-transform: uppercase;
-  }
-
-  &__item {
-    margin-right: 35px;
-  }
-
-  &__link {
-    font-weight: 550;
-    color: $black;
-    font-size: 15px;
-    line-height: 2.8;
-    position: relative;
-    transition: all 0.3s;
-
-    &::before {
-      content: "";
-      width: 0;
-      left: auto;
-      right: 0;
-      bottom: -6px;
-      position: absolute;
-      height: 3px;
-      transform: rotate(2deg);
-      background-color: $blue-light;
-      opacity: 0.7;
-      transition: all 0.5s;
+  // Start navigation 
+  .menu {
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 3px;
+      text-transform: uppercase;
     }
 
-    &:hover {
+    &__item {
+      margin-right: 35px;
+    }
+
+    &__link {
+      font-weight: 550;
+      color: $black;
+      font-size: 15px;
+      line-height: 2.8;
+      position: relative;
+      transition: all 0.3s;
+
       &::before {
-        width: 100%;
-        right: auto;
-        left: 0;
+        content: "";
+        width: 0;
+        left: auto;
+        right: 0;
+        bottom: -6px;
+        position: absolute;
+        height: 3px;
+        transform: rotate(2deg);
+        background-color: $blue-light;
+        opacity: 0.7;
+        transition: all 0.5s;
+      }
+
+      &:hover {
+        &::before {
+          width: 100%;
+          right: auto;
+          left: 0;
+        }
+      }
+
+      &:active {
+        color: $blue-light;
       }
     }
-
-    &:active {
-      color: $blue-light;
-    }
   }
+  // End Navigation 
 }
-
-// End Navigation 

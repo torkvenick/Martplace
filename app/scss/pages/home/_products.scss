@@ -15,20 +15,23 @@
     margin: 0 auto;
     line-height: 2;
     
+    &:focus {
+      box-shadow: 0px 0px 5px 0px #0b63c2;
+    }
+    
     &:hover {
       background-color: $btn-hover;
     }
     
-    &:focus,
     &:active {
-      box-shadow: 0px 0px 5px 0px #0b63c2;
+      transform: scale(0.9);
     }
   }
   
   &__filter {
     position: relative;
-    z-index: 2;
-
+    z-index: 2; //Контекст наложения исправлен. Блок больше не заходит за карточки
+    
     &:hover {
       .products__filter-icon {
         transform: rotate(45deg);

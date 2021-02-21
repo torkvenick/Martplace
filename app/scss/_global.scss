@@ -22,7 +22,7 @@ li {
  */
 }
 
-//list-style лучше убирать только тем классам, которым нужно
+//list-style лучше убирать только тем классам, которым нужно. А нужно было всем.
 ul[class],
 ol[class] {
   list-style: none;
@@ -51,7 +51,7 @@ body {
   padding: 0 15px;
 }
 
-//section
+//Start section. Создан для позиционирования элементов внутри. До этого был block, но block слишком общий класс.
 .section {
   &__wrapper {
     padding: 120px 0;
@@ -89,14 +89,14 @@ body {
 
 //End section
 
-//Start btn
+//Start btn. Класс присваивается как кнопкам, так и ссылкам.
 .btn {
   border: transparent;
   border-radius: 30px;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
   text-align: center;
   color: #fff;
-  cursor: pointer;
+  cursor: pointer; 
   transition: all 0.3s;
   outline: transparent;
 
@@ -178,7 +178,7 @@ body {
 
 // End form
 
-// Start навигационные кнопки слайдера
+// Start навигационные кнопки слайдера. Стрелки - это две кнпоки.
 
 //обертка стрелкам для позиционирования
 .arrow {
@@ -188,13 +188,17 @@ body {
   border-radius: 30px 0 0 30px;
   left: 0;
   outline: transparent;
-  transition: transform 0.3s, background-color 0.3s;
+  transition: all 0.3s;
+
+  &:focus {
+    background-color: #feb71d;
+    box-shadow: inset 0px 0px 3px 1px #555;
+  }
 
   &:hover {
     background-color: #feb71d;
   }
 
-  &:focus,
   &:active {
     transform: scale(0.9);
   }
@@ -209,20 +213,21 @@ body {
 // End навигационные кнопки слайдера
 
 
-//Логотип
+//Start Логотип
 .logo {
   max-width: 200px;
   height: 50px;
   transition: transform 0.3s;
-
+  
   &:hover {
     transform: scale(0.9);
   }
-
+  
   &:active {
     transform: rotate(2deg);
   }
-
+  
+  //при смене картинки логотип не разлезается
   &__img {
     width: 100%;
     height: 100%;
@@ -230,36 +235,37 @@ body {
     object-position: left;
   }
 }
+//End Логотип
 
-//Данные пользователя
+//Start Аватарка и имя пользователя. Ширина блока, ограничивающая контент, у каждой секции разная
 .user {
   display: flex;
   transition: transform 0.3s;
-
+  
   &:hover {
     transform: scale(1.1);
   }
-
+  
   &:active {
     transform: scale(0.9);
   }
-
-  //отступ справа и размер аватарки наиболее популярные по макету
+  
   &__avatar {
-    width: 28px;
+    width: 28px; //размер аватарки наиболее популярный по макету
     height: 28px;
-    margin-right: 7px;
+    margin-right: 7px; //отступ справа наиболее популярный по макету
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
   }
-
-
+  
+  
   &__name {
     display: inline-block;
     color: #000;
   }
 }
+//End Аватарка и имя пользователя отдельным блоком
 
 //звёздный рейтинг
 .jq-ry-normal-group svg {
@@ -275,16 +281,12 @@ body {
   margin: 0 -30px 0 0;
 }
 
-//стандартная высота строки
-.lh-default {
-  line-height: 1.15;
-}
-
 //жирный кегль
 .text-bold {
   font-weight: 700;
 }
 
+//фон
 .bg-blue {
   background-color: $blue-light;
 }
@@ -301,6 +303,7 @@ body {
   background-color: #fff;
 }
 
+//цвет текста
 .clr-blue {
   color: #58c9e9;
 }
@@ -325,6 +328,7 @@ body {
   color: #feb71d;
 }
 
+//screen reader
 .sr-only {
   width: 1px;
   height: 1px;

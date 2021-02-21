@@ -1,7 +1,7 @@
 .intro {
   background-image: linear-gradient(180deg, rgb(0, 48, 222) 0%, rgb(23, 69, 237) 54%, rgb(46, 90, 251) 100%);
   opacity: 0.8;
-
+  
   &__wrapper {
     min-height: 725px;
     display: flex;
@@ -10,7 +10,7 @@
     text-align: center;
     position: relative;
   }
-
+  
   &__inner {
     color: $white-title;
     padding-bottom: 85px;
@@ -19,9 +19,9 @@
   &__title {
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
     font-size: 60px;
     line-height: 1.15;
-    margin-bottom: 30px;
   }
 
   &__subtitle {
