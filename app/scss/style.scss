@@ -5,12 +5,20 @@
 
 @import 'fonts';
 
-@import 'components/header';
+@import 'components/logo';
+
+@import 'components/btn';
+
+@import 'components/form';
+
+@import 'components/user';
 
 @import 'components/title';
 
+@import 'components/header';
+
 @import 'components/product-item';
 
-@import 'pages/home';
-
 @import 'components/footer';
+
+@import 'pages/home';

@@ -1,0 +1,56 @@
+// Start form
+.form {
+  position: relative;
+
+  &__input {
+    width: 100%;
+    //правый отступ взят с запасом, чтобы в подвале текст не заходил под кнопку. При вводе текста в шапке из-за этого расстояние до кнопки кажется слишком большим.
+    padding: 12px 120px 15px 25px;
+    border: 1px solid $border-button;
+    border-radius: 30px;
+    font-size: 15px;
+    outline: transparent;
+    transition: border-color, box-shadow 0.3s;
+
+    &:hover {
+      border-color: rgba(98, 142, 189, 0.5);
+      box-shadow: inset 0px 0px 3px 1px $blue-light;
+    }
+
+    &:focus,
+    &:active {
+      border-color: $blue-light;
+      box-shadow: inset 0px 0px 3px 1px $blue-light;
+    }
+
+    &::-webkit-search-cancel-button {
+      display: none;
+    }
+  }
+
+  &__btn {
+    padding: 14px 27px;
+    position: absolute;
+    right: 0;
+
+    &:hover {
+      transform: rotate(5deg);
+    }
+
+    &:focus {
+      transform: rotate(5deg);
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  &__icon {
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+// End form
+

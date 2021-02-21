@@ -1,0 +1,31 @@
+//Start btn. Класс присваивается как кнопкам, так и ссылкам.
+.btn {
+  border: transparent;
+  border-radius: 30px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #fff;
+  cursor: pointer; 
+  transition: all 0.3s;
+  outline: transparent;
+
+  &--cat {
+    margin: 0 7px 10px 0;
+    padding: 4px 12px;
+    box-shadow: none;
+    background-color: #f1f3f6;
+    color: $text-grey;
+    transition: all .3s;
+
+    &:hover {
+      background-color: $blue-light;
+      color: #fff;
+    }
+
+    &:active {
+      background-color: $btn-hover;
+      transform: scale(0.9);
+    }
+  }
+}
+//End btn
